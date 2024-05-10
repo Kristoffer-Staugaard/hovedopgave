@@ -7,4 +7,3 @@ const app = createApp(header);
 app.mount('#app'); // Mount the app on element with id="app" in index.html
 
 
-
