@@ -4,9 +4,9 @@ import './assets/main.css'
 import { createApp } from 'vue';
 import header from './components/header.vue';
 const app = createApp(header);
-app.mount('#app'); // Mount the app on element with id="app" in index.html
+header.mount('#header'); // Mount the app on element with id="app" in index.html
 
 
 import footer from './components/footer.vue';
-const app1 = createApp(footer);
-app1.mount('#app1'); // Mount the app on element with id="app" in index.html
+const footer = createApp(footer);
+footer.mount('#footer'); // Mount the app on element with id="app" in index.html
