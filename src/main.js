@@ -1,14 +1,9 @@
 import './assets/main.css'
 
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+// main.js
+import { createApp } from 'vue';
+import Myheader from './header.vue';
 
-const app = createApp(App)
-router.beforeEach((to, from, next) => {
-    window.scrollTo(0, 0);
-    next();
-  });
-app.use(router)
+const app = createApp(Myheader);
 
-app.mount('#app')
+app.mount('#app'); // Mount the app on element with id="app" in index.html
