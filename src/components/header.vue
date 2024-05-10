@@ -5,6 +5,7 @@
 <style>
 .header{
     border: 1px solid darkgray;
+    background-color: pink;
 
 }
 </style>
