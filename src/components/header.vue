@@ -1,5 +1,5 @@
 <template>
-<div class="header">this is a card.</div> 
+<div class="header">Dette er header.</div> 
 </template>
 
 <style>
