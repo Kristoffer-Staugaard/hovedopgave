@@ -7,3 +7,6 @@ const app = createApp(header);
 app.mount('#app'); // Mount the app on element with id="app" in index.html
 
 
+import footer from './components/footer.vue';
+const app = createApp(footer);
+app.mount('#app'); // Mount the app on element with id="app" in index.html
