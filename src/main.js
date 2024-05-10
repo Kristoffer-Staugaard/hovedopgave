@@ -2,7 +2,7 @@ import './assets/main.css'
 
 // main.js
 import { createApp } from 'vue';
-import header from './header.vue';
+import header from './components/header.vue';
 
 const app = createApp(header);
 
