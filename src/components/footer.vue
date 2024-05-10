@@ -1,5 +1,5 @@
 <template> 
-<h2> dette er en header </h2>
+<h2> dette er en Footer </h2>
 </template>
 
 <style>
