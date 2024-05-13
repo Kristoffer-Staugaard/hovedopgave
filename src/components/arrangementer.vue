@@ -28,7 +28,9 @@ const getArrangementerSection = () => {
   <section id="arrangementer_section">
     <div class="arrangementer_container">
       <div v-for="(  arrangementer, index) in arrangementer" :key="index" class="arrangementer_box"> 
-        
+        <div class="">
+              <img id="arrangementer_img" :src="arrangementer.image" alt="arrangementer billede" class="arrangementer_image" />
+          </div>
         <div>
           <p class="arrangementer_dato">{{ arrangementer.dato }}</p> 
         </div>  
