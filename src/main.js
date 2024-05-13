@@ -19,3 +19,7 @@ arrangementerUCL.mount('#arrangementer_section');
 import kontakt from './components/kontakt.vue';
 const kontaktUCL = createApp(kontakt);
 kontaktUCL.mount('#kontakt'); // Mount the app on element with id="footer" in index.html
+
+import shortcut from './components/shortcut.vue';
+const shortcutUCL = createApp(shortcut);
+shortcutUCL.mount('#shortcut');
