@@ -1,11 +1,12 @@
 <template> 
-<h2> dette er en Footer </h2>
+<div class="Footer">Dette er Footer.</div> 
 </template>
 
 <style>
-h2{
-background-color: orange;
-color: orange;
+.Footer{
+    border: 1px solid darkgray;
+    background-color: orange;
+    padding: 50px
 
 }
 </style>
