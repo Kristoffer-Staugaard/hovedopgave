@@ -10,3 +10,4 @@ headerUCL.mount('#header'); // Mount the app on element with id="header" in inde
 import footer from './components/footer.vue';
 const footerUCL = createApp(footer);
 footerUCL.mount('#footer'); // Mount the app on element with id="footer" in index.html
+

@@ -44,10 +44,9 @@
 </template>
 
 <style>
+
 footer{
     background-color: #1A444D;
-
-
 }
 .footer-main{
     color: #fff;
@@ -59,17 +58,14 @@ footer{
 
 .footer-1{
     width: 25%;
-
 }
 
 .footer-2{
     width: 25%;
-
 }
 
 .footer-3{
     width: 50%;
-
 }
 
 ul{
@@ -88,13 +84,11 @@ ul{
     flex-direction: row;
     gap: 25px;
     padding: 5%;
-
 }
 
 .footer-icons img{
-  height: 30px;
-  width: 30px;
-
+    height: 30px;
+    width: 30px;
 }
 
 .footer-bottom-line{
@@ -104,9 +98,6 @@ ul{
     text-align: center;
     padding: 1%;
     border-top: 1px solid #707070;
-
-
-
 }
 
 </style>
