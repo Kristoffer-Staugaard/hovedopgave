@@ -14,7 +14,7 @@ footerUCL.mount('#footer'); // Mount the app on element with id="footer" in inde
 
 import arrangementer from './components/arrangementer.vue';
 const arrangementerUCL = createApp(arrangementer);
-arrangementerUCL.mount('#arrangementer'); // Mount the app on element with id="footer" in index.html
+arrangementerUCL.mount('#arrangementer_section');
 
 import kontakt from './components/kontakt.vue';
 const kontaktUCL = createApp(kontakt);

@@ -1,10 +1,7 @@
 <script setup>
-import {
-  onMounted,
-  ref
-} from 'vue';
+import { onMounted, ref } from 'vue';
 
-const arrangementer = ref({});
+const arrangementer = ref([]);
 const error = ref(null);
 
 onMounted(() => {
@@ -12,14 +9,13 @@ onMounted(() => {
 });
 
 const getArrangementerSection = () => {
-  fetch('https://hovedopgave-f875e-default-rtdb.firebaseio.com/arrangementer.json', {
+  fetch('https://hovedopgave-f875e-default-rtdb.firebaseio.com/arragementer.json', {
     method: 'GET'
   })
   .then((res) => res.json())
   .then((res) => {
     console.log(res);
     arrangementer.value = res;
-    console.log(arrangementer.value)
   })
   .catch((err) => {
     console.log(err);
@@ -31,15 +27,16 @@ const getArrangementerSection = () => {
 <template>
   <section id="arrangementer_section">
     <div class="arrangementer_container">
-      <div v-for="(arrangement, index) in arrangementer" :key="index" class="arrangementer_box">  
+      <div v-for="(  arrangementer, index) in arrangementer" :key="index" class="arrangementer_box"> 
+        
         <div>
-          <p class="arrangementer_dato">{{ arrangementerSection.dato }}</p>
+          <p class="arrangementer_dato">{{ arrangementer.dato }}</p> 
         </div>  
         <div>
-          <p class="arrangementer_location">{{ arrangementerSection.location }}</p>
+          <p class="arrangementer_location">{{ arrangementer.location }}</p> 
         </div> 
         <div>
-          <p class="arrangementer_titel">{{ arrangementerSection.titel }}</p>
+          <p class="arrangementer_titel">{{ arrangementer.titel }}</p> 
         </div> 
       </div>
     </div>
