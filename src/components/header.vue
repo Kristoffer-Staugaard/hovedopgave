@@ -36,6 +36,7 @@
 
 nav {
     background-color: #E6F1F0;
+    padding: 5%;
 }
 
 header {
@@ -44,7 +45,13 @@ header {
 }
 
 .logo {
-    width: 200px;
+    width: 250px;
+}
+
+.nav-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .top-nav-wrap {
