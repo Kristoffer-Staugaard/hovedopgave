@@ -1,11 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Alt';
+    src: url('../assets/fonts/ProximaNovaA-Regular.woff') format('woff');
+}
+
+body {
+    font-family: 'Proxima Nova Alt';
+}
+
 h1{
 background-color: pink;
-
-
 }
 
-*{
-    line-height: 30px;
-
-
-}
