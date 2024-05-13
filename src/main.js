@@ -4,7 +4,7 @@ import './assets/main.css'
 import { createApp } from 'vue';
 import header from './components/header.vue';
 const headerUCL = createApp(header);
-headerUCL.mount('#header'); // Mount the app on element with id="heaer" in index.html
+headerUCL.mount('#header'); // Mount the app on element with id="header" in index.html
 
 
 import footer from './components/footer.vue';
