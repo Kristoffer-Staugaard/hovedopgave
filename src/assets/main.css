@@ -50,3 +50,37 @@ h3{
     margin-top: 20px;
     width: fit-content;
   }
+
+  /* Nu kommer reviews style  */
+  .
+
+
+.reviews_section{
+
+}
+
+.reviews_container{
+    background-color: #1A444D;
+    display: flex;
+}
+
+#reviews_img{
+width: 150px;
+height: 150px;
+border-radius: 100%;
+}
+.reviews_education{
+
+}
+.reviews_message{
+
+}
+
+.reviews_name{
+
+}
+.reviews_titel{
+
+}
+          
+ /* Nu slutter reviews style  */
