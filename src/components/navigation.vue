@@ -1,10 +1,10 @@
 <template>
    <nav>
         <div class="nav-upper">
-            <img class="nav-logo" src="img/logo.svg" alt="Staugaard Studio logo">
+            <img class="nav-logo" src="" alt="Staugaard Studio logo">
             <div class="nav-collapse-btn">
                 <h3>Navigation</h3>
-                <img class="nav-arrow" src="img/arrow-down.svg" alt="nav indicator">
+                <img class="nav-arrow" src="" alt="nav indicator">
             </div>
             <div class="nav-collapse">
                 <a class="nav-collapse-link" href="#om-mig" id="om-mig-link">Om mig</a>
