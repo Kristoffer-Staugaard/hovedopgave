@@ -3,69 +3,167 @@
 </script>
 
 <template>
+
+    <section>
     <h2 class="italic">Karriere tjekliste</h2>
 
-<div>
+<div class="flex-overordnet">
     <div class="flex-tjekliste">
-        <div class="semester-opdeling">
-            <p>1. semester</p>
+            <div class="semester-opdeling">
+                <p>1. semester</p>
 
             <div class="checkbox-class">
-                <img src="../assets/img/check.svg" alt="">
+                <img class="check-img" src="../assets/img/check.svg" alt="">
                 <p>LinkedIn profil</p>
             </div>
-            
+                
             <div class="checkbox-class">
-                <img src="../assets/img/cross.svg" alt="">
+                <img class="check-img" src="../assets/img/cross.svg" alt="">
                 <p>Praktiksøgning</p>
             </div>
-            <div class="checkbox-class"><div class="unchecked-box"></div><p>CV og ansøgning</p></div>
-            <div class="checkbox-class"><div class="unchecked-box"></div><p>Jobsøgningsstrategi</p></div>
-            <div class="checkbox-class"><div class="unchecked-box"></div><p>Kompetenceafklaring</p></div>
-            <div class="checkbox-class"><div class="unchecked-box"></div><p>Praktiksamtale</p></div>
-            <div class="checkbox-class"><div class="unchecked-box"></div><p>Jobsamtalen</p></div>
+
+            <div class="checkbox-class">
+                <img class="check-img" src="../assets/img/cross.svg" alt="">
+                <p>CV og ansøgning</p>
+            </div>
+
+            <div class="checkbox-class">
+                <img class="check-img" src="../assets/img/cross.svg" alt="">
+                <p>Jobsøgningsstrategi</p>
+            </div>
+            <div class="checkbox-class">
+                <img class="check-img" src="../assets/img/cross.svg" alt="">
+                <p>Kompetenceafklaring</p>
+            </div>
+
+            <div class="checkbox-class">
+                <img class="check-img" src="../assets/img/cross.svg" alt="">
+                <p>Praktiksamtale</p>
+            </div>
+            <div  class="checkbox-class">
+                <img class="check-img" src="../assets/img/cross.svg" alt="">
+                <p>Jobsamtalen</p>
+            </div>
         </div>
 
         <div class="semester-opdeling">
-            <p>2. semester</p>
+                <p>2. semester</p>
 
-            <div class="checkbox-class"> <div class="checked-box"></div><p>LinkedIn profil</p></div>
-            <div class="checkbox-class"><div class="checked-box"></div><p>Praktiksøgning</p></div>
-            <div class="checkbox-class"><div class="checked-box"></div><p>CV og ansøgning</p></div>
-            <div class="checkbox-class"><div class="unchecked-box"></div><p>Jobsøgningsstrategi</p></div>
-            <div class="checkbox-class"><div class="unchecked-box"></div><p>Kompetenceafklaring</p></div>
-            <div class="checkbox-class"><div class="unchecked-box"></div><p>Praktiksamtale</p></div>
-            <div class="checkbox-class"><div class="unchecked-box"></div><p>Jobsamtalen</p></div>
-        </div>   
+                <div class="checkbox-class">
+                <img class="check-img" src="../assets/img/check.svg" alt="">
+                <p>LinkedIn profil</p>
+            </div>
+                
+            <div class="checkbox-class">
+                <img class="check-img" src="../assets/img/check.svg" alt="">
+                <p>Praktiksøgning</p>
+            </div>
 
-    </div>
+            <div class="checkbox-class">
+                <img class="check-img" src="../assets/img/check.svg" alt="">
+                <p>CV og ansøgning</p>
+            </div>
 
-    <div class="flex-tjekliste">
-        <div class="semester-opdeling">
-            <p>3. semester</p>
+            <div class="checkbox-class">
+                <img class="check-img" src="../assets/img/cross.svg" alt="">
+                <p>Jobsøgningsstrategi</p>
+            </div>
+            <div class="checkbox-class">
+                <img class="check-img" src="../assets/img/cross.svg" alt="">
+                <p>Kompetenceafklaring</p>
+            </div>
 
-            <div class="checkbox-class"><div class="checked-box"></div><p>LinkedIn profil</p></div>
-            <div class="checkbox-class"><div class="checked-box"></div><p>Praktiksøgning</p></div>
-            <div class="checkbox-class"><div class="checked-box"></div><p>CV og ansøgning</p></div>
-            <div class="checkbox-class"><div class="checked-box"></div><p>Jobsøgningsstrategi</p></div>
-            <div class="checkbox-class"><div class="checked-box"></div><p>Kompetenceafklaring</p></div>
-            <div class="checkbox-class"><div class="checked-box"></div><p>Praktiksamtale</p></div>
-            <div class="checkbox-class"><div class="unchecked-box"></div><p>Jobsamtalen</p></div>
+            <div class="checkbox-class">
+                <img class="check-img" src="../assets/img/cross.svg" alt="">
+                <p>Praktiksamtale</p>
+            </div>
+            <div class="checkbox-class">
+                <img class="check-img" src="../assets/img/cross.svg" alt="">
+                <p>Jobsamtalen</p>
+            </div> 
+
         </div>
 
-        <div class="semester-opdeling">
-            <p>4. semester</p>
+        <div class="flex-tjekliste">
+            <div class="semester-opdeling">
+                <p>3. semester</p>
 
-            <div class="checkbox-class"><div class="checked-box"></div><p>LinkedIn profil</p></div>
-            <div class="checkbox-class"><div class="checked-box"></div><p>Praktiksøgning</p></div>
-            <div class="checkbox-class"><div class="checked-box"></div><p>CV og ansøgning</p></div>
-            <div class="checkbox-class"><div class="checked-box"></div><p>Jobsøgningsstrategi</p></div>
-            <div class="checkbox-class"><div class="checked-box"></div><p>Kompetenceafklaring</p></div>
-            <div class="checkbox-class"><div class="checked-box"></div><p>Praktiksamtale</p></div>
-            <div class="checkbox-class"><div class="checked-box"></div><p>Jobsamtalen</p></div>
-        </div>   
+                <div class="checkbox-class">
+                    <img class="check-img" src="../assets/img/check.svg" alt="">
+                    <p>LinkedIn profil</p>
+                </div>
+                    
+                <div class="checkbox-class">
+                    <img class="check-img" src="../assets/img/check.svg" alt="">
+                    <p>Praktiksøgning</p>
+                </div>
+
+                <div class="checkbox-class">
+                    <img class="check-img" src="../assets/img/check.svg" alt="">
+                    <p>CV og ansøgning</p>
+                </div>
+
+                <div class="checkbox-class">
+                    <img class="check-img" src="../assets/img/check.svg" alt="">
+                    <p>Jobsøgningsstrategi</p>
+                </div>
+                <div class="checkbox-class">
+                    <img class="check-img" src="../assets/img/check.svg" alt="">
+                    <p>Kompetenceafklaring</p>
+                </div>
+
+                <div class="checkbox-class">
+                    <img class="check-img" src="../assets/img/check.svg" alt="">
+                    <p>Praktiksamtale</p>
+                </div>
+                <div class="checkbox-class">
+                    <img class="check-img" src="../assets/img/cross.svg" alt="">
+                    <p>Jobsamtalen</p>
+                </div>
+
+            </div>
+
+            <div class="semester-opdeling">
+                <p>4. semester</p>
+                <div class="checkbox-class">
+                    <img class="check-img" src="../assets/img/check.svg" alt="">
+                    <p>LinkedIn profil</p>
+                </div>
+                    
+                <div class="checkbox-class">
+                    <img class="check-img" src="../assets/img/check.svg" alt="">
+                    <p>Praktiksøgning</p>
+                </div>
+
+                <div class="checkbox-class">
+                    <img class="check-img" src="../assets/img/check.svg" alt="">
+                    <p>CV og ansøgning</p>
+                </div>
+
+                <div class="checkbox-class">
+                    <img class="check-img" src="../assets/img/check.svg" alt="">
+                    <p>Jobsøgningsstrategi</p>
+                </div>
+                <div class="checkbox-class">
+                    <img class="check-img" src="../assets/img/check.svg" alt="">
+                    <p>Kompetenceafklaring</p>
+                </div>
+
+                <div class="checkbox-class">
+                    <img class="check-img" src="../assets/img/check.svg" alt="">
+                    <p>Praktiksamtale</p>
+                </div>
+                <div class="checkbox-class">
+                    <img class="check-img" src="../assets/img/check.svg" alt="">
+                    <p>Jobsamtalen</p>
+                </div>
+        
+            </div> 
+        </div>
     </div>
 </div>
+
+</section>
 
 </template>
 
@@ -81,12 +179,25 @@
 
 .flex-tjekliste {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    width: 750px;
 }
 
 .semester-opdeling {
     margin: 20px 100px 20px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-overordnet {
+    display: flex;
+    margin-left: 350px;
+}
+
+.check-img {
+    margin-right: 6px;
 }
 
 </style>
