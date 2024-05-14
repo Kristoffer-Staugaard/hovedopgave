@@ -3,6 +3,7 @@ import footerUCL from './components/footerUCL.vue'
 </script>
 
 <template>
+<router-view/>
 <footerUCL />
 </template>
 
