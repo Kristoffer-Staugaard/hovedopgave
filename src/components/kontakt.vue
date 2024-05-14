@@ -1,30 +1,24 @@
-<template> 
+<template>
+    <section>
     <h2>Kontakt Karrievejledning</h2>
     <div class="contact">
-        <div>
+        <div class="contact-inner">
             <img src="../assets/img/dennis.png" alt="">
                 <h3>Dennis Færch Broch</h3>
                 <p>Dimittend- og karrierekonsulent</p>
                <b> <p class="paragraf-kontakt-os">Kontakt os</p> </b>
         </div>
-        <div>
+        <div class="contact-inner">
             <img src="../assets/img/morten.png" alt="">
                 <h3>Morten Jung Lassen</h3>
                 <p>Karrierevejleder</p>
                <b> <p class="paragraf-kontakt-os">Kontakt os</p> </b>
         </div>
-
      </div>
-   
+   </section>
 </template>
     
 <style>
-h2{
-    text-align: center;
-    margin: 2%;
-
-}
-
     
 .contact{
     display: flex;
@@ -32,9 +26,8 @@ h2{
     justify-content: space-evenly;
     text-align: center;
     background-color: #F8CCC4;
-    padding: 5%;
-    width: 80%;
     margin: 0 auto;
+    padding: 5%;
 
 }   
 
@@ -47,7 +40,7 @@ h2{
 .paragraf-kontakt-os{
     border-bottom: 2px solid #000;
     border-bottom-style: dotted;
-
-
+    text-align: center;
 }
+
 </style>

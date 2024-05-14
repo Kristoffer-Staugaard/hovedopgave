@@ -25,7 +25,7 @@ const getArrangementerSection = () => {
 </script>
 
 <template>
-  <section id="arrangementer_section">
+  <section>
     <div class="arrangementer_container">
       <div v-for="(  arrangementer, index) in arrangementer" :key="index" class="arrangementer_box"> 
         <div>
@@ -49,10 +49,6 @@ const getArrangementerSection = () => {
 #arrangementer_img{
   width: 400px;
   height: auto;
-}
-
-#arrangementer_section{
-padding: 10px;
 }
 
 .arrangementer_container{
