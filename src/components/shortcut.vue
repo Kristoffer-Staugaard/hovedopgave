@@ -39,10 +39,6 @@ function toggleDropdown(index) {
 
 <style scoped>
 
-section {
-  padding: 5%;
-}
-
 .dropdown-wrap {
   border: solid 2px #CAE4E3;
   margin-bottom: 20px;
