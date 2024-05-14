@@ -4,13 +4,13 @@
 
 <template>
 
-    <section>
+    <section id="tjekliste-baggrund">
     <h2 class="italic">Karriere tjekliste</h2>
 
 <div class="flex-overordnet">
     <div class="flex-tjekliste">
             <div class="semester-opdeling">
-                <p>1. semester</p>
+                <p class="italic">1. semester</p>
 
             <div class="checkbox-class">
                 <img class="check-img" src="../assets/img/check.svg" alt="">
@@ -47,7 +47,7 @@
         </div>
 
         <div class="semester-opdeling">
-                <p>2. semester</p>
+                <p class="italic">2. semester</p>
 
                 <div class="checkbox-class">
                 <img class="check-img" src="../assets/img/check.svg" alt="">
@@ -86,7 +86,7 @@
 
         <div class="flex-tjekliste">
             <div class="semester-opdeling">
-                <p>3. semester</p>
+                <p class="italic">3. semester</p>
 
                 <div class="checkbox-class">
                     <img class="check-img" src="../assets/img/check.svg" alt="">
@@ -124,7 +124,7 @@
             </div>
 
             <div class="semester-opdeling">
-                <p>4. semester</p>
+                <p class="italic">4. semester</p>
                 <div class="checkbox-class">
                     <img class="check-img" src="../assets/img/check.svg" alt="">
                     <p>LinkedIn profil</p>
@@ -169,6 +169,13 @@
 
 <style scoped>
 
+#tjekliste-baggrund {
+    background-image: url("../assets/img/baggrund-tjekliste(2).svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
 .italic {
     font-style: italic;
 }
@@ -182,18 +189,18 @@
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    width: 750px;
+    width: 900px;
 }
 
 .semester-opdeling {
-    margin: 20px 100px 20px 100px;
+    margin: 20px 150px 20px 100px;
     display: flex;
     flex-direction: column;
 }
 
 .flex-overordnet {
     display: flex;
-    margin-left: 350px;
+    justify-content: center;
 }
 
 .check-img {
