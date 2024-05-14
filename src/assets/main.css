@@ -15,6 +15,7 @@ body {
 
 section {
     padding: 5%;
+    margin-left: 20%;
 }
 
 h1{
@@ -35,6 +36,11 @@ h3{
  p {
     color: #1A424B;
     font-size: 15px;
+ }
+
+ .main-wrap {
+    display: flex;
+    position: relative;
  }
 
  .btn-yellow{

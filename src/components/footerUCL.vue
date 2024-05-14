@@ -47,6 +47,7 @@
 
 footer{
     background-color: #1A444D;
+   
 }
 .footer-main{
     color: #fff;
