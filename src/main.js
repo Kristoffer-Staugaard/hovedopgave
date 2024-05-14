@@ -28,3 +28,4 @@ import jobportalen from './components/jobportalen.vue';
 const jobportalenUCL = createApp(jobportalen);
 jobportalenUCL.mount('#jobportalen');
 
+
