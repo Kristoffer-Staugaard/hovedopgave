@@ -19,11 +19,13 @@
         <div class="buttom-nav-wrap">
             <ul class="buttom-nav">
                 <li>Mit campus</li>
-                <li>Studie service</li>
+                <!--midlertidig løsning ind til karrierevejledning-->
+                <router-link to="/karrierevejledning">
+                    <li>Studieservice</li>
+                </router-link>
                 <li>Events & studieliv</li>
                 <li>SU</li>
                 <li>Specialpædagogisk støtte (SPS)</li>
-
             </ul>
         </div>
     </div>
