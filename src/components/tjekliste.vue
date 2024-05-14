@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <h2>Karriere tjekliste</h2>
+    <h2 class="italic">Karriere tjekliste</h2>
     <p>1. semester</p>
 
     <div class="checkbox-class"><div class="checked_box"></div><p>LinkedIn profil</p></div>
@@ -51,6 +51,10 @@
 </template>
 
 <style scoped>
+
+.italic {
+    font-style: italic;
+}
 
 
 </style>

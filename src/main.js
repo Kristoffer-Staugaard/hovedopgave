@@ -28,4 +28,7 @@ import jobportalen from './components/jobportalen.vue';
 const jobportalenUCL = createApp(jobportalen);
 jobportalenUCL.mount('#jobportalen');
 
+import tjekliste from './components/tjekliste.vue';
+const tjeklisteUCL = createApp(tjekliste);
+tjeklisteUCL.mount('#tjekliste');
 
