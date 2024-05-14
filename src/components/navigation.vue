@@ -32,6 +32,7 @@
     padding: 40px 25px 40px 25px;
     box-sizing: border-box;
     background-color: #00454E;
+    margin-top: 0;
 }
 
 .nav-inner {
