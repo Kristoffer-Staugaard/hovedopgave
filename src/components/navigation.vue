@@ -29,7 +29,7 @@
     position: fixed;
     top: 0;
     left: 1px;
-    padding: 40px 25px 40px 25px;
+    padding: 40px;
     box-sizing: border-box;
     background-color: #00454E;
     margin-top: 0;
