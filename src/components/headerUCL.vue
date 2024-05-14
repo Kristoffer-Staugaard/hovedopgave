@@ -32,7 +32,7 @@
 
 </template>
 
-<style>
+<style scoped>
 
 nav {
     background-color: #E6F1F0;

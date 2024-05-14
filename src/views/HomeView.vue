@@ -1,8 +1,8 @@
 <script setup>
-import header from '../components/header.vue';
+import headerUCL from '../components/headerUCL.vue';
 
 </script>
 
 <template>
-<header />
+<headerUCL />
 </template>

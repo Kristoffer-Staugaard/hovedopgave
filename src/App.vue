@@ -1,9 +1,9 @@
 <script setup>
-import arragementer from './components/arrangementer.vue'
+import footerUCL from './components/footerUCL.vue'
 </script>
 
 <template>
-<arragementer/>
+<footerUCL />
 </template>
 
 <style>
@@ -59,4 +59,4 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
-</style>
+</style>./components/footerUCL.vue
