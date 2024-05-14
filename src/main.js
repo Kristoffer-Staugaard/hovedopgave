@@ -29,3 +29,8 @@ const jobportalenUCL = createApp(jobportalen);
 jobportalenUCL.mount('#jobportalen');
 
 
+import navigation from './components/navigation.vue';
+const navigationUCL = createApp(navigation);
+navigationUCL.mount('#navigation');
+
+
