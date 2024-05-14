@@ -32,3 +32,8 @@ import tjekliste from './components/tjekliste.vue';
 const tjeklisteUCL = createApp(tjekliste);
 tjeklisteUCL.mount('#tjekliste');
 
+import navigation from './components/navigation.vue';
+const navigationUCL = createApp(navigation);
+navigationUCL.mount('#navigation');
+
+
