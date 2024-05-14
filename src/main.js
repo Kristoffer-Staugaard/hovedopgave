@@ -23,3 +23,8 @@ kontaktUCL.mount('#kontakt'); // Mount the app on element with id="footer" in in
 import shortcut from './components/shortcut.vue';
 const shortcutUCL = createApp(shortcut);
 shortcutUCL.mount('#shortcut');
+
+import jobportalen from './components/jobportalen.vue';
+const jobportalenUCL = createApp(jobportalen);
+jobportalenUCL.mount('#jobportalen');
+
