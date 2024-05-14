@@ -16,6 +16,7 @@
 </template>
     
 <script setup>
+
     
 </script>
     
@@ -26,10 +27,10 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 1px;
-    padding: 40px 25px 40px 25px;
+    position: sticky;
+    left: 0px;
+    top: 0px;
+    padding: 40px;
     box-sizing: border-box;
     background-color: #00454E;
     margin-top: 0;
@@ -37,6 +38,7 @@
 
 .nav-inner {
     color: white;
+    text-wrap: nowrap;
 }
 
 ul {

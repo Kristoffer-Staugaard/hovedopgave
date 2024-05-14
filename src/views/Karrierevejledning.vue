@@ -11,9 +11,13 @@
 </script>
 
 <template>
-
-<navigation />
 <headerKarriere />
+
+
+<div class="main-wrap">
+<navigation />
+
+<div class="content-wrap">
 <shortcut />
 <!--kalender-->
 <tjekliste />
@@ -21,4 +25,7 @@
 <jobportalen />
 <arrangementer />
 <kontaktUCL />
+</div>
+</div>
+
 </template>
