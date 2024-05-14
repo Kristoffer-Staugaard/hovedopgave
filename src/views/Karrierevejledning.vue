@@ -6,10 +6,13 @@
     import tjekliste from '@/components/tjekliste.vue';
     import shortcut from '@/components/shortcut.vue';
     import kontaktUCL from '@/components/kontaktUCL.vue';
+    import navigation from '@/components/navigation.vue';
+
 </script>
 
 <template>
 
+<navigation />
 <headerKarriere />
 <shortcut />
 <!--kalender-->
