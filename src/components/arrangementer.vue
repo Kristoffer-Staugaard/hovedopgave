@@ -25,7 +25,7 @@ const getArrangementerSection = () => {
 </script>
 
 <template>
-  <section>
+  <section id="arrang">
     <h2>Arrangementer</h2>
     <p>Se karrierevejlednings hos UCL's kommende arrangementer, for din som studerende og bliv klogere på fremtidsmuligheder og din karriere</p>
     <div class="arrangementer_container">
