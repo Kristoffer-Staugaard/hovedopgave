@@ -57,35 +57,75 @@ h3{
   }
 
   /* Nu kommer reviews style  */
-  .
-
-
-.reviews_section{
-
+.reviews_container{
+    display: flex;
+    width:auto ;
+    gap: 50px;
+    justify-content: space-evenly;
 }
 
-.reviews_container{
-    background-color: #1A444D;
+.reviews_box{
+background-color: #1A444D;
+width: 500px;
+}
+
+.style_reviews{
     display: flex;
+    align-items: center;
+}
+.style_name_education{
+    padding-left: 10px;
+}
+
+.style_titel_message{
+padding-left: 15px;
 }
 
 #reviews_img{
-width: 150px;
-height: 150px;
+width: 120px;
+height: 120px;
 border-radius: 100%;
+padding-left: 15px;
+padding-top: 15px;
 }
 .reviews_education{
-
+color: #FFFFFF;
 }
 .reviews_message{
 color: #FFFFFF;
 }
 
 .reviews_name{
-
+color: #FFFFFF;
+font-weight: bold;
 }
 .reviews_titel{
+color: #CAE4E3;
+font-weight: bold;
+}
+
+.btn-wrap{
+ display: flex;
+ justify-content: end;
+ gap: 20px;
+padding-top: 15px;
 
 }
-          
+
+.carousel-btn{
+    border-style: none;
+}
+
+.btn-div{
+   background-color: #CAE4E3;
+   width: 50px;
+   height: 50px;
+   color:#1A444D;
+   align-content: center;
+ font-size: 50px;
+}
+
+.btn-div:hover{
+    background-color: #FCE977;
+}
  /* Nu slutter reviews style  */
