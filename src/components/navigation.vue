@@ -1,14 +1,45 @@
+<script setup>
+const hkvtScroll = () => {
+    document.getElementById("hkvt").scrollIntoView({ behavior: "smooth"});
+}
+
+const bdkScroll = () => {
+    document.getElementById("bdk").scrollIntoView({ behavior: "smooth"});
+}
+
+const ktScroll = () => {
+    document.getElementById("tjekliste-baggrund").scrollIntoView({ behavior: "smooth"});
+}
+
+const hsdsScroll = () => {
+    document.getElementById("reviews_section").scrollIntoView({ behavior: "smooth"});
+}
+
+const jobportalScroll = () => {
+    document.getElementById("jobp").scrollIntoView({ behavior: "smooth"});
+}
+
+const arrangementerScroll = () => {
+    document.getElementById("arrang").scrollIntoView({ behavior: "smooth"});
+}
+
+const kontaktkScroll = () => {
+    document.getElementById("kontaktka").scrollIntoView({ behavior: "smooth"});
+}
+
+</script>
+
 <template>
    <nav>
         <div class="nav-inner">
             <ul>
-                <li>Hvad kan vi tilbyde?</li>
-                <li>Book din vejledning</li>
-                <li>Karriere tjekliste</li>
-                <li>Hvad siger de studerende?</li>
-                <li>Jobportalen</li>
-                <li>Arrangementer</li>
-                <li>Kontakt karrierevejledningen</li>
+                <li @click="hkvtScroll()">Hvad kan vi tilbyde?</li>
+                <li @click="bdkScroll()">Book din vejledning</li>
+                <li @click="ktScroll()">Karriere tjekliste</li>
+                <li @click="hsdsScroll()">Hvad siger de studerende?</li>
+                <li @click="jobportalScroll()">Jobportalen</li>
+                <li @click="arrangementerScroll()">Arrangementer</li>
+                <li @click="kontaktkScroll()">Kontakt karrierevejledningen</li>
             </ul>
             
         </div>
