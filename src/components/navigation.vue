@@ -12,7 +12,7 @@ const ktScroll = () => {
 }
 
 const hsdsScroll = () => {
-    document.getElementById("hsds").scrollIntoView({ behavior: "smooth"});
+    document.getElementById("reviews_section").scrollIntoView({ behavior: "smooth"});
 }
 
 const jobportalScroll = () => {
