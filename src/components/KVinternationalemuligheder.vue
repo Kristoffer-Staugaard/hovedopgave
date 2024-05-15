@@ -4,12 +4,12 @@
 
 <template>
     <section>
-<div class="internationalemuligheder-overordnet">
-    <div>
-        <h2>Internationale<br>muligheder</h2>
-    <img src="../assets/img/internationalemuligheder.png" alt="">
+      <h2>Internationale muligheder</h2>
+
+<div class="buttom-divider">
+    <div class="buttom-divider-width international-img">
     </div>
-    <div class="internationalemuligheder-content">
+    <div class="buttom-divider-width">
         <h3> 3 muligheder for at rejse ud</h3>
         <p>- En praktikperiode i udlandet</p>
         <p>- Et udlandsophold i forbindelse med et valgfag</p>
@@ -63,23 +63,17 @@
 </template>
 
 <style scoped>
-.internationalemuligheder-overordnet {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
 
-}
-.internationalemuligheder-overordnet img{
-    width: 500px;
-    height: 250px;
-
+.international-img {
+  background-image: url("../assets/img/internationalemuligheder.png");
+  background-size: cover;
+  height: 250px;
 }
 
 .internationalemuligheder-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .internationalemuligheder-button{
@@ -91,22 +85,17 @@ align-items: center;
 width: 200px;
 margin-top: 20px ;
 gap: 10px;
-
 }
 
 .internationalemuligheder-button p{
 color: #FAE76A;
 text-align: center;
-
 }
 
 .arrow{
 fill:#FAE76A;
 display: flex;
 align-items: center;
-
-
-
 }
 
 
