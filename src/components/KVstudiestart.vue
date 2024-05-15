@@ -46,23 +46,5 @@
 <script setup></script>
 
 <style scoped>
-.buttom-divider {
-  display: flex;
-  padding-bottom: 40px;
-  padding-top: 40px;
-  border-bottom: 2px #e6f1f0 solid;
-  gap: 60px;
-}
 
-.buttom-divider div {
-  width: 50%;
-}
-
-.list {
-    display: flex;
-}
-
-.list img {
-    margin-right: 10px;
-}
 </style>

@@ -70,7 +70,12 @@ function toggleDropdown(index) {
           <h4>Karen Malene Andreasen</h4>
           <p>Praktikkordinator</p>
           <div class="list">
-            
+            <img src="../assets/img/phone-icon.svg" alt="">
+            <p>22 66 02 86</p>
+          </div>
+          <div class="list">
+            <img src="../assets/img/phone-icon.svg" alt="">
+            <p>22 66 02 86</p>
           </div>
         </div>
       </div>
