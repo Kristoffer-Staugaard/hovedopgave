@@ -129,9 +129,4 @@ function toggleDropdown(index) {
   width: 100px;
   height: 100px;
 }
-
-.blue-card {
-  background-color: #daeced;
-  padding: 20px;
-}
 </style>

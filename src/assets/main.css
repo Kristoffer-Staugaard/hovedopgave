@@ -184,3 +184,16 @@ padding-top: 15px;
     background-color: #daeced;
     padding: 20px;
   }
+
+.green-card {
+  background-color: #00454E;
+  padding: 20px;
+}
+
+.green-card p {
+  color: white;
+}
+
+.green-card h3 {
+  color: white;
+}

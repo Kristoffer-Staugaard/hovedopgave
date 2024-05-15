@@ -14,10 +14,10 @@ const dropdowns = ref([
 ]);
 
 const dropdown2 = ref([
-    { dropdown: "Undervisning", answer: "<b>Multimedieproduktion 1 (30 ECTS)</b><br>På 1. semester er undervisningen tilrettelagt som en blanding af individuelt arbejde, gruppeprojekter og real life-opgaver i samarbejde med virksomheder.<br>Her opbygger du et fagligt fundament og får en grundlæggende forståelse for arbejdet med digitale brugergrænseflader og digitalt indhold."},
-    { dropdown: "Undervisning", answer: "<b>Multimedieproduktion 2 (30 ECTS)</b><br>På 2. semester arbejder du videre med at designe og programmere komplekse digitale løsninger med særligt fokus på brugergrænsefladen.<br>Du lærer om centrale metoder til udvikling og tests af brugeres oplevelser, således du kan sikre en god brugeroplevelse.<br>Du arbejder både individuelt og sammen med dine medstuderende i gruppeprojekter, hvor I løser udfordringer for en virksomhed.<br>I projekterne implementeres den teori, du har lært, og du bringer alle dine værktøjer i brug."},
-    { dropdown: "Undervisning", answer: "<b>Valgfag (30 ECTS)</b><br>På 3. semester vælger du mellem de to specialiseringer<ul><li>Content Produktion</li><li>User Interfaces</li></ul>"},
-    { dropdown: "Undervisning", answer: "<b>Praktik (15 ECTS)</b><br>4. semester tilbringer du i et praktikforløb, hvor du får mulighed for at prøve, hvordan det er at være en del af en fysisk virksomhed.<br><b>Afsluttende eksamensprojekt (15 ECTS)</b><br>Herefter afslutter du uddannelsen og skriver din hovedopgave, som kan være i samarbejde med din praktikvirksomhed."}
+    { dropdown: "Undervisning", semester: "1. semester", answer: "<b>Multimedieproduktion 1 (30 ECTS)</b><br>På 1. semester er undervisningen tilrettelagt som en blanding af individuelt arbejde, gruppeprojekter og real life-opgaver i samarbejde med virksomheder.<br>Her opbygger du et fagligt fundament og får en grundlæggende forståelse for arbejdet med digitale brugergrænseflader og digitalt indhold."},
+    { dropdown: "Undervisning", semester: "2. semester", answer: "<b>Multimedieproduktion 2 (30 ECTS)</b><br>På 2. semester arbejder du videre med at designe og programmere komplekse digitale løsninger med særligt fokus på brugergrænsefladen.<br>Du lærer om centrale metoder til udvikling og tests af brugeres oplevelser, således du kan sikre en god brugeroplevelse.<br>Du arbejder både individuelt og sammen med dine medstuderende i gruppeprojekter, hvor I løser udfordringer for en virksomhed.<br>I projekterne implementeres den teori, du har lært, og du bringer alle dine værktøjer i brug."},
+    { dropdown: "Undervisning", semester: "3. semester", answer: "<b>Valgfag (30 ECTS)</b><br>På 3. semester vælger du mellem de to specialiseringer<ul><li>Content Produktion</li><li>User Interfaces</li></ul>"},
+    { dropdown: "Undervisning", semester: "4. semester", answer: "<b>Praktik (15 ECTS)</b><br>4. semester tilbringer du i et praktikforløb, hvor du får mulighed for at prøve, hvordan det er at være en del af en fysisk virksomhed.<br><b>Afsluttende eksamensprojekt (15 ECTS)</b><br>Herefter afslutter du uddannelsen og skriver din hovedopgave, som kan være i samarbejde med din praktikvirksomhed."}
 ])
 
 function toggleDropdown(index) {
@@ -71,22 +71,20 @@ function isOpen2(index) {
                         <p>Undervisning</p>
                     </div>
                 </div>
-                <h4>1. semester</h4>
                 <div class="item-wrap">
-                    <div class="dropdown-wrap_uo" v-for="(item1, index) in dropdown2" :key="index">
-                        <div class="dropdown_uo" @click="toggleDropdown2(index)">
+                    <div class="semester-wrap_uo" v-for="(item1, index) in dropdown2" :key="index">
+                        <h4> {{ item1.semester }}</h4>
+                        <div class="semester-inner-wrap">
+                        <div class="semester_uo" @click="toggleDropdown2(index)">
                             <h4>{{ item1.dropdown }}</h4>
-                            <img src="../assets/img/arrow-down.svg" alt="arrow">
                         </div>
+                        <img src="../assets/img/arrow-down.svg" alt="arrow">
+                    </div>
                         <div class="answer_uo" v-if="isOpen2(index)">
                             <p v-html="item1.answer"></p>
                         </div>
                     </div>
                 </div>
-                
-                <h4>2. semester</h4>
-                <h4>3. semester</h4>
-                <h4>4. semester</h4>
             </div>
 
 
@@ -96,9 +94,37 @@ function isOpen2(index) {
 
 <style scoped>
 
+
+
+.semester-wrap_uo {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.answer_uo {
+    background-color: #DAECED;
+}
+
 .dropdown-wrap_uo {
   margin-top: 5px;
+  width: 100%;
+}
+
+.semester-inner-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.semester-inner-wrap img {
+    margin-left: 10px;
+}
+
+.semester_uo {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
   background-color: #DAECED;
+  border: #00454E solid 2px;
   width: 100%;
 }
 
@@ -106,6 +132,7 @@ function isOpen2(index) {
   display: flex;
   justify-content: space-between;
   padding: 15px;
+  background-color: #DAECED;
 }
 
 .answer_uo {
