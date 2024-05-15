@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="kontaktka">
     <h2>Kontakt Karrievejledning</h2>
     <div class="contact">
         <div class="contact-inner">

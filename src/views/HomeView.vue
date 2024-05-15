@@ -1,8 +1,17 @@
 <script setup>
-import { ref } from 'vue';
-import headerUCL from '../components/headerUCL.vue';
+import { ref } from "vue";
+import headerUCL from "../components/headerUCL.vue";
+import navigation from "@/components/navigation.vue";
+import KVstudiestart from "@/components/KVstudiestart.vue";
 </script>
 
 <template>
-<headerUCL />
+  <headerUCL />
+
+  <div class="main-wrap">
+    <navigation />
+    <div class="content-wrap">
+        <KVstudiestart />
+    </div>
+  </div>
 </template>

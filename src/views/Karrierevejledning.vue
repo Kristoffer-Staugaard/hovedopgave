@@ -7,7 +7,6 @@
     import shortcut from '@/components/shortcut.vue';
     import kontaktUCL from '@/components/kontaktUCL.vue';
     import navigation from '@/components/navigation.vue';
-
 </script>
 
 <template>
@@ -19,7 +18,6 @@
 
 <div class="content-wrap">
 <shortcut />
-<!--kalender-->
 <tjekliste />
 <reviews />
 <jobportalen />

@@ -120,7 +120,6 @@
                     <img class="check-img" src="../assets/img/cross.svg" alt="">
                     <p>Jobsamtalen</p>
                 </div>
-
             </div>
 
             <div class="semester-opdeling">
@@ -157,11 +156,13 @@
                     <img class="check-img" src="../assets/img/check.svg" alt="">
                     <p>Jobsamtalen</p>
                 </div>
-        
+                
             </div> 
         </div>
     </div>
 </div>
+
+<button class="btn-yellow">Guide: Bliv klar til din karriere gennem hele din uddannelse</button>
 
 </section>
 

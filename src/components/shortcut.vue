@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section  id="hkvt">
     <div class="shortcut-wrap">
       <h2>Hvad kan vi tilbyde</h2>
       <p>UCL karrierevejledning har mulighed for at hjælpe dig som studerede gennem studiet, dyk ned i hvad vi kan tilbyde dig.</p>
