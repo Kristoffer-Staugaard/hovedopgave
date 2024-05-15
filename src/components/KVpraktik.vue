@@ -48,41 +48,61 @@ function toggleDropdown(index) {
           <li>Praktikperioden er ulønnet og SU-berettiget</li>
         </ul>
       </div>
-        <div class="buttom-divider-width">
-          <div class="item-wrap">
-            <div class="dropdown-wrap" v-for="(item, index) in dropdowns">
-              <div class="dropdown" @click="toggleDropdown(index)">
-                <h3>{{ item.dropdown }}</h3>
-                <span>{{ openIndex === index ? "-" : "+" }}</span>
-              </div>
-              <div class="answer" v-if="openIndex === index">
-                <p>{{ item.answer }}</p>
-              </div>
+      <div class="buttom-divider-width">
+        <div class="item-wrap">
+          <div class="dropdown-wrap" v-for="(item, index) in dropdowns">
+            <div class="dropdown" @click="toggleDropdown(index)">
+              <h3>{{ item.dropdown }}</h3>
+              <span>{{ openIndex === index ? "-" : "+" }}</span>
             </div>
-          </div>
-    </div>
-    </div>
-    <div class="buttom-divider">
-      <div class="blue-card">
-        <h3>Kontakt din praktikkoordinator</h3>
-        <img src="../components/praktikkoordinator.png" alt="Prkatik koordinator profil billede">
-        <div class="koordinator-info">
-          <h4>Karen Malene Andreasen</h4>
-          <p>Praktikkordinator</p>
-          <div class="list">
-            <img src="../assets/img/phone-icon.svg" alt="">
-            <p>22 66 02 86</p>
-          </div>
-          <div class="list">
-            <img src="../assets/img/phone-icon.svg" alt="">
-            <p>22 66 02 86</p>
+            <div class="answer" v-if="openIndex === index">
+              <p>{{ item.answer }}</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="buttom-divider">
+      <div class="buttom-divider-width">
+      <div class="blue-card">
+        <h3>Kontakt din praktikkoordinator</h3>
+        <div class="card-inner">
+          <img
+            class="profile-img"
+            src="../components/praktikkoordinator.png"
+            alt="Prkatik koordinator profil billede"
+          />
+          <div class="koordinator-info">
+            <h4>Karen Malene Andreasen</h4>
+            <p>Praktikkordinator</p>
+            <div class="list">
+              <img src="../assets/img/phone-icon.svg" alt="" />
+              <p>22 66 02 86</p>
+            </div>
+            <div class="list">
+              <img src="../assets/img/mail-icon.svg" alt="" />
+              <p>kmea@ucl.dk</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="buttom-divider-width">
+      <h3>To vejledere</h3>
+      <p>
+        I praktikken har du både en vejleder på dit praktiksted og en vejleder
+        fra uddannelsesinstitutionen. De følger og vejleder dig begge to i de 3
+        måneder, du er i praktik. Din praktikvejleder på UCL fremgår her på
+        siden mens du først får tildelt en vejleder på dit praktiksted, når din
+        praktikaftale foreligger.
+      </p>
+    </div>
+    </div>
   </section>
 </template>
+
 <style scoped>
+
 .dropdown-wrap {
   margin-top: 5px;
   background-color: #daeced;
@@ -99,9 +119,19 @@ function toggleDropdown(index) {
   padding: 15px;
 }
 
-.buttom-divider-wrap {
+.card-inner {
   display: flex;
-  width: 100%;
-  gap: 60px;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+}
+
+.blue-card {
+  background-color: #daeced;
+  padding: 20px;
 }
 </style>

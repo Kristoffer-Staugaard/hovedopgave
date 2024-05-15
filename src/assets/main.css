@@ -57,7 +57,7 @@ h3{
   }
 
   /* Nu kommer reviews style  */
-.reviews_container{
+  .reviews_container{
     display: flex;
     width:auto ;
     gap: 50px;
@@ -109,11 +109,6 @@ font-weight: bold;
  justify-content: end;
  gap: 20px;
 padding-top: 15px;
-
-}
-
-.carousel-btn{
-    border-style: none;
 }
 
 .btn-div{
@@ -124,10 +119,42 @@ padding-top: 15px;
    align-content: center;
  font-size: 50px;
 }
-
+.carousel-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-style: none;
+  }
 .btn-div:hover{
     background-color: #FCE977;
 }
+.reviews_container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .reviews_wrapper {
+    display: flex;
+    width: 950px;
+    height: 300px ;
+    transition: transform 0.5s ease;
+    gap: 50px;
+  }
+
+  .reviews_box {
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  .carousel-enter-active, .carousel-leave-active {
+    transition: opacity 0.5s;
+  }
+  .carousel-enter, .carousel-leave-to /* .carousel-leave-active in <2.1.8 */ {
+    opacity: 0;
+  }
  /* Nu slutter reviews style  */
 
 
