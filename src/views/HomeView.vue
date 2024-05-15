@@ -8,6 +8,7 @@ import KVpraktik from "@/components/KVpraktik.vue";
 import KVinternationalemuligheder from "@/components/KVinternationalemuligheder.vue";
 import KVmuligheder from "@/components/KVmuligheder.vue";
 import KVGenveje from "@/components/KVGenveje.vue";
+import KVevent from "@/components/KVevent.vue";
 </script>
 
 <template>
@@ -21,7 +22,8 @@ import KVGenveje from "@/components/KVGenveje.vue";
         <KVpraktik />
         <KVinternationalemuligheder />
         <KVmuligheder />
-        <KVGenveje />        
+        <KVGenveje />
+        <KVevent />        
     </div>
   </div>
 </template>
