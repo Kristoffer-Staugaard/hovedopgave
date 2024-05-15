@@ -100,7 +100,9 @@ function toggleDropdown(index) {
     </div>
   </section>
 </template>
+
 <style scoped>
+
 .dropdown-wrap {
   margin-top: 5px;
   background-color: #daeced;
