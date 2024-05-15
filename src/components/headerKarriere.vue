@@ -5,6 +5,7 @@
 <template>
 
 <header>
+    <div class="header-div">
         <div class="logo-div">
             <a href=""><img class="logo" src="../assets/img/mitucl-logo.png" alt="MitUcl logo"></a>
         </div>
@@ -32,7 +33,8 @@
             </ul>
         </div>
     </div>
-    </header>
+</div>
+</header>
 </template>
 
 <style scoped>
@@ -42,9 +44,19 @@ nav {
     padding: 5%;
 }
 
-header {
+header{
+    background-image: url("../assets/img/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+
+}
+
+.header-div {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .logo {
@@ -54,7 +66,7 @@ header {
 .nav-wrap {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .top-nav-wrap {
@@ -66,10 +78,13 @@ header {
 .top-nav {
     display: flex;
     gap: 30px;
+    font-size: 11px;
+    font-weight: lighter;
 }
 
 li {
     list-style-type: none;
+    color: #fff;
 }
 
 .search-btn {
