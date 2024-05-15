@@ -144,3 +144,11 @@ padding-top: 15px;
   .buttom-divider-width{
     width: 50%;
   }
+
+  .list {
+    display: flex;
+}
+
+.list img {
+    margin-right: 10px;
+}

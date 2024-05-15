@@ -34,6 +34,27 @@
         </div>
     </div>
 </div>
+<div class="buttom-nav-list-main">
+    <div class="buttom-nav-list-1">
+            <p> Forside</p>
+            <p>/</p>
+            <p>Studieservice</p>
+            <p>/</p>
+            <p> Karrierevejledning</p>
+    </div>
+<div class="buttom-nav-list-2">
+<div>
+    <h1>Karrierevejledning</h1>
+</div>
+<div>
+    <h2>Få råd og vejledning om praktik og karrierevalg.</h2>
+</div>
+ <div>
+    <p>Kontakt os</p>
+</div>
+</div>
+</div>
+           
 </header>
 </template>
 
@@ -49,6 +70,7 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 500px;
 
 
 
@@ -60,19 +82,22 @@ header{
 }
 
 .logo {
-    width: 250px;
+    width: 200px;
+    margin-top: 40px;
+    margin-right: 100px;
 }
 
 .nav-wrap {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    padding-top: 30px;
 }
 
 .top-nav-wrap {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
 }
 
 .top-nav {
@@ -116,9 +141,53 @@ li {
 
 .buttom-nav {
     display: flex;
+    justify-content: flex-start;
     gap: 30px;   
     font-size: 18px;
     font-weight: bold; 
+    padding: 20px;
 }
+
+
+.buttom-nav-list-main{
+display: flex;
+flex-direction: column;
+margin-left: 300px;
+gap: 40px;
+
+
+}
+
+.buttom-nav-list-1{
+display: flex;
+flex-direction: row;
+gap: 20px;
+}
+
+.buttom-nav-list-1 p{
+color: #fff;
+
+
+}
+
+.buttom-nav-list-2{
+display: flex;
+flex-direction: column;
+gap: 50px;
+
+}
+
+.buttom-nav-list-2 h1, h2, p{
+color: #fff;
+
+}
+
+.buttom-nav-list-2 p{
+color: #fff;
+
+
+}
+
+
 
 </style>
