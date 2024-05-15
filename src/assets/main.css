@@ -197,3 +197,44 @@ padding-top: 15px;
 .green-card h3 {
   color: white;
 }
+
+/*Bokse på forsiden*/
+
+.info-box {
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#info-banner {
+  background-image: url("../assets/img/event-billedet.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 182px;
+  width: 701px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#info-banner p {
+  color: white;
+  font-size: 48px;
+}
+
+
+
+.info-green-box {
+  background-color: #66B7B1;
+  width: 57px;
+  height: 182px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-green-box img {
+  width: 40%;
+  height: 40%;
+}
