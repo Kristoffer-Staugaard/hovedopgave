@@ -20,6 +20,44 @@
  </div>
     </div>
 </div>
+    </section>
+<section>
+    <div class="buttom-divider">
+      <div class="buttom-divider-width">
+      <div class="blue-card">
+        <h3>Kontakt din praktikkoordinator</h3>
+        <div class="card-inner">
+          <img
+            class="profile-img"
+            src="../assets/img/lars.png"
+            alt="Prkatik koordinator profil billede"
+          />
+          <div class="koordinator-info">
+            <h4>Lars Christian Bojen Nielsen</h4>
+            <p>International koordinator</p>
+            <div class="list">
+              <img src="../assets/img/phone-icon.svg" alt="" />
+              <p>65 43 48 01</p>
+            </div>
+            <div class="list">
+              <img src="../assets/img/mail-icon.svg" alt="" />
+              <p>lcbn@ucl.dk</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="buttom-divider-width">
+      <h3>Internationalt team</h3>
+      <p>
+        Kontakt Internationalt team, hvis du har behov for råd og vejledning om praktiske og administrative spørgsmål som f.eks. ansøgning og stipendier.<br><br>
+        Du kontakter Internationalt team ved at oprette en sag via service.ucl.dk, hvor du vælger Studieservice => Mit Studieforløb => Udlandsophold. 
+      </p>
+    </div>
+    </div>
+
+
+
 </section>
 
 </template>
@@ -70,5 +108,24 @@ align-items: center;
 
 
 }
+
+
+.card-inner {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+}
+
+.blue-card {
+  background-color: #daeced;
+  padding: 20px;
+}
+
+
 
 </style>
