@@ -179,3 +179,8 @@ padding-top: 15px;
 .list img {
     margin-right: 10px;
 }
+
+.blue-card {
+    background-color: #daeced;
+    padding: 20px;
+  }
