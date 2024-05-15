@@ -5,7 +5,7 @@
     <section>
         <h2>Genveje</h2>
         <div class="buttom-divider">
-            <div class="buttom-divider-width genveje_background_lys">
+            <div class="buttom-divider-width blue-card">
                 <h3>Log på</h3>
 
                 <div class="list">
@@ -34,7 +34,7 @@
                 </div>
             </div>
 
-            <div class="buttom-divider-width genveje_background_moerk">
+            <div class="buttom-divider-width green-card">
                 <h3>Info om</h3>
 
                 <div class="list">
@@ -63,19 +63,12 @@
 </template>
 
 <style scoped>
-    .genveje_background_lys {
-        background-color: #DAECED;
-    }
 
-    .genveje_background_moerk {
-        background-color: #00454E;
-    }
-
-    .genveje_background_moerk p {
+    .green-card p {
         color: white;
     }
 
-    .genveje_background_moerk h3 {
+    .green-card h3 {
         color: white;
     }
 

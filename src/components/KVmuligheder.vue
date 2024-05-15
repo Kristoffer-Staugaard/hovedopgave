@@ -13,10 +13,24 @@
             relevante events samt webinarer, som skal gøre dig klogere på dine
             kompetencer og styrke din faglige profil.
           </p>
+          <button class="yellow-btn">
+            Karrierevejledningen
+          </button>
         </div>
       </div>
     </div>
   </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+.yellow-btn {
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: #FAE76A;
+    border: none;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+</style>
