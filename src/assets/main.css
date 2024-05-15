@@ -157,6 +157,45 @@ padding-top: 15px;
   }
  /* Nu slutter reviews style  */
 
+ /*Tjekliste*/
+ #tjekliste-baggrund {
+  background-image: url("../assets/img/baggrund-tjekliste(2).svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.italic {
+  font-style: italic;
+}
+
+.checkbox-class {
+  display: flex;
+}
+
+.flex-tjekliste {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 900px;
+}
+
+.semester-opdeling {
+  margin: 20px 150px 20px 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-overordnet {
+  display: flex;
+  justify-content: center;
+}
+
+.check-img {
+  margin-right: 6px;
+}
+
 
  /* FORSIDE */
 
@@ -196,4 +235,119 @@ padding-top: 15px;
 
 .green-card h3 {
   color: white;
+}
+
+/*Bokse på forsiden*/
+
+.info-box {
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#info-banner {
+  background-image: url("../assets/img/event-billedet.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 182px;
+  width: 701px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#info-banner p {
+  color: white;
+  font-size: 48px;
+}
+
+
+
+.info-green-box {
+  background-color: #66B7B1;
+  width: 57px;
+  height: 182px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-green-box img {
+  width: 40%;
+  height: 40%;
+}
+
+/*Uddannelsens opbygning*/
+
+
+.semester-wrap_uo {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.answer_uo {
+    background-color: #DAECED;
+}
+
+.dropdown-wrap_uo {
+  margin-top: 5px;
+  width: 100%;
+}
+
+.semester-inner-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.semester-inner-wrap img {
+    margin-left: 10px;
+}
+
+.semester_uo {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #DAECED;
+  border: #00454E solid 2px;
+  width: 100%;
+}
+
+.dropdown_uo {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #DAECED;
+}
+
+.answer_uo {
+  padding: 0px 15px 15px 15px;
+}
+
+.box_uo {
+    width: 25px;
+    height: 25px;
+    border: solid;
+    border-color: #00454E;
+}
+
+.oversigt_uo  p {
+    margin-left: 10px;
+}
+
+.oversigt_uo {
+    display: flex;
+}
+
+
+.box_uo_moerk {
+    background-color: #00454E;
+}
+
+.box_uo_lys {
+    background-color: #DAECED;
+}
+
+.flex_uo {
+    display: flex;
 }

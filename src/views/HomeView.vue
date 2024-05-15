@@ -9,6 +9,7 @@ import KVinternationalemuligheder from "@/components/KVinternationalemuligheder.
 import KVmuligheder from "@/components/KVmuligheder.vue";
 import KVGenveje from "@/components/KVGenveje.vue";
 import KVevent from "@/components/KVevent.vue";
+import KVai from "@/components/KVai.vue";
 </script>
 
 <template>
@@ -20,6 +21,7 @@ import KVevent from "@/components/KVevent.vue";
         <KVstudiestart />
         <KVUdannelsensOpbygning />
         <KVpraktik />
+        <KVai />
         <KVinternationalemuligheder />
         <KVmuligheder />
         <KVGenveje />
