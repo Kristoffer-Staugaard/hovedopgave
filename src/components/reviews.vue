@@ -47,6 +47,7 @@ onMounted(() => {
 
 <template>
   <section id="reviews_section">
+  <h2>Hvad siger de studernde?</h2>
     <div class="reviews_container">
       <transition-group name="carousel" tag="div" class="reviews_wrapper">
         <div v-for="(review, index) in visibleReviews" :key="index" class="reviews_box"> 
