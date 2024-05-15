@@ -64,14 +64,6 @@
 
 <style scoped>
 
-    .green-card p {
-        color: white;
-    }
-
-    .green-card h3 {
-        color: white;
-    }
-
     .buttom-divider-width {
         padding: 20px;
     }
