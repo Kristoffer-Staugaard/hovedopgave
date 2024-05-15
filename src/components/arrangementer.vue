@@ -25,7 +25,7 @@ const getArrangementerSection = () => {
 </script>
 
 <template>
-  <section>
+  <section id="arrang">
     <div class="arrangementer_container">
       <div v-for="(  arrangementer, index) in arrangementer" :key="index" class="arrangementer_box"> 
         <div>
