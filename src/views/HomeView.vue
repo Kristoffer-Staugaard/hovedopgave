@@ -5,6 +5,7 @@ import navigation from "@/components/navigation.vue";
 import KVstudiestart from "@/components/KVstudiestart.vue";
 import KVUdannelsensOpbygning from "@/components/KVUdannelsensOpbygning.vue";
 import KVpraktik from "@/components/KVpraktik.vue";
+import KVinternationalemuligheder from "@/components/KVinternationalemuligheder.vue";
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import KVpraktik from "@/components/KVpraktik.vue";
         <KVstudiestart />
         <KVUdannelsensOpbygning />
         <KVpraktik />
+        <KVinternationalemuligheder />
     </div>
   </div>
 </template>
