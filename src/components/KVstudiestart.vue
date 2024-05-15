@@ -18,6 +18,26 @@
           <img src="../assets/img/arrow-icon.svg" alt="" />
           <h4>Velkomstbrev</h4>
         </div>
+        <div class="list">
+          <img src="../assets/img/arrow-icon.svg" alt="" />
+          <h4>Program introuge</h4>
+        </div>
+        <div class="list">
+          <img src="../assets/img/arrow-icon.svg" alt="" />
+          <h4>Litteraturliste</h4>
+        </div>
+        <div class="list">
+          <img src="../assets/img/arrow-icon.svg" alt="" />
+          <h4>Kom godt i gang med IT</h4>
+        </div>
+        <div class="list">
+          <img src="../assets/img/arrow-icon.svg" alt="" />
+          <h4>God studiestart</h4>
+        </div>
+        <div class="list">
+          <img src="../assets/img/arrow-icon.svg" alt="" />
+          <h4>Genveje</h4>
+        </div>
       </div>
     </div>
   </section>
@@ -31,7 +51,7 @@
   padding-bottom: 40px;
   padding-top: 40px;
   border-bottom: 2px #e6f1f0 solid;
-  gap: 40px;
+  gap: 60px;
 }
 
 .buttom-divider div {
