@@ -13,35 +13,35 @@
                 <p class="italic">1. semester</p>
 
             <div class="checkbox-class">
-                <img class="check-img" src="../assets/img/check.svg" alt="">
+                <img class="check-img" src="../assets/img/check.svg" alt="checkmark">
                 <p>LinkedIn profil</p>
             </div>
                 
             <div class="checkbox-class">
-                <img class="check-img" src="../assets/img/cross.svg" alt="">
+                <img class="check-img" src="../assets/img/cross.svg" alt="cross">
                 <p>Praktiksøgning</p>
             </div>
 
             <div class="checkbox-class">
-                <img class="check-img" src="../assets/img/cross.svg" alt="">
+                <img class="check-img" src="../assets/img/cross.svg" alt="cross">
                 <p>CV og ansøgning</p>
             </div>
 
             <div class="checkbox-class">
-                <img class="check-img" src="../assets/img/cross.svg" alt="">
+                <img class="check-img" src="../assets/img/cross.svg" alt="cross">
                 <p>Jobsøgningsstrategi</p>
             </div>
             <div class="checkbox-class">
-                <img class="check-img" src="../assets/img/cross.svg" alt="">
+                <img class="check-img" src="../assets/img/cross.svg" alt="cross">
                 <p>Kompetenceafklaring</p>
             </div>
 
             <div class="checkbox-class">
-                <img class="check-img" src="../assets/img/cross.svg" alt="">
+                <img class="check-img" src="../assets/img/cross.svg" alt="cross">
                 <p>Praktiksamtale</p>
             </div>
             <div  class="checkbox-class">
-                <img class="check-img" src="../assets/img/cross.svg" alt="">
+                <img class="check-img" src="../assets/img/cross.svg" alt="cross">
                 <p>Jobsamtalen</p>
             </div>
         </div>
@@ -50,35 +50,35 @@
                 <p class="italic">2. semester</p>
 
                 <div class="checkbox-class">
-                <img class="check-img" src="../assets/img/check.svg" alt="">
+                <img class="check-img" src="../assets/img/check.svg" alt="check">
                 <p>LinkedIn profil</p>
             </div>
                 
             <div class="checkbox-class">
-                <img class="check-img" src="../assets/img/check.svg" alt="">
+                <img class="check-img" src="../assets/img/check.svg" alt="check">
                 <p>Praktiksøgning</p>
             </div>
 
             <div class="checkbox-class">
-                <img class="check-img" src="../assets/img/check.svg" alt="">
+                <img class="check-img" src="../assets/img/check.svg" alt="check">
                 <p>CV og ansøgning</p>
             </div>
 
             <div class="checkbox-class">
-                <img class="check-img" src="../assets/img/cross.svg" alt="">
+                <img class="check-img" src="../assets/img/cross.svg" alt="cross">
                 <p>Jobsøgningsstrategi</p>
             </div>
             <div class="checkbox-class">
-                <img class="check-img" src="../assets/img/cross.svg" alt="">
+                <img class="check-img" src="../assets/img/cross.svg" alt="cross">
                 <p>Kompetenceafklaring</p>
             </div>
 
             <div class="checkbox-class">
-                <img class="check-img" src="../assets/img/cross.svg" alt="">
+                <img class="check-img" src="../assets/img/cross.svg" alt="cross">
                 <p>Praktiksamtale</p>
             </div>
             <div class="checkbox-class">
-                <img class="check-img" src="../assets/img/cross.svg" alt="">
+                <img class="check-img" src="../assets/img/cross.svg" alt="cross">
                 <p>Jobsamtalen</p>
             </div> 
 
@@ -89,35 +89,35 @@
                 <p class="italic">3. semester</p>
 
                 <div class="checkbox-class">
-                    <img class="check-img" src="../assets/img/check.svg" alt="">
+                    <img class="check-img" src="../assets/img/check.svg" alt="check">
                     <p>LinkedIn profil</p>
                 </div>
                     
                 <div class="checkbox-class">
-                    <img class="check-img" src="../assets/img/check.svg" alt="">
+                    <img class="check-img" src="../assets/img/check.svg" alt="check">
                     <p>Praktiksøgning</p>
                 </div>
 
                 <div class="checkbox-class">
-                    <img class="check-img" src="../assets/img/check.svg" alt="">
+                    <img class="check-img" src="../assets/img/check.svg" alt="check">
                     <p>CV og ansøgning</p>
                 </div>
 
                 <div class="checkbox-class">
-                    <img class="check-img" src="../assets/img/check.svg" alt="">
+                    <img class="check-img" src="../assets/img/check.svg" alt="check">
                     <p>Jobsøgningsstrategi</p>
                 </div>
                 <div class="checkbox-class">
-                    <img class="check-img" src="../assets/img/check.svg" alt="">
+                    <img class="check-img" src="../assets/img/check.svg" alt="check">
                     <p>Kompetenceafklaring</p>
                 </div>
 
                 <div class="checkbox-class">
-                    <img class="check-img" src="../assets/img/check.svg" alt="">
+                    <img class="check-img" src="../assets/img/check.svg" alt="check">
                     <p>Praktiksamtale</p>
                 </div>
                 <div class="checkbox-class">
-                    <img class="check-img" src="../assets/img/cross.svg" alt="">
+                    <img class="check-img" src="../assets/img/cross.svg" alt="cross">
                     <p>Jobsamtalen</p>
                 </div>
             </div>
@@ -125,35 +125,35 @@
             <div class="semester-opdeling">
                 <p class="italic">4. semester</p>
                 <div class="checkbox-class">
-                    <img class="check-img" src="../assets/img/check.svg" alt="">
+                    <img class="check-img" src="../assets/img/check.svg" alt="check">
                     <p>LinkedIn profil</p>
                 </div>
                     
                 <div class="checkbox-class">
-                    <img class="check-img" src="../assets/img/check.svg" alt="">
+                    <img class="check-img" src="../assets/img/check.svg" alt="check">
                     <p>Praktiksøgning</p>
                 </div>
 
                 <div class="checkbox-class">
-                    <img class="check-img" src="../assets/img/check.svg" alt="">
+                    <img class="check-img" src="../assets/img/check.svg" alt="check">
                     <p>CV og ansøgning</p>
                 </div>
 
                 <div class="checkbox-class">
-                    <img class="check-img" src="../assets/img/check.svg" alt="">
+                    <img class="check-img" src="../assets/img/check.svg" alt="check">
                     <p>Jobsøgningsstrategi</p>
                 </div>
                 <div class="checkbox-class">
-                    <img class="check-img" src="../assets/img/check.svg" alt="">
+                    <img class="check-img" src="../assets/img/check.svg" alt="check">
                     <p>Kompetenceafklaring</p>
                 </div>
 
                 <div class="checkbox-class">
-                    <img class="check-img" src="../assets/img/check.svg" alt="">
+                    <img class="check-img" src="../assets/img/check.svg" alt="check">
                     <p>Praktiksamtale</p>
                 </div>
                 <div class="checkbox-class">
-                    <img class="check-img" src="../assets/img/check.svg" alt="">
+                    <img class="check-img" src="../assets/img/check.svg" alt="check">
                     <p>Jobsamtalen</p>
                 </div>
                 
