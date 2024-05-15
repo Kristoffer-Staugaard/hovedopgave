@@ -5,14 +5,14 @@
     </div>
 
     <div class="buttom-divider">
-      <div>
+      <div class="buttom-divider-width">
         <h2>Studiestart</h2>
         <p>
           Velkommen til multimediedesigneruddannelsen hos UCL. Kom godt i gang
           med de 5 links til en god studiestart.
         </p>
       </div>
-      <div>
+      <div class="buttom-divider-width">
         <h3>Info om studiestart</h3>
         <div class="list">
           <img src="../assets/img/arrow-icon.svg" alt="" />
