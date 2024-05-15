@@ -26,6 +26,8 @@ const getArrangementerSection = () => {
 
 <template>
   <section>
+    <h2>Arrangementer</h2>
+    <p>Se karrierevejlednings hos UCL's kommende arrangementer, for din som studerende og bliv klogere på fremtidsmuligheder og din karriere</p>
     <div class="arrangementer_container">
       <div v-for="(  arrangementer, index) in arrangementer" :key="index" class="arrangementer_box"> 
         <div>
@@ -47,13 +49,14 @@ const getArrangementerSection = () => {
 
 <style>
 #arrangementer_img{
-  width: 400px;
+  max-width: 450px;
   height: auto;
 }
 
 .arrangementer_container{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 .arrangementer_dato{
