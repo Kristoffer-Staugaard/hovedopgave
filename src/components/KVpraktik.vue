@@ -69,7 +69,7 @@ function toggleDropdown(index) {
         <div class="card-inner">
           <img
             class="profile-img"
-            src="../components/praktikkoordinator.png"
+            src="../assets/img/praktikkoordinator.png"
             alt="Prkatik koordinator profil billede"
           />
           <div class="koordinator-info">
