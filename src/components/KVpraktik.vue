@@ -7,32 +7,36 @@ const dropdowns = ref([
   {
     dropdown: "Om praktikken",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Praktikperioden på uddannelsen til multimediedesigner er din chance for at få prøvet din nyerhvervede viden af i den virkelige verden, hvor du får mulighed for at varetage samme opgaver som en færdiguddannet multimediedesigner. <br><br>Du udvikler dig både fagligt og personligt under praktikperioden og får et godt billede af, hvad du vil med din uddannelse, når du er færdig.  <br><br>Dine erfaringer fra praksis er meget værdifulde, når du skal ud på jobmarkedet efter endt uddannelse. Du har ikke bare læst en masse teorier, men du har rent faktisk prøvet at arbejde inden for det område, som din uddannelse sigter mod.  <br><br>En praktikplads er desuden en enestående chance for at udvide dit netværk i erhvervslivet og er ofte en direkte vej ind på arbejdsmarkedet efter studiet. <br><br>Du har også mulighed for at tage din praktik i udlandet.",
   },
   {
     dropdown: "Jobportalen",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Du kan altid finde annoncerede praktikmuligheder på jobportalen. Ud over studiejobs og dimittendjobs indeholder jobportalen også praktikmuligheder annonceret direkte til dig. <br> <br> <i><b> - Læs mere på Jobportalen</b></i>",
   },
   {
     dropdown: "Praktikfaktaark og praktikportal",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "<b>Praktikfaktaark</b> <br>Har du helt styr på, hvad det egentlig er, du kan tilbyde din kommende praktikvært?<br><br> Find dit praktikfaktaark og bliv helt skarp på dine kompetencer, når du skal ud og søge praktikplads. <br><br> <b><i>- Find dit praktikfaktaart </i></b> <br><br> <b>Praktikportalen</b> <br>Dit praktikophold administreres i Praktikportalen. <br><br>I praktikportalen kan du bl.a. ønske praktikpladser, kommunikere med praktikstedet, se praktikrelevante dokumenter, m.m.  <br><br> <b><i>- Læs mere om Praktikportalen </b></i>",
   },
   {
     dropdown: "Ikke gennemført praktik",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Hvis du starter i praktik, men praktikken bliver afbrudt eller ikke kan godkendes som gennemført, risikerer du at modtage et varslingsbrev om udmeldelse, fordi du kun har ret til én praktikplads pr. praktikforløb, jfr.<br><br> <b><i>- Eksamensbekendtgørelsens § 5</i></b> <br><br>Af varslingsbrevet vil fremgå en mulighed for at søge om dispensation til en ekstra praktik, hvis du kan dokumentere, at der foreligger usædvanlige forhold. Læs mere om <br><br> <b><i>- Dispensation </i></b><br><br> Det samme gælder, hvis du ikke finder en praktikplads inden for de tidsfrister, der er fastsat på din uddannelse. Det er derfor vigtigt, at du i god tid kontakter uddannelsen for at få hjælp til praktikplads-søgning, hvis du har svært ved at finde en praktikplads på egen hånd.<br><br> Hvis din praktik er godkendt og du derfor er blevet indstillet til praktikeksamen, kan der ikke dispenseres til ny praktik trods brugte eksamensforsøg.",
   },
   {
     dropdown: "Få hjælp",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Du kan få hjælp til alt inden for praktik og jobsøgning hos karrierevejledningen på UCL. Du kan læse mere om, hvordan de kan hjælpe dig og hvilke tilbud de udbyder her:<br><br> <b><i>- Karrierevejledningen </i></b> <br><br> Find online guides der kan hjælpe dig med din ansøgning, CV, kompetence-afklaring m.m. her: <br><br> <i><b>- Online guides </b></i>",
   },
 ]);
 
 function toggleDropdown(index) {
   openIndex.value = openIndex.value === index ? null : index;
+}
+
+function isOpen(index) {
+    return openIndex.value === index;
 }
 </script>
 
@@ -55,8 +59,8 @@ function toggleDropdown(index) {
               <h3>{{ item.dropdown }}</h3>
               <span>{{ openIndex === index ? "-" : "+" }}</span>
             </div>
-            <div class="answer" v-if="openIndex === index">
-              <p>{{ item.answer }}</p>
+            <div class="answer_uo" v-if="isOpen(index)">
+              <p v-html="item.answer"></p>
             </div>
           </div>
         </div>
