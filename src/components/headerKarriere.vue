@@ -73,6 +73,7 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     height: 500px;
+    width: 100%;
 
 
 

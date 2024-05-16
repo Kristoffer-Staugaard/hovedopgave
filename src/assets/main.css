@@ -6,7 +6,17 @@
 
 body {
     font-family: "proxima-nova";
-    background-color: #E6F1F0;
+    background-color: #E6F1F0; 
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-wrap {
+  overflow: auto;
 }
 
 section {
@@ -36,8 +46,8 @@ h3{
  .main-wrap {
     display: flex;
     position: relative;
-    margin: 0px 150px;
     background-color: white;
+    max-width: 1200px;
 
  }
 
@@ -65,7 +75,7 @@ h3{
 
 .reviews_box{
 background-color: #1A444D;
-width: 500px;
+width: 50%;
 }
 
 .style_reviews{
@@ -76,16 +86,10 @@ width: 500px;
     padding-left: 10px;
 }
 
-.style_titel_message{
-padding-left: 15px;
-}
-
 #reviews_img{
 width: 120px;
 height: 120px;
 border-radius: 100%;
-padding-left: 15px;
-padding-top: 15px;
 }
 .reviews_education{
 color: #FFFFFF;
@@ -136,16 +140,13 @@ padding-top: 15px;
 
   .reviews_wrapper {
     display: flex;
-    width: 950px;
-    height: 300px ;
     transition: transform 0.5s ease;
-    gap: 50px;
+    gap: 40px;
   }
 
   .reviews_box {
-    flex: 0 0 50%;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 20px;
   }
 
   .carousel-enter-active, .carousel-leave-active {
