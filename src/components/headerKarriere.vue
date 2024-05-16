@@ -1,5 +1,7 @@
 <script setup>
-
+const kontaktOsScroll = () => {
+    document.getElementById("kontaktka").scrollIntoView({ behavior: "smooth"});
+}
 </script>
 
 <template>
@@ -50,7 +52,7 @@
     <h2>Få råd og vejledning om praktik og karrierevalg.</h2>
 </div>
  <div>
-    <p>Kontakt os</p>
+    <p @click="kontaktOsScroll"> Kontakt os</p>
 </div>
 </div>
 </div>
