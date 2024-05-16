@@ -7,7 +7,7 @@
 <header>
     <div class="header-div">
         <div class="logo-div">
-            <a href=""><img class="logo" src="../assets/img/mitucl-logo.png" alt="MitUcl logo"></a>
+            <a href=""><img class="logo" src="../assets/img/mitucl-logo-white.png" alt="MitUcl logo"></a>
         </div>
         <div class="nav-wrap">
         <div class="top-nav-wrap">
@@ -152,7 +152,7 @@ li {
 .buttom-nav-list-main{
 display: flex;
 flex-direction: column;
-margin-left: 300px;
+margin-left: 250px;
 gap: 40px;
 
 
