@@ -76,5 +76,9 @@ ul {
     font-weight: bold;
     gap: 70px;
 }
+
+ul li:first-child {
+    color: #47B9B3;
+}
   
 </style>
