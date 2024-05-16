@@ -86,10 +86,18 @@ export default {
     body: JSON.stringify(dataToSend)
   })
   .then(response => {
-    console.log('Data er sendt:', response);
+    console.log('Data er sendt server:', response);
     this.nameValue = '';
     this.UCLMailValue = '';
     this.messageValue = '';
+    this.popupMessage = '✔ booking sendt';
+    setTimeout(() => {
+      console.log('Fjerner popup-melding');
+        this.$nextTick(() => {
+            this.popupMessage = ''; 
+            this.$forceUpdate();
+        });
+    }, 2000);
    })  
   .catch(error => {
     console.error('Fejl ved afsendelse af data:', error);
@@ -121,6 +129,9 @@ export default {
             </div>
             <div class="input-hide-box-3">
             <button @click="sendData" class="btn-div-hide-box-send">Send</button>
+            </div>
+            <div>
+    <div class="popup-sendt">{{ popupMessage }}</div>
             </div>
           </div>
         </div>
@@ -221,7 +232,7 @@ export default {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  height: 400px;
+  height: 450px;
   width: 500px;
   z-index: 9999;
   display: flex;
@@ -295,4 +306,10 @@ background-color: #FCE977;
     width:400px
 }
 
+.popup-sendt{
+  display: flex;
+width: 200px;
+padding-left: 180px;
+color: #1A424B;
+}
 </style>
