@@ -38,7 +38,7 @@ function isOpen2(index) {
 </script>
 
 <template>
-    <section>
+    <section id="uo-scroll">
         <h2>Uddannelsens opbygning</h2>
         <div class="buttom-divider">
             <div class="buttom-divider-width">

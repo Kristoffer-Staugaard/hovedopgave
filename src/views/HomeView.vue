@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
 import headerUCL from "../components/headerUCL.vue";
-import navigation from "@/components/navigation.vue";
+import forsideNavigation from "@/components/forsideNavigation.vue";
 import KVstudiestart from "@/components/KVstudiestart.vue";
 import KVUdannelsensOpbygning from "@/components/KVUdannelsensOpbygning.vue";
 import KVpraktik from "@/components/KVpraktik.vue";
@@ -16,14 +16,14 @@ import KVai from "@/components/KVai.vue";
   <headerUCL />
 
   <div class="main-wrap">
-    <navigation />
+    <forsideNavigation />
     <div class="content-wrap">
         <KVstudiestart />
         <KVUdannelsensOpbygning />
         <KVpraktik />
         <KVai />
-        <KVinternationalemuligheder />
         <KVmuligheder />
+        <KVinternationalemuligheder />
         <KVGenveje />
         <KVevent />        
     </div>

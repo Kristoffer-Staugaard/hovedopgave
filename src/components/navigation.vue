@@ -52,8 +52,8 @@ const kontaktkScroll = () => {
 </script>
     
 <style scoped>
- 
- nav {
+
+nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
