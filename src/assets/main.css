@@ -11,6 +11,7 @@
 
 body {
     font-family: 'Proxima Nova Alt';
+    background-color: #E6F1F0;
 }
 
 section {
@@ -40,6 +41,9 @@ h3{
  .main-wrap {
     display: flex;
     position: relative;
+    margin: 0px 150px;
+    background-color: white;
+
  }
 
  .btn-yellow{
