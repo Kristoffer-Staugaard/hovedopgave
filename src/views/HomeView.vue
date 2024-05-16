@@ -10,6 +10,7 @@ import KVmuligheder from "@/components/KVmuligheder.vue";
 import KVGenveje from "@/components/KVGenveje.vue";
 import KVevent from "@/components/KVevent.vue";
 import KVai from "@/components/KVai.vue";
+import KVvidereuddannelse from "@/components/KVvidereuddannelse.vue";
 </script>
 
 <template>
@@ -24,8 +25,9 @@ import KVai from "@/components/KVai.vue";
         <KVai />
         <KVinternationalemuligheder />
         <KVmuligheder />
+        <KVvidereuddannelse />      
         <KVGenveje />
-        <KVevent />        
+        <KVevent />         
     </div>
   </div>
 </template>
