@@ -19,14 +19,14 @@ export default {
     };
   },
   mounted() {
-    let currentDate = new Date(); // Hent den aktuelle dato
-    this.currYear = currentDate.getFullYear(); // Indstil det aktuelle år
-    this.currMonth = currentDate.getMonth(); // Indstil den aktuelle måned
+    let currentDate = new Date();
+    this.currYear = currentDate.getFullYear();
+    this.currMonth = currentDate.getMonth();
     this.renderCalendar();
   },
   methods: {
     renderCalendar() {
-      let currentDate = new Date(); // Hent den aktuelle dato
+      let currentDate = new Date(); 
       let date = new Date(this.currYear, this.currMonth, 1);
       let firstDayOfMonth = date.getDay();
       let lastDateOfMonth = new Date(this.currYear, this.currMonth + 1, 0).getDate();
@@ -69,7 +69,6 @@ export default {
       this.showInput = false;
     },
     sendData() {
-  // Opretter et objekt med data fra de tre inputfelter
   const dataToSend = {
     name: this.nameValue,
     uclMail: this.UCLMailValue,
@@ -77,7 +76,6 @@ export default {
   };
   console.log('Data til afsendelse:', dataToSend);
 
-  // Sender dataen til din ønskede endpoint
   fetch('https://hovedopgave-f875e-default-rtdb.firebaseio.com/booking.json', {
     method: 'POST',
     headers: {
@@ -106,33 +104,29 @@ export default {
   }
 };
 </script>
-
-
-
-
 <template>
     <section id="bdk">
       <div class="calendar">
-        <div class="current-date">{{ currentDate }}</div>
+          <div class="current-date">{{ currentDate }}</div>
         <div v-if="showInput" class="input-container">
           <div class="input-box">
-            <div class="input-hide-box-1">
-            <div class="input-hide-box-1-tekst">
-                <h3>Book en tid til Karrierevejledning</h3>
-            </div>
-            <button @click="hideInputBox" class="btn-div-hide-box-x">X</button>
-            </div>
-            <div class="input-hide-box-2">
-            <input type="text" v-model="nameValue" placeholder="Navn" class="input-felter-box">
-            <input type="text" v-model="UCLMailValue" placeholder="UCL mail" class="input-felter-box">
-            <input type="text" v-model="messageValue" placeholder="besked" class="input-felter-box" id="input-input-felter-box-besked">
-            </div>
-            <div class="input-hide-box-3">
-            <button @click="sendData" class="btn-div-hide-box-send">Send</button>
-            </div>
-            <div>
-    <div class="popup-sendt">{{ popupMessage }}</div>
-            </div>
+              <div class="input-hide-box-1">
+              <div class="input-hide-box-1-tekst">
+                  <h3>Book en tid til Karrierevejledning</h3>
+              </div>
+              <button @click="hideInputBox" class="btn-div-hide-box-x">X</button>
+              </div>
+              <div class="input-hide-box-2">
+              <input type="text" v-model="nameValue" placeholder="Navn" class="input-felter-box">
+              <input type="text" v-model="UCLMailValue" placeholder="UCL mail" class="input-felter-box">
+              <input type="text" v-model="messageValue" placeholder="besked" class="input-felter-box" id="input-input-felter-box-besked">
+              </div>
+              <div class="input-hide-box-3">
+              <button @click="sendData" class="btn-div-hide-box-send">Send</button>
+              </div>
+              <div>
+                <div class="popup-sendt">{{ popupMessage }}</div>
+              </div>
           </div>
         </div>
         <div class="btn-wrap">
@@ -143,11 +137,11 @@ export default {
             <div class="btn-div">&gt;</div>
           </button>
         </div>
-        <ul class="days">
-          <li v-for="day in days" :class="{ 'active': day.active, 'inactive': !day.active }" @click="showInputBox(day.date)">
-            {{ day.date }}
-          </li>
-        </ul>
+          <ul class="days">
+            <li v-for="day in days" :class="{ 'active': day.active, 'inactive': !day.active }" @click="showInputBox(day.date)">
+              {{ day.date }}
+            </li>
+          </ul>
       </div>
     </section>
   </template>
