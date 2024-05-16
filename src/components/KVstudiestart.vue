@@ -1,6 +1,6 @@
 <template>
-  <section>
-    <div class="buttom-divider">
+  <section id="sstart">
+    <div class="buttom-divider multim-scroll">
       <h1>Multimediedesigner</h1>
     </div>
 

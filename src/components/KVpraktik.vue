@@ -37,7 +37,7 @@ function toggleDropdown(index) {
 </script>
 
 <template>
-  <section>
+  <section id="praktik-scroll">
     <h2>Praktik</h2>
     <div class="buttom-divider">
       <div class="buttom-divider-width">

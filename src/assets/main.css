@@ -4,13 +4,9 @@
     line-height: 30px;
 }
 
-@font-face {
-    font-family: 'Proxima Nova Alt';
-    src: url('../assets/fonts/ProximaNovaA-Regular.woff') format('woff');
-}
-
 body {
-    font-family: 'Proxima Nova Alt';
+    font-family: "proxima-nova";
+    background-color: #E6F1F0;
 }
 
 section {
@@ -40,6 +36,9 @@ h3{
  .main-wrap {
     display: flex;
     position: relative;
+    margin: 0px 150px;
+    background-color: white;
+
  }
 
  .btn-yellow{

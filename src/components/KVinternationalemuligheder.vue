@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <section>
+    <section id="imScroll">
       <h2>Internationale muligheder</h2>
 
 <div class="buttom-divider">
@@ -22,6 +22,7 @@
 </div>
     </section>
 <section>
+  <h3>International vejledning</h3>
     <div class="buttom-divider">
       <div class="buttom-divider-width">
       <div class="blue-card">

@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="kmScroll">
     <h2>Karrieremuligheder</h2>
     <div class="buttom-divider">
       <div class="buttom-divider-width blue-card">

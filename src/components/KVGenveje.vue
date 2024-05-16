@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <section>
+    <section id="genvejescroll">
         <h2>Genveje</h2>
         <div class="buttom-divider">
             <div class="buttom-divider-width blue-card">
