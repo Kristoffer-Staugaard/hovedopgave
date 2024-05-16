@@ -7,6 +7,7 @@ import tjekliste from "@/components/tjekliste.vue";
 import shortcut from "@/components/shortcut.vue";
 import kontaktUCL from "@/components/kontaktUCL.vue";
 import navigation from "@/components/navigation.vue";
+import bookKarrierevejledning from "@/components/bookKarrierevejledning.vue";
 </script>
 
 <template>
@@ -17,6 +18,7 @@ import navigation from "@/components/navigation.vue";
 
     <div class="content-wrap">
       <shortcut />
+      <bookKarrierevejledning />
       <tjekliste />
       <reviews />
       <jobportalen />
