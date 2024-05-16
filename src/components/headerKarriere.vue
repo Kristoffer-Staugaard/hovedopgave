@@ -73,6 +73,7 @@ header{
     height: 200px;
     margin: 0px;
     height: 500px;
+    width: 100%;
 
 
 
