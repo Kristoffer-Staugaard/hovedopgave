@@ -69,30 +69,32 @@ export default {
       this.showInput = false;
     },
     sendData() {
-      // Opretter et objekt med data fra de tre inputfelter
-      const dataToSend = {
-        name: this.nameValue,
-        uclMail: this.UCLMailValue,
-        message: this.messageValue
-      };
-      console.log('Data til afsendelse:', dataToSend);
+  // Opretter et objekt med data fra de tre inputfelter
+  const dataToSend = {
+    name: this.nameValue,
+    uclMail: this.UCLMailValue,
+    message: this.messageValue
+  };
+  console.log('Data til afsendelse:', dataToSend);
 
-      // Sender dataen til din ønskede endpoint
-      fetch('https://hovedopgave-f875e-default-rtdb.firebaseio.com/booking.json', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(dataToSend)
-      })
-      .then(response => {
-        console.log('Data er sendt:', response);
-        // Udfør handlinger baseret på svar, hvis ønsket
-      })
-      .catch(error => {
-        console.error('Fejl ved afsendelse af data:', error);
-      });
-    }
+  // Sender dataen til din ønskede endpoint
+  fetch('https://hovedopgave-f875e-default-rtdb.firebaseio.com/booking.json', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(dataToSend)
+  })
+  .then(response => {
+    console.log('Data er sendt:', response);
+    this.nameValue = '';
+    this.UCLMailValue = '';
+    this.messageValue = '';
+   })  
+  .catch(error => {
+    console.error('Fejl ved afsendelse af data:', error);
+  });
+}
   }
 };
 </script>
