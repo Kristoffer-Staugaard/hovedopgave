@@ -68,10 +68,10 @@ nav {
 }
 
 header{
-    background-image: url("../assets/img/background.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url("../assets/img/background.png") center repeat fixed;
+    background-position: fixed;
+    height: 200px;
+    margin: 0px;
     height: 500px;
     width: 100%;
 

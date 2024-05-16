@@ -97,7 +97,8 @@ function toggleDropdown(index) {
 
 .dropdown-wrap {
   margin-top: 5px;
-  background-color: #daeced;
+  background-color: #fff;
+  border: 1px solid #00454E;
   width: 350px;
 }
 

@@ -25,6 +25,8 @@ section {
 
 h1{
     font-size: 63px;
+    color: #1A424B;
+
     }
 
 h2{
@@ -36,6 +38,12 @@ h2{
 
 h3{
     font-size: 18px;
+    color: #1A424B;
+ }
+
+ h4 {
+  color: #1A424B;
+
  }
 
  p {
@@ -159,9 +167,10 @@ padding-top: 15px;
 
  /*Tjekliste*/
  #tjekliste-baggrund {
-  background-image: url("../assets/img/baggrund-tjekliste(2).svg");
+  background-image: url("../assets/img/tjekliste.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position:right;
 
 }
 
