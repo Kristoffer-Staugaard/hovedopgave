@@ -1,4 +1,6 @@
 <script>
+import { ref } from 'vue';
+
 export default {
   data() {
     return {
@@ -9,7 +11,11 @@ export default {
       months: [
         "Januar", "Februar", "Marts", "April", "Maj", "Juni", "Juli",
         "August", "September", "Oktober", "November", "December"
-      ]
+      ],
+      showInput: false,
+      nameValue: '',
+      UCLMailValue: '', 
+      messageValue: '' 
     };
   },
   mounted() {
@@ -45,12 +51,7 @@ export default {
       this.currentDate = `${this.months[this.currMonth]} ${this.currYear}`;
     },
     changeMonth(direction) {
-      //console.log("Changing month:", direction); // Tilføjet linje
-      //console.log("Current month:", this.currMonth); // Tilføjet linje
-      //console.log("Current year:", this.currYear); // Tilføjet linje
       this.currMonth += direction;
-     // console.log("New month:", this.currMonth); // Tilføjet linje
-     // console.log("New year:", this.currYear); // Tilføjet linje
       if (this.currMonth < 0) {
         this.currMonth = 11;
         this.currYear--;
@@ -59,16 +60,68 @@ export default {
         this.currYear++;
       }
       this.renderCalendar();
+    },
+    showInputBox(day) {
+      this.showInput = true;
+      this.inputValue = '';
+    },
+    hideInputBox() {
+      this.showInput = false;
+    },
+    sendData() {
+      // Opretter et objekt med data fra de tre inputfelter
+      const dataToSend = {
+        name: this.nameValue,
+        uclMail: this.UCLMailValue,
+        message: this.messageValue
+      };
+      console.log('Data til afsendelse:', dataToSend);
+
+      // Sender dataen til din ønskede endpoint
+      fetch('https://hovedopgave-f875e-default-rtdb.firebaseio.com/booking.json', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(dataToSend)
+      })
+      .then(response => {
+        console.log('Data er sendt:', response);
+        // Udfør handlinger baseret på svar, hvis ønsket
+      })
+      .catch(error => {
+        console.error('Fejl ved afsendelse af data:', error);
+      });
     }
   }
 };
 </script>
 
 
+
+
 <template>
     <section id="bdk">
       <div class="calendar">
         <div class="current-date">{{ currentDate }}</div>
+        <div v-if="showInput" class="input-container">
+          <div class="input-box">
+            <div class="input-hide-box-1">
+            <div class="input-hide-box-1-tekst">
+                <h3>Book en tid til Karrierevejledning</h3>
+            </div>
+            <button @click="hideInputBox" class="btn-div-hide-box-x">X</button>
+            </div>
+            <div class="input-hide-box-2">
+            <input type="text" v-model="nameValue" placeholder="Navn" class="input-felter-box">
+            <input type="text" v-model="UCLMailValue" placeholder="UCL mail" class="input-felter-box">
+            <input type="text" v-model="messageValue" placeholder="besked" class="input-felter-box" id="input-input-felter-box-besked">
+            </div>
+            <div class="input-hide-box-3">
+            <button @click="sendData" class="btn-div-hide-box-send">Send</button>
+            </div>
+          </div>
+        </div>
         <div class="btn-wrap">
           <button class="carousel-btn" @click="changeMonth(-1)">
             <div class="btn-div">&lt;</div>
@@ -78,7 +131,9 @@ export default {
           </button>
         </div>
         <ul class="days">
-          <li v-for="day in days" :class="{ 'active': day.active, 'inactive': !day.active }">{{ day.date }}</li>
+          <li v-for="day in days" :class="{ 'active': day.active, 'inactive': !day.active }" @click="showInputBox(day.date)">
+            {{ day.date }}
+          </li>
         </ul>
       </div>
     </section>
@@ -89,7 +144,7 @@ export default {
   font-size: 1.45rem;
   font-weight: 500;
   color: #E2F1EE;
- Font-style: italic;
+  Font-style: italic;
 }
 
 .calendar {
@@ -154,4 +209,88 @@ export default {
 .days li:not(.active):hover::before {
   background: #F8CCC4;
 }
+
+.input-container {
+  position: fixed;
+  top: 20%;
+  left: 59%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  height: 400px;
+  width: 500px;
+  z-index: 9999;
+  display: flex;
+
+}
+.input-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 20px;
+}
+.input-box input {
+  flex: 1;
+  margin-right: 10px;
+
+}
+
+.input-hide-box-1{
+margin-left: 50px;
+display: flex;
+}
+
+.input-hide-box-2{
+    display: flex;
+    flex-wrap: wrap;
+    grid-row-gap: 30px;
+    padding-left: 36px;
+}
+
+.input-felter-box{
+    width:420px;
+}
+
+#input-input-felter-box-besked{
+    height: 200px;
+}
+
+.input-hide-box-3{
+    margin-left: 170px;
+}
+
+
+.btn-div-hide-box-x{
+    background-color: #CAE4E3;
+   width: 50px;
+   height: 50px;
+   color:#1A444D;
+   align-content: center;
+ font-size: 50px;
+}
+
+.btn-div-hide-box-x:hover{
+background-color: #FCE977;
+}
+
+.btn-div-hide-box-send{
+    background-color: #CAE4E3;
+   width: 150px;
+   height: 50px;
+   color:#1A444D;
+   align-content: center;
+ font-size: 50px;
+}
+
+.btn-div-hide-box-send:hover{
+background-color: #FCE977;
+}
+
+.input-hide-box-1-tekst{
+    width:400px
+}
+
 </style>
