@@ -15,7 +15,8 @@ export default {
       showInput: false,
       nameValue: '',
       UCLMailValue: '', 
-      messageValue: '' 
+      messageValue: '', 
+      tider: ["10:00 - 10:30", "10:45 - 11:15", "11:30 - 12:00", "12:15 - 12:45"],
     };
   },
   mounted() {
@@ -33,7 +34,6 @@ export default {
       let lastDayOfMonth = new Date(this.currYear, this.currMonth, lastDateOfMonth).getDay();
       let lastDateOfLastMonth = new Date(this.currYear, this.currMonth, 0).getDate();
       let daysArray = [];
-
       for (let i = firstDayOfMonth; i > 0; i--) {
         daysArray.push({ date: lastDateOfLastMonth - i + 1, active: false });
       }
@@ -75,7 +75,7 @@ export default {
     message: this.messageValue
   };
   console.log('Data til afsendelse:', dataToSend);
-
+  
   fetch('https://hovedopgave-f875e-default-rtdb.firebaseio.com/booking.json', {
     method: 'POST',
     headers: {
@@ -100,7 +100,10 @@ export default {
   .catch(error => {
     console.error('Fejl ved afsendelse af data:', error);
   });
-}
+},
+selectTime(tid) {
+      console.log("Du har valgt tid: " + tid);
+    }
   }
 };
 </script>
@@ -119,6 +122,11 @@ export default {
               <div class="input-hide-box-2">
               <input type="text" v-model="nameValue" placeholder="Navn" class="input-felter-box">
               <input type="text" v-model="UCLMailValue" placeholder="UCL mail" class="input-felter-box">
+              <div>
+                <div v-for="(tid, index) in tider" :key="index" @click="selectTime(tid)" class="bestil-tid">
+                  {{ tid }}
+                </div>
+              </div>
               <input type="text" v-model="messageValue" placeholder="besked" class="input-felter-box" id="input-input-felter-box-besked">
               </div>
               <div class="input-hide-box-3">
@@ -306,5 +314,15 @@ background-color: #FCE977;
 width: 200px;
 padding-left: 180px;
 color: #1A424B;
+background-color: #FCE977;
+}
+
+.bestil-tid{
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.bestil-tid:hover{
+  background-color: #FCE977;
 }
 </style>
