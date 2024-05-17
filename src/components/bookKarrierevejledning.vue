@@ -272,11 +272,12 @@ display: flex;
 
 .btn-div-hide-box-x{
     background-color: #CAE4E3;
-   width: 50px;
-   height: 50px;
+   width: 30px;
+   height: 30px;
    color:#1A444D;
    align-content: center;
- font-size: 50px;
+   font-size: 20px;
+   border-radius: 15%;
 }
 
 .btn-div-hide-box-x:hover{
