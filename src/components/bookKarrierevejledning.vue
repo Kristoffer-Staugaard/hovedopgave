@@ -110,7 +110,16 @@ selectTime(tid) {
 <template>
     <section id="bdk">
       <div class="calendar">
-          <div class="current-date">{{ currentDate }}</div>
+        <div>
+          <div class="current-date">{{ currentDate }}   <div class="btn-wrap">
+          <button class="carousel-btn" @click="changeMonth(-1)">
+            <div class="btn-div-kalender">❮</div>
+          </button>
+          <button class="carousel-btn" @click="changeMonth(1)">
+            <div class="btn-div-kalender">❯</div>
+          </button>
+        </div></div>
+      </div>
         <div v-if="showInput" class="input-container">
           <div class="input-box">
               <div class="input-hide-box-1">
@@ -137,14 +146,7 @@ selectTime(tid) {
               </div>
           </div>
         </div>
-        <div class="btn-wrap">
-          <button class="carousel-btn" @click="changeMonth(-1)">
-            <div class="btn-div">&lt;</div>
-          </button>
-          <button class="carousel-btn" @click="changeMonth(1)">
-            <div class="btn-div">&gt;</div>
-          </button>
-        </div>
+      
           <ul class="days">
             <li v-for="day in days" :class="{ 'active': day.active, 'inactive': !day.active }" @click="showInputBox(day.date)">
               {{ day.date }}
@@ -160,6 +162,9 @@ selectTime(tid) {
   font-weight: 500;
   color: #E2F1EE;
   Font-style: italic;
+  display: flex;
+    gap: 490px;
+    align-items: end;
 }
 
 .calendar {
@@ -324,5 +329,13 @@ background-color: #FCE977;
 
 .bestil-tid:hover{
   background-color: #FCE977;
+}
+.btn-div-kalender{
+  background-color: #CAE4E3;
+   width: 30px;
+   height: 30px;
+   color:#1A444D;
+   align-content: center;
+ font-size: 30x;
 }
 </style>
