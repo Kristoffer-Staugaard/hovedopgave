@@ -1,3 +1,22 @@
+@media (min-width: 768px) {
+  
+  .buttom-divider {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border-bottom: 2px #e6f1f0 solid;
+    gap: 60px;
+  }
+
+ .item-wrap{
+  width: 100%;
+
+  }
+
+}
+
+
 * {
     margin: 0;
     padding: 0;
