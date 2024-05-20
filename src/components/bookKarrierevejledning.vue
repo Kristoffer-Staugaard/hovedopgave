@@ -105,7 +105,7 @@ export default {
     this.UCLMailValue = '';
     this.messageValue = '';
     this.selectedTime = '';
-    this.popupMessage = '✔ booking sendt';
+    this.popupMessage = '✔ Tak for din bestilling af tid til vejledning';
     setTimeout(() => {
       console.log('Fjerner popup-melding');
         this.$nextTick(() => {
@@ -160,7 +160,9 @@ selectTime(tid) {
                   {{ tid }}
                 </div>
               </div>
+              <p>Skriv gerne hvad du har brug for vejledning inden for. På den måde sikre vi at du for mest ud af din vejledning</p>
               <input type="text" v-model="messageValue" placeholder="besked" class="input-felter-box" id="input-input-felter-box-besked">
+             
               </div>
               <div class="input-hide-box-3">
               <button @click="sendData" class="btn-div-hide-box-send">Send</button>
@@ -299,7 +301,7 @@ display: flex;
 }
 
 #input-input-felter-box-besked{
-    height: 150px;
+    
 }
 
 .input-hide-box-3{
