@@ -3,6 +3,7 @@
 </script>
 
 <template>
+    <section>
     <div class="buttom-divider">
         <div class="info-box">
             <div id="info-banner">
@@ -13,6 +14,7 @@
             </div>
         </div>
     </div>
+</section>
 </template>
 
 <style scoped>

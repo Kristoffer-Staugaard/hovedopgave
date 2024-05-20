@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    
+    <section>
         <div class="info-box">
             <div id="info-banner">
                 <p>Events på mit campus</p>
@@ -12,5 +12,5 @@
                 <img src="../assets/img/arrow-icon.svg" alt="arrow" />
             </div>
         </div>
-
+    </section>
 </template>

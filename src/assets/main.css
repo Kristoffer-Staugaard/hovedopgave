@@ -278,8 +278,9 @@ padding-top: 15px;
   background-image: url("../assets/img/event-billedet.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   height: 182px;
-  width: 701px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -378,4 +379,12 @@ padding-top: 15px;
 
 .flex_uo {
     display: flex;
+}
+
+@media screen and (max-width: 1010px) { 
+
+
+  .buttom-divider {
+    flex-direction: column;
+  }
 }
