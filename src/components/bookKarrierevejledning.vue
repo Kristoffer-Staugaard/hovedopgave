@@ -16,6 +16,7 @@ export default {
       nameValue: '',
       UCLMailValue: '', 
       messageValue: '', 
+      selectedTime:'',
       tider: ["10:00 - 10:30", "10:45 - 11:15", "11:30 - 12:00", "12:15 - 12:45"],
     };
   },
@@ -102,6 +103,7 @@ export default {
   });
 },
 selectTime(tid) {
+     this.selectedTime = tid;
       console.log("Du har valgt tid: " + tid);
     }
   }
@@ -135,7 +137,7 @@ selectTime(tid) {
                 <p>Tidsbestilling for Karrierevejledning er mandag til fredag</p>
                 </div>
                 <div class="bestil-tid-boks">
-                <div v-for="(tid, index) in tider" :key="index" @click="selectTime(tid)" class="bestil-tid">
+                  <div :class="{ 'selected-time': selectedTime === tid }" v-for="(tid, index) in tider" :key="index" @click="selectTime(tid)" class="bestil-tid">
                   {{ tid }}
                 </div>
               </div>
@@ -297,7 +299,7 @@ display: flex;
 }
 
 .btn-div-hide-box-x:hover{
-background-color: #FCE977;
+background-color: #f8ccc4;
 }
 
 .btn-div-hide-box-send{
@@ -310,7 +312,7 @@ background-color: #FCE977;
 }
 
 .btn-div-hide-box-send:hover{
-background-color: #FCE977;
+background-color: #f8ccc4;
 }
 
 .input-hide-box-1-tekst{
@@ -322,7 +324,7 @@ background-color: #FCE977;
 width: 200px;
 padding-left: 180px;
 color: #1A424B;
-background-color: #FCE977;
+
 }
 
 .bestil-tid{
@@ -331,7 +333,7 @@ background-color: #FCE977;
 }
 
 .bestil-tid:hover{
-  background-color: #FCE977;
+  background-color: #f8ccc4;
 }
 .btn-div-kalender{
   background-color: #CAE4E3;
@@ -345,6 +347,10 @@ background-color: #FCE977;
 .bestil-tid-boks{
   display: flex;
   gap: 26px;
+}
+
+.selected-time{
+  background-color: #fce977;
 }
 
 </style>
