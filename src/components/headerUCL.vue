@@ -4,6 +4,11 @@
     <header>
         <div class="logo-div">
             <a href=""><img class="logo" src="../assets/img/mitucl-logo.png" alt="MitUcl logo"></a>
+            <div class="burger-div">
+                <button class="burger-search">Søg <img src="../assets/img/search-icon-dark.svg" alt="Søge knap"></button>
+
+                <button class="burgermenu"> <img src="../assets/img/burgermenu-icon.svg" alt=""></button>
+            </div>
         </div>
         <div class="nav-wrap">
         <div class="top-nav-wrap">
@@ -109,10 +114,95 @@ li {
     font-weight: bold; 
 }
 
+.burger-div {
+    display: none;
+}
+
+@media screen and (max-width: 1100px) { 
+
+    .nav-wrap {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .buttom-nav-wrap {
+        justify-content: flex-start;
+    }
+
+    .buttom-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .top-nav-wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .top-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        gap: 30px;
+    }
+
+    .burgermenu {
+        display: flex;
+        border-radius: 100%;
+        padding: 15px;
+        border-style: none;
+        background-color: #00454E;
+    }
+
+    .logo-div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .burger-div {
+        display: flex;
+        gap: 20px;
+    }
+
+    .burger-search {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: #FFFFFF;
+        border-radius: 50px;
+        border-style: none;
+        padding: 0 20px;
+    }
+
+    .search-btn {
+        display: none;
+    }
+
+}
+
+
+
+
 @media screen and (max-width: 1200px) { 
 
 header {
     padding: 0 5%;
+}
+
+.logo {
+    width: 200px;
 }
 
 }
