@@ -131,7 +131,10 @@ selectTime(tid) {
               <div class="input-hide-box-2">
               <input type="text" v-model="nameValue" placeholder="Navn" class="input-felter-box">
               <input type="text" v-model="UCLMailValue" placeholder="UCL mail" class="input-felter-box">
-              <div class="bestil-tid-boks">
+                <div>
+                <p>Tidsbestilling for Karrierevejledning er mandag til fredag</p>
+                </div>
+                <div class="bestil-tid-boks">
                 <div v-for="(tid, index) in tider" :key="index" @click="selectTime(tid)" class="bestil-tid">
                   {{ tid }}
                 </div>
@@ -239,7 +242,7 @@ selectTime(tid) {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  height: 450px;
+  height: 480px;
   width: 500px;
   z-index: 9999;
   display: flex;
@@ -275,7 +278,7 @@ display: flex;
 }
 
 #input-input-felter-box-besked{
-    height: 200px;
+    height: 150px;
 }
 
 .input-hide-box-3{
