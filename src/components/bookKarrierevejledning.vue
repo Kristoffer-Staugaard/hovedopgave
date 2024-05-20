@@ -131,7 +131,7 @@ selectTime(tid) {
               <div class="input-hide-box-2">
               <input type="text" v-model="nameValue" placeholder="Navn" class="input-felter-box">
               <input type="text" v-model="UCLMailValue" placeholder="UCL mail" class="input-felter-box">
-              <div>
+              <div class="bestil-tid-boks">
                 <div v-for="(tid, index) in tider" :key="index" @click="selectTime(tid)" class="bestil-tid">
                   {{ tid }}
                 </div>
@@ -338,4 +338,10 @@ background-color: #FCE977;
    align-content: center;
  font-size: 30x;
 }
+
+.bestil-tid-boks{
+  display: flex;
+  gap: 26px;
+}
+
 </style>
