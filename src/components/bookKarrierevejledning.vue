@@ -64,6 +64,7 @@ export default {
     },
     showInputBox(day) {
       this.showInput = true;
+      this.dayClicked = day;
       this.inputValue = '';
     },
     hideInputBox() {
@@ -74,7 +75,12 @@ export default {
     name: this.nameValue,
     uclMail: this.UCLMailValue,
     message: this.messageValue,
-    selectedTime: this.selectedTime
+    selectedTime: this.selectedTime,
+    selectedDate: {
+      year: this.currYear,
+      month: this.currMonth + 1, 
+      day: this.dayClicked
+    }
   };
   console.log('Data til afsendelse:', dataToSend);
   
