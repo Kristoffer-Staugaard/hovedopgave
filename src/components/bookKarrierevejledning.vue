@@ -17,6 +17,12 @@ export default {
       UCLMailValue: '', 
       messageValue: '', 
       selectedTime:'',
+      selectedDate: {
+        year: null,
+        month: null,
+        day: null
+      },
+      dayClicked: '',
       tider: ["10:00 - 10:30", "10:45 - 11:15", "11:30 - 12:00", "12:15 - 12:45"],
     };
   },
@@ -65,7 +71,9 @@ export default {
     showInputBox(day) {
       this.showInput = true;
       this.dayClicked = day;
-      this.inputValue = '';
+      this.selectedDate.day = day;
+      this.selectedDate.month = this.currMonth + 1;
+      this.selectedDate.year = this.currYear;
     },
     hideInputBox() {
       this.showInput = false;
@@ -142,7 +150,10 @@ selectTime(tid) {
               <input type="text" v-model="nameValue" placeholder="Navn" class="input-felter-box">
               <input type="text" v-model="UCLMailValue" placeholder="UCL mail" class="input-felter-box">
                 <div>
-                <p>Tidsbestilling for Karrierevejledning er mandag til fredag</p>
+                <p>Hvornår ønsker du at bestille din tid hos karrierevejledning d.</p>
+                <div class="selected-date">
+                  <p>{{ selectedDate.day }}/{{ selectedDate.month }}/{{ selectedDate.year }}</p>
+                </div>
                 </div>
                 <div class="bestil-tid-boks">
                   <div :class="{ 'selected-time': selectedTime === tid }" v-for="(tid, index) in tider" :key="index" @click="selectTime(tid)" class="bestil-tid">
