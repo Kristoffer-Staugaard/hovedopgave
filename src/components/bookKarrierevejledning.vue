@@ -374,6 +374,10 @@ color: #1A424B;
 .bestil-tid{
   border: 1px solid;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
 }
 
 .bestil-tid:hover{
@@ -390,7 +394,8 @@ color: #1A424B;
 
 .bestil-tid-boks{
   display: flex;
-  gap: 26px;
+  width: 425px;
+  justify-content: space-between;
 }
 
 .selected-time{
