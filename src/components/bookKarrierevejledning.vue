@@ -137,6 +137,29 @@ selectTime(tid) {
             <div class="btn-div-kalender">❯</div>
           </button>
         </div></div>
+        <div class="uge-dage">
+          <div>
+            <p id="uge-dage-tekst">Mandag</p>
+          </div>
+          <div>
+            <p id="uge-dage-tekst">Tirsdag</p>
+          </div>
+          <div>
+            <p id="uge-dage-tekst">Onsdag</p>
+          </div>
+          <div>
+            <p id="uge-dage-tekst">Torsdag</p>
+          </div>
+          <div>
+            <p id="uge-dage-tekst">Fredag</p>
+          </div>
+          <div>
+            <p id="uge-dage-tekst">Lørdag</p>
+          </div>
+          <div>
+            <p id="uge-dage-tekst">Søndag</p>
+          </div>
+        </div>
       </div>
         <div v-if="showInput" class="input-container">
           <div class="input-box">
@@ -372,6 +395,15 @@ color: #1A424B;
 
 .selected-time{
   background-color: #fce977;
+}
+
+.uge-dage{
+ display: flex;
+ justify-content: space-evenly;
+ gap: 50px;
+}
+#uge-dage-tekst{
+  color:  #CAE4E3;
 }
 
 </style>
