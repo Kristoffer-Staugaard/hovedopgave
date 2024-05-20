@@ -113,6 +113,7 @@ header{
 li {
     list-style-type: none;
     color: #fff;
+    font-size: 11px;
 }
 
 .search-btn {

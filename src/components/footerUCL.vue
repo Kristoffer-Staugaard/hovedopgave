@@ -75,9 +75,8 @@ ul{
 }
 
 .footer-image img{
-    height: 300px;
-    width: 500px;
     display: flex;
+    width: 100%;
 }
 
 .footer-icons{

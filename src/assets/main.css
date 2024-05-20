@@ -288,7 +288,8 @@ padding-top: 15px;
 
 #info-banner p {
   color: white;
-  font-size: 48px;
+  font-size: 40px;
+  font-weight: bolder;
 }
 
 
@@ -381,10 +382,41 @@ padding-top: 15px;
     display: flex;
 }
 
-@media screen and (max-width: 1010px) { 
+@media screen and (max-width: 880px) { 
 
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+#info-banner p {
+  font-size: 30px;
+}
+
+p {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.buttom-divider {
+  gap: 30px;
+}
+  
+}
+
+@media screen and (max-width: 855px) {  
 
   .buttom-divider {
     flex-direction: column;
   }
+
+  .buttom-divider-width {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
 }
+

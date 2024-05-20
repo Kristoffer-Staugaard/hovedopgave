@@ -38,7 +38,9 @@
 
 nav {
     background-color: #E6F1F0;
-    padding: 5%;
+    padding: 5% 0;
+    width: 100%;
+    max-width: 1200px;
 }
 
 header {
@@ -54,6 +56,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 15px;
 }
 
 .top-nav-wrap {
@@ -65,6 +68,7 @@ header {
 .top-nav {
     display: flex;
     gap: 30px;
+    font-size: 11px;
 }
 
 li {
@@ -101,8 +105,17 @@ li {
 .buttom-nav {
     display: flex;
     gap: 30px;   
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold; 
 }
+
+@media screen and (max-width: 1200px) { 
+
+header {
+    padding: 0 5%;
+}
+
+}
+
 
 </style>

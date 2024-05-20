@@ -99,7 +99,7 @@ function toggleDropdown(index) {
   margin-top: 5px;
   background-color: #fff;
   border: 1px solid #00454E;
-  width: 350px;
+  width: 100%;
 }
 
 .dropdown {

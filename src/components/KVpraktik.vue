@@ -110,7 +110,7 @@ function isOpen(index) {
 .dropdown-wrap {
   margin-top: 5px;
   background-color: #daeced;
-  width: 350px;
+  width: 100%;
 }
 
 .dropdown {
