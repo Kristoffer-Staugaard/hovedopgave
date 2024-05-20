@@ -112,7 +112,7 @@ export default {
             this.popupMessage = ''; 
             this.$forceUpdate();
         });
-    }, 2000);
+    }, 3000);
    })  
   .catch(error => {
     console.error('Fejl ved afsendelse af data:', error);
@@ -169,31 +169,32 @@ selectTime(tid) {
               </div>
               <button @click="hideInputBox" class="btn-div-hide-box-x">X</button>
               </div>
-              <div class="input-hide-box-2">
+            <div class="input-hide-box-2">
               <input type="text" v-model="nameValue" placeholder="Navn" class="input-felter-box">
               <input type="text" v-model="UCLMailValue" placeholder="UCL mail" class="input-felter-box">
-                <div>
-                <p>Hvornår ønsker du at bestille din tid hos karrierevejledning d.</p>
-                <div class="selected-date">
-                  <p>{{ selectedDate.day }}/{{ selectedDate.month }}/{{ selectedDate.year }}</p>
-                </div>
-                </div>
-                <div class="bestil-tid-boks">
-                  <div :class="{ 'selected-time': selectedTime === tid }" v-for="(tid, index) in tider" :key="index" @click="selectTime(tid)" class="bestil-tid">
-                  {{ tid }}
-                </div>
+                    <div>
+                          <div>
+                          <p>Hvornår ønsker du at bestille din tid hos karrierevejledning d.</p>
+                          </div>
+                          <div class="selected-date">
+                            <p>{{ selectedDate.day }}/{{ selectedDate.month }}/{{ selectedDate.year }}</p>
+                          </div>
+                    <div class="bestil-tid-boks">
+                      <div :class="{ 'selected-time': selectedTime === tid }" v-for="(tid, index) in tider" :key="index" @click="selectTime(tid)" class="bestil-tid">
+                      {{ tid }}
+                    </div>
+                 </div>
               </div>
               <p>Skriv gerne hvad du har brug for vejledning inden for. På den måde sikre vi at du for mest ud af din vejledning</p>
-              <input type="text" v-model="messageValue" placeholder="besked" class="input-felter-box" id="input-input-felter-box-besked">
-             
+              <input type="text" v-model="messageValue" placeholder="Besked" class="input-felter-box" id="input-input-felter-box-besked">
               </div>
-              <div class="input-hide-box-3">
-              <button @click="sendData" class="btn-div-hide-box-send">Send</button>
-              </div>
-              <div>
-                <div class="popup-sendt">{{ popupMessage }}</div>
-              </div>
-          </div>
+                  <div class="input-hide-box-3">
+                  <button @click="sendData" class="btn-div-hide-box-send">Send</button>
+                  </div>
+                  <div>
+                    <div class="popup-sendt">{{ popupMessage }}</div>
+                  </div>
+            </div>
         </div>
       
           <ul class="days">
@@ -212,13 +213,12 @@ selectTime(tid) {
   color: #E2F1EE;
   Font-style: italic;
   display: flex;
-    gap: 490px;
+justify-content: space-between;
     align-items: end;
 }
 
 .calendar {
   padding: 20px;
-  border-style: solid;
   background: #1A444D;
 }
 
@@ -287,7 +287,7 @@ selectTime(tid) {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   height: 480px;
   width: 500px;
   z-index: 9999;
@@ -364,9 +364,9 @@ background-color: #f8ccc4;
 }
 
 .popup-sendt{
-  display: flex;
-width: 200px;
-padding-left: 180px;
+display: flex;
+width: 480px;
+justify-content: center;
 color: #1A424B;
 
 }
@@ -394,7 +394,7 @@ color: #1A424B;
 }
 
 .selected-time{
-  background-color: #fce977;
+  background-color: #f8ccc4;
 }
 
 .uge-dage{
