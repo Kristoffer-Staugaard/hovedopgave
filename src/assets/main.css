@@ -75,7 +75,6 @@ h3{
     position: relative;
     background-color: white;
     max-width: 1200px;
-
  }
 
  .btn-yellow{
@@ -419,4 +418,13 @@ p {
   }
 
 }
+
+@media screen and (max-width: 1100px) {  
+
+  .main-wrap {
+    top: 125px;
+  }
+}
+
+
 

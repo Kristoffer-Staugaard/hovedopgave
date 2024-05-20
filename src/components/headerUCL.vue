@@ -39,6 +39,18 @@
 
 </template>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const burgerMenu = document.querySelector('.burgermenu');
+        const navWrap = document.querySelector('.nav-wrap');
+
+        burgerMenu.addEventListener('click', function() {
+            navWrap.classList.toggle('open');
+        });
+    });
+</script>
+
+
 <style scoped>
 
 nav {
@@ -118,12 +130,41 @@ li {
     display: none;
 }
 
+@media screen and (max-width: 1200px) { 
+
+header {
+    padding: 0 5%;
+}
+
+.logo {
+    width: 200px;
+}
+
+}
+
 @media screen and (max-width: 1100px) { 
+
+    .logo-div {
+        background-color: #E6F1F0;
+        padding: 3%;
+        box-sizing: border-box;
+    }
 
     .nav-wrap {
         flex-direction: column-reverse;
         width: 100%;
+        height: 100vh;
+        justify-content: flex-end;
+        right: -106%;
+        position: relative;
+        padding: 3%;
+        box-sizing: border-box;
     }
+
+    .nav-wrap.open {
+    right: 0;
+    background-color: #E6F1F0;
+}
 
     .buttom-nav-wrap {
         justify-content: flex-start;
@@ -149,11 +190,19 @@ li {
         gap: 15px;
     }
 
+    nav {
+        padding: 0;
+        padding-bottom: 2%;
+        position: fixed;
+        z-index: 2;
+        margin-top: 0;
+        background-color: transparent;
+    }
+
     header {
         flex-direction: column;
         align-items: flex-start;
         padding: 0;
-        gap: 30px;
     }
 
     .burgermenu {
@@ -189,23 +238,5 @@ li {
     .search-btn {
         display: none;
     }
-
 }
-
-
-
-
-@media screen and (max-width: 1200px) { 
-
-header {
-    padding: 0 5%;
-}
-
-.logo {
-    width: 200px;
-}
-
-}
-
-
 </style>
