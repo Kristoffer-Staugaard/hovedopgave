@@ -73,7 +73,8 @@ export default {
   const dataToSend = {
     name: this.nameValue,
     uclMail: this.UCLMailValue,
-    message: this.messageValue
+    message: this.messageValue,
+    selectedTime: this.selectedTime
   };
   console.log('Data til afsendelse:', dataToSend);
   
@@ -89,6 +90,7 @@ export default {
     this.nameValue = '';
     this.UCLMailValue = '';
     this.messageValue = '';
+    this.selectedTime = '';
     this.popupMessage = '✔ booking sendt';
     setTimeout(() => {
       console.log('Fjerner popup-melding');
