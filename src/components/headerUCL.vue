@@ -159,6 +159,7 @@ header {
         position: relative;
         padding: 3%;
         box-sizing: border-box;
+        top: 50px;
     }
 
     .nav-wrap.open {

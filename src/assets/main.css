@@ -422,8 +422,10 @@ p {
 @media screen and (max-width: 1100px) {  
 
   .main-wrap {
-    top: 125px;
+    top: 143px;
+    flex-direction: column;
   }
+
 }
 
 
