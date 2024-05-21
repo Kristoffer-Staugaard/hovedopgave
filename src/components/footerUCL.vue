@@ -53,7 +53,9 @@ footer{
     color: #fff;
     display: flex;
     flex-direction: row;
-    padding: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
 }
 
 
@@ -76,19 +78,21 @@ ul{
 
 .footer-image img{
     display: flex;
-    width: 100%;
+    width: 400px
 }
 
 .footer-icons{
     display: flex;
     flex-direction: row;
-    gap: 25px;
-    padding: 5%;
+    gap: 10px;
+    padding-left: 15%;
+    padding-bottom: 10%;
+    padding-top: 5%;
 }
 
 .footer-icons img{
-    height: 30px;
-    width: 30px;
+    height: 15px;
+    width: 15px;
 }
 
 .footer-bottom-line{
@@ -100,13 +104,55 @@ ul{
     border-top: 1px solid #707070;
 }
 
+.footer-bottom-line p{
+    color: #fff;
+
+}
+
 @media screen and (max-width: 1100px) { 
 
-    footer {
-        display: flex;
-        flex-direction: column;
-    }
+.footer-main{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 1000px;
+    font-size: 20px;
+    line-height: 4.8rem;
 }
+
+
+ .footer-1{
+    width: 100%;
+
+}
+
+.footer-2{
+    width: 100%;
+}
+
+.footer-3{
+    width: 100%;
+}
+
+.footer-icons img{
+    height: 30px;
+    width: 30px;
+}
+
+.footer-image img{
+    display: flex;
+    width: 100%;
+}
+
+.footer-1 .footer-2 li{
+    font-size: 30px;
+
+
+}
+}
+
+
 
 
 </style>
