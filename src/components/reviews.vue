@@ -5,19 +5,26 @@ const reviews = ref([]);
 const currentIndex = ref(0);
 const error = ref(null);
 
-const getReviewsFromFirebase = async () => {
-  try {
-    const response = await fetch('https://hovedopgave-f875e-default-rtdb.firebaseio.com/reviews.json');
-    if (!response.ok) {
-      throw new Error('Kunne ikke indlæse data fra Firebase');
-    }
-    const data = await response.json();
-    reviews.value = Object.values(data);
-  } catch (err) {
+
+const getReviewsFromFirebase = () => {
+  fetch('https://hovedopgave-f875e-default-rtdb.firebaseio.com/reviews.json', {
+  method: 'GET'
+})
+.then(response => {
+  if (!response.ok) {
+    throw new Error('Kunne ikke indlæse data fra Firebase');
+  }
+  return response.json();
+})
+.then(data => {
+  reviews.value = Object.values(data);
+  updateVisibleReviews();
+})
+.catch (err => {
     console.error(err);
     error.value = 'Kunne ikke indlæse data fra Firebase';
-  }
-};
+  });
+}
 
 const visibleReviews = ref([]);
 const updateVisibleReviews = () => {
