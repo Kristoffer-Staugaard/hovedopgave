@@ -321,6 +321,7 @@ display: flex;
 
 .input-felter-box{
     width:420px;
+    border: 1px solid #1A424B;
 }
 
 #input-input-felter-box-besked{
@@ -347,12 +348,15 @@ background-color: #f8ccc4;
 }
 
 .btn-div-hide-box-send{
-    background-color: #CAE4E3;
-   width: 150px;
-   height: 50px;
-   color:#1A444D;
-   align-content: center;
- font-size: 50px;
+  background-color: #FCE977;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  width: 150px;
+  height: 50px;
+  color:#1A444D;
+  align-content: center;
+  font-size: 14px;
 }
 
 .btn-div-hide-box-send:hover{
@@ -372,12 +376,14 @@ color: #1A424B;
 }
 
 .bestil-tid{
-  border: 1px solid;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90px;
+  width: 100px;
+  background-color: #FCE977;
+  border: none;
+  border-radius: 20px;
 }
 
 .bestil-tid:hover{
@@ -409,6 +415,12 @@ color: #1A424B;
 }
 #uge-dage-tekst{
   color:  #CAE4E3;
+}
+
+#input-input-felter-box-besked{
+display: flex;
+height: 100px;
+
 }
 
 </style>

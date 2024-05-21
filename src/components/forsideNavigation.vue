@@ -87,6 +87,7 @@ nav {
   box-sizing: border-box;
   background-color: #00454e;
   margin-top: 0;
+  background: url("../assets/img/background.png") center 50%;
 }
 
 .nav-inner {

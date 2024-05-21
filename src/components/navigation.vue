@@ -80,17 +80,18 @@ const genvejeScroll = () => {
 
 <style scoped>
 nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
-  position: sticky;
-  left: 0px;
-  top: 0px;
-  padding: 40px;
-  box-sizing: border-box;
-  background-color: #00454e;
-  margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    position: sticky;
+    left: 0px;
+    top: 0px;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #00454E;
+    margin-top: 0;
+    background: url("../assets/img/background.png") center 50%;
 }
 
 .nav-inner {
