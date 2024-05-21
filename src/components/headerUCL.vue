@@ -1,58 +1,57 @@
 <template>
-
-<nav>
-    <header>
-        <div class="logo-div">
-            <a href=""><img class="logo" src="../assets/img/mitucl-logo.png" alt="MitUcl logo"></a>
-            <div class="burger-div">
-                <button class="burger-search">Søg <img src="../assets/img/search-icon-dark.svg" alt="Søge knap"></button>
-
-                <button class="burgermenu"> <img src="../assets/img/burgermenu-icon.svg" alt=""></button>
+    <nav>
+        <header>
+            <div class="logo-div">
+                <a href=""><img class="logo" src="../assets/img/mitucl-logo.png" alt="MitUcl logo"></a>
+                <div class="burger-div">
+                    <button class="burger-search">Søg <img src="../assets/img/search-icon-dark.svg" alt="Søge knap"></button>
+                    <button class="burgermenu" @click="toggleMenu"> <img src="../assets/img/burgermenu-icon.svg" alt=""></button>
+                </div>
             </div>
-        </div>
-        <div class="nav-wrap">
-        <div class="top-nav-wrap">
-            <ul class="top-nav">
-                <li>GDPR - behandling af persondata</li>
-                <li>Krisesituationer på UCL</li>
-                <li>mitUCL på mobilen</li>
-                <li>Bibliotek</li>
-            </ul>
-            <button class="search-btn">Søg <img src="../assets/img/search-icon-white.svg" alt="Søge knap"></button>
-            <button class="pen-btn">Tilpas valg <img src="../assets/img/pen-icon-green.svg" alt="Tilpas knap"></button>
-        </div>
-        <div class="buttom-nav-wrap">
-            <ul class="buttom-nav">
-                <li>Mit campus</li>
-                <!--midlertidig løsning ind til karrierevejledning-->
-                <router-link to="/karrierevejledning">
-                    <li>Studieservice</li>
-                </router-link>
-                <li>Events & studieliv</li>
-                <li>SU</li>
-                <li>Specialpædagogisk støtte (SPS)</li>
-            </ul>
-        </div>
-    </div>
-    </header>
-</nav>
-
+            <div :class="['nav-wrap', { open: isMenuOpen }]">
+                <div class="top-nav-wrap">
+                    <ul class="top-nav">
+                        <li>GDPR - behandling af persondata</li>
+                        <li>Krisesituationer på UCL</li>
+                        <li>mitUCL på mobilen</li>
+                        <li>Bibliotek</li>
+                    </ul>
+                    <button class="search-btn">Søg <img src="../assets/img/search-icon-white.svg" alt="Søge knap"></button>
+                    <button class="pen-btn">Tilpas valg <img src="../assets/img/pen-icon-green.svg" alt="Tilpas knap"></button>
+                </div>
+                <div class="buttom-nav-wrap">
+                    <ul class="buttom-nav">
+                        <li>Mit campus</li>
+                        <!--midlertidig løsning ind til karrierevejledning-->
+                        <router-link to="/karrierevejledning">
+                            <li>Studieservice</li>
+                        </router-link>
+                        <li>Events & studieliv</li>
+                        <li>SU</li>
+                        <li>Specialpædagogisk støtte (SPS)</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </nav>
 </template>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const burgerMenu = document.querySelector('.burgermenu');
-        const navWrap = document.querySelector('.nav-wrap');
-
-        burgerMenu.addEventListener('click', function() {
-            navWrap.classList.toggle('open');
-        });
-    });
+export default {
+    data() {
+        return {
+            isMenuOpen: false
+        };
+    },
+    methods: {
+        toggleMenu() {
+            this.isMenuOpen = !this.isMenuOpen;
+        }
+    }
+}
 </script>
 
-
 <style scoped>
-
 nav {
     background-color: #E6F1F0;
     padding: 5% 0;
@@ -131,7 +130,6 @@ li {
 }
 
 @media screen and (max-width: 1200px) { 
-
 header {
     padding: 0 5%;
 }
@@ -139,105 +137,105 @@ header {
 .logo {
     width: 200px;
 }
-
 }
 
 @media screen and (max-width: 1100px) { 
-
-    .logo-div {
-        background-color: #E6F1F0;
-        padding: 3%;
-        box-sizing: border-box;
-    }
-
-    .nav-wrap {
-        flex-direction: column-reverse;
-        width: 100%;
-        height: 100vh;
-        justify-content: flex-end;
-        right: -106%;
-        position: relative;
-        padding: 3%;
-        box-sizing: border-box;
-        top: 50px;
-    }
-
-    .nav-wrap.open {
-    right: 0;
+.logo-div {
     background-color: #E6F1F0;
+    padding: 3%;
+    box-sizing: border-box;
 }
 
-    .buttom-nav-wrap {
-        justify-content: flex-start;
-    }
+.nav-wrap {
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100vh;
+    justify-content: flex-end;
+    right: -106%;
+    position: relative;
+    padding: 3%;
+    box-sizing: border-box;
+    top: 50px;
+    display: none;
+}
 
-    .buttom-nav {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-    }
+.nav-wrap.open {
+    right: 0;
+    background-color: #E6F1F0;
+    display: block;
+}
 
-    .top-nav-wrap {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        align-items: flex-end;
-        justify-content: space-between;
-    }
+.buttom-nav-wrap {
+    justify-content: flex-start;
+}
 
-    .top-nav {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-    }
+.buttom-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
 
-    nav {
-        padding: 0;
-        padding-bottom: 2%;
-        position: fixed;
-        z-index: 2;
-        margin-top: 0;
-        background-color: transparent;
-    }
+.top-nav-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-items: flex-end;
+    justify-content: space-between;
+}
 
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0;
-    }
+.top-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
 
-    .burgermenu {
-        display: flex;
-        border-radius: 100%;
-        padding: 15px;
-        border-style: none;
-        background-color: #00454E;
-    }
+nav {
+    padding: 0;
+    padding-bottom: 2%;
+    position: fixed;
+    z-index: 2;
+    margin-top: 0;
+    background-color: transparent;
+}
 
-    .logo-div {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-    }
+header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+}
 
-    .burger-div {
-        display: flex;
-        gap: 20px;
-    }
+.burgermenu {
+    display: flex;
+    border-radius: 100%;
+    padding: 15px;
+    border-style: none;
+    background-color: #00454E;
+}
 
-    .burger-search {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        background-color: #FFFFFF;
-        border-radius: 50px;
-        border-style: none;
-        padding: 0 20px;
-    }
+.logo-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
 
-    .search-btn {
-        display: none;
-    }
+.burger-div {
+    display: flex;
+    gap: 20px;
+}
+
+.burger-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    border-style: none;
+    padding: 0 20px;
+}
+
+.search-btn {
+    display: none;
+}
 }
 </style>

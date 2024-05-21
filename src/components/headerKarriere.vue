@@ -1,119 +1,105 @@
-<script setup>
-const kontaktOsScroll = () => {
-    document.getElementById("kontaktka").scrollIntoView({ behavior: "smooth"});
+<template>
+    <nav>
+        <header>
+            <div class="logo-div">
+                <a href=""><img class="logo" src="../assets/img/mitucl-logo.png" alt="MitUcl logo"></a>
+                <div class="burger-div">
+                    <button class="burger-search">Søg <img src="../assets/img/search-icon-dark.svg" alt="Søge knap"></button>
+                    <button class="burgermenu" @click="toggleMenu"> <img src="../assets/img/burgermenu-icon.svg" alt=""></button>
+                </div>
+            </div>
+            <div :class="['nav-wrap', { open: isMenuOpen }]">
+                <div class="top-nav-wrap">
+                    <ul class="top-nav">
+                        <li>GDPR - behandling af persondata</li>
+                        <li>Krisesituationer på UCL</li>
+                        <li>mitUCL på mobilen</li>
+                        <li>Bibliotek</li>
+                    </ul>
+                    <button class="search-btn">Søg <img src="../assets/img/search-icon-white.svg" alt="Søge knap"></button>
+                    <button class="pen-btn">Tilpas valg <img src="../assets/img/pen-icon-green.svg" alt="Tilpas knap"></button>
+                </div>
+                <div class="buttom-nav-wrap">
+                    <ul class="buttom-nav">
+                        <li>Mit campus</li>
+                        <!--midlertidig løsning ind til karrierevejledning-->
+                        <router-link to="/karrierevejledning">
+                            <li>Studieservice</li>
+                        </router-link>
+                        <li>Events & studieliv</li>
+                        <li>SU</li>
+                        <li>Specialpædagogisk støtte (SPS)</li>
+                    </ul>
+                </div>
+            </div>
+
+        </header>
+        <div class="purple">
+            
+        </div>
+ 
+    </nav>
+</template>
+
+<script>
+export default {
+    data() {
+        return {
+            isMenuOpen: false
+        };
+    },
+    methods: {
+        toggleMenu() {
+            this.isMenuOpen = !this.isMenuOpen;
+        }
+    }
 }
 </script>
 
-<template>
-
-<header>
-    <div class="header-div">
-        <div class="logo-div">
-            <a href=""><img class="logo" src="../assets/img/mitucl-logo-white.png" alt="MitUcl logo"></a>
-        </div>
-        <div class="nav-wrap">
-        <div class="top-nav-wrap">
-            <ul class="top-nav">
-                <li>GDPR - behandling af persondata</li>
-                <li>Krisesituationer på UCL</li>
-                <li>mitUCL på mobilen</li>
-                <li>Bibliotek</li>
-            </ul>
-            <button class="search-btn">Søg <img src="../assets/img/search-icon-white.svg" alt="Søge knap"></button>
-            <button class="pen-btn">Tilpas valg <img src="../assets/img/pen-icon-green.svg" alt="Tilpas knap"></button>
-        </div>
-        <div class="buttom-nav-wrap">
-            <ul class="buttom-nav">
-                <li>Mit campus</li>
-                <!--midlertidig løsning ind til karrierevejledning-->
-                <router-link to="/karrierevejledning">
-                    <li>Studieservice</li>
-                </router-link>
-                <li>Events & studieliv</li>
-                <li>SU</li>
-                <li>Specialpædagogisk støtte (SPS)</li>
-            </ul>
-        </div>
-    </div>
-</div>
-<div class="buttom-nav-list-main">
-    <div class="buttom-nav-list-1">
-            <p> Forside</p>
-            <p>/</p>
-            <p>Studieservice</p>
-            <p>/</p>
-            <p> Karrierevejledning</p>
-    </div>
-<div class="buttom-nav-list-2">
-<div>
-    <h1>Karrierevejledning</h1>
-</div>
-<div>
-    <h2>Få råd og vejledning om praktik og karrierevalg.</h2>
-</div>
- <div>
-    <p @click="kontaktOsScroll"> Kontakt os</p>
-</div>
-</div>
-</div>
-           
-</header>
-</template>
-
 <style scoped>
 
+.purple {
+    background-color: purple;
+ 
+}
+
 nav {
-    background-color: #00454E;
-    padding: 5%;
-}
-
-header{
-    background: url("../assets/img/background.png") center repeat fixed;
-    background-position: fixed;
-    height: 200px;
-    margin: 0px;
-    height: 500px;
+    background-color: #E6F1F0;
+    padding: 5% 0;
     width: 100%;
-
-
-
+    max-width: 1200px;
 }
 
-.header-div {
+header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .logo {
-    width: 200px;
-    margin-top: 40px;
-    margin-right: 100px;
+    width: 250px;
 }
 
 .nav-wrap {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    padding-top: 30px;
+    justify-content: space-between;
+    gap: 15px;
 }
 
 .top-nav-wrap {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
 }
 
 .top-nav {
     display: flex;
     gap: 30px;
     font-size: 11px;
-    font-weight: lighter;
 }
 
 li {
     list-style-type: none;
-    color: #fff;
-    font-size: 11px;
 }
 
 .search-btn {
@@ -145,53 +131,122 @@ li {
 
 .buttom-nav {
     display: flex;
-    justify-content: flex-start;
     gap: 30px;   
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold; 
-    padding: 20px;
 }
 
-
-.buttom-nav-list-main{
-display: flex;
-flex-direction: column;
-margin-left: 250px;
-gap: 40px;
-
-
+.burger-div {
+    display: none;
 }
 
-.buttom-nav-list-1{
-display: flex;
-flex-direction: row;
-gap: 20px;
+@media screen and (max-width: 1200px) { 
+header {
+    padding: 0 5%;
 }
 
-.buttom-nav-list-1 p{
-color: #fff;
-
-
+.logo {
+    width: 200px;
+}
 }
 
-.buttom-nav-list-2{
-display: flex;
-flex-direction: column;
-gap: 50px;
-
+@media screen and (max-width: 1100px) { 
+.logo-div {
+    background-color: #E6F1F0;
+    padding: 3%;
+    box-sizing: border-box;
 }
 
-.buttom-nav-list-2 h1, h2, p{
-color: #fff;
-
+.nav-wrap {
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100vh;
+    justify-content: flex-end;
+    right: -106%;
+    position: relative;
+    padding: 3%;
+    box-sizing: border-box;
+    top: 50px;
+    display: none;
 }
 
-.buttom-nav-list-2 p{
-color: #fff;
-
-
+.nav-wrap.open {
+    right: 0;
+    background-color: #E6F1F0;
+    display: block;
 }
 
+.buttom-nav-wrap {
+    justify-content: flex-start;
+}
 
+.buttom-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
 
+.top-nav-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.top-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+nav {
+    padding: 0;
+    padding-bottom: 2%;
+    position: fixed;
+    z-index: 2;
+    margin-top: 0;
+    background-color: transparent;
+}
+
+header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.burgermenu {
+    display: flex;
+    border-radius: 100%;
+    padding: 15px;
+    border-style: none;
+    background-color: #00454E;
+}
+
+.logo-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.burger-div {
+    display: flex;
+    gap: 20px;
+}
+
+.burger-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    border-style: none;
+    padding: 0 20px;
+}
+
+.search-btn {
+    display: none;
+}
+}
 </style>

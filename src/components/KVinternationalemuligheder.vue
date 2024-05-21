@@ -116,22 +116,5 @@ align-items: center;
   padding: 20px;
 }
 
-@media screen and (max-width: 880px) { 
-
-  .profile-img {
-    width: 50px;
-    height: 50px;
-  }
-
-  .blue-card {
-    padding: 10px;
-  }
-
-  .buttom-divider {
-    gap: 30px;
-  }
-}
-
-
 
 </style>
