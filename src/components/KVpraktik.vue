@@ -57,7 +57,7 @@ function isOpen(index) {
           <div class="dropdown-wrap" v-for="(item, index) in dropdowns">
             <div class="dropdown" @click="toggleDropdown(index)">
               <h3>{{ item.dropdown }}</h3>
-              <span>{{ openIndex === index ? "-" : "+" }}</span>
+              <img src="../assets/img/arrow-down.svg" alt="arrow">
             </div>
             <div class="answer_uo" v-if="isOpen(index)">
               <p v-html="item.answer"></p>

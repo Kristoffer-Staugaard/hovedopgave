@@ -26,7 +26,7 @@
     <div class="buttom-divider">
       <div class="buttom-divider-width">
       <div class="blue-card">
-        <h3>Kontakt din praktikkoordinator</h3>
+        <h3>International koordinator</h3>
         <div class="card-inner">
           <img
             class="profile-img"
