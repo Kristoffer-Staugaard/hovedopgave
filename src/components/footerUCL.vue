@@ -100,4 +100,13 @@ ul{
     border-top: 1px solid #707070;
 }
 
+@media screen and (max-width: 1100px) { 
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
 </style>
