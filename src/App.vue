@@ -58,4 +58,3 @@ nav a:first-of-type {
   }
 }
 </style>
-./components/footerUCL.vue
