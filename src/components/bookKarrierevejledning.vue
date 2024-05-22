@@ -411,7 +411,7 @@ color: #1A424B;
 .uge-dage{
  display: flex;
  justify-content: space-evenly;
- gap: 50px;
+ gap: 5%;
 }
 #uge-dage-tekst{
   color:  #CAE4E3;

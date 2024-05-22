@@ -83,6 +83,7 @@
             </div> 
 
         </div>
+        </div>
 
         <div class="flex-tjekliste">
             <div class="semester-opdeling">
@@ -159,7 +160,6 @@
                 
             </div> 
         </div>
-    </div>
 </div>
 
 <button class="btn-yellow">Guide: Bliv klar til din karriere gennem hele din uddannelse</button>

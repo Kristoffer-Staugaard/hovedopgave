@@ -32,7 +32,7 @@ background-color: #E2F1EE;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 5%;
+  padding: 5%;
 }
 
 
@@ -41,8 +41,7 @@ background-color: #E2F1EE;
 }
 
 .jobportalen img{
-  height: 300px;
-  width: 400px;
+  width: 100%;
 }
 
 
