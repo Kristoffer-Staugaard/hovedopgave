@@ -69,42 +69,7 @@ function toggleDropdown(index) {
         </div>
       </div>
     </div>
-    <div class="buttom-divider">
-      <div class="buttom-divider-width">
-      <div class="blue-card">
-        <h3>Kontakt din praktikkoordinator</h3>
-        <div class="card-inner">
-          <img
-            class="profile-img"
-            src="../assets/img/praktikkoordinator.png"
-            alt="Prkatik koordinator profil billede"
-          />
-          <div class="koordinator-info">
-            <h4>Karen Malene Andreasen</h4>
-            <p>Praktikkordinator</p>
-            <div class="list">
-              <img src="../assets/img/phone-icon.svg" alt="" />
-              <p>22 66 02 86</p>
-            </div>
-            <div class="list">
-              <img src="../assets/img/mail-icon.svg" alt="" />
-              <p>kmea@ucl.dk</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-      <div class="buttom-divider-width">
-      <h3>To vejledere</h3>
-      <p>
-        I praktikken har du både en vejleder på dit praktiksted og en vejleder
-        fra uddannelsesinstitutionen. De følger og vejleder dig begge to i de 3
-        måneder, du er i praktik. Din praktikvejleder på UCL fremgår her på
-        siden mens du først får tildelt en vejleder på dit praktiksted, når din
-        praktikaftale foreligger.
-      </p>
-    </div>
-    </div>
+    
   </section>
 </template>
 
