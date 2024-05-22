@@ -72,4 +72,12 @@ const getArrangementerSection = () => {
 .arrangementer_dato{
   font-weight: bold;
 }
+
+@media screen and (max-width: 700px) {  
+
+  .arrangementer_container {
+    gap: 20px;
+  }
+}
+
 </style>
