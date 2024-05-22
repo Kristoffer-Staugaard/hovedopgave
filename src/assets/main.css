@@ -240,6 +240,19 @@ padding-top: 15px;
     width: 50%;
   }
 
+  .talentprogram-buttom-divider {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border-bottom: 2px #e6f1f0 solid;
+    gap: 60px;
+  }
+  
+  .talentprogram-buttom-divider-width{
+    width: 50%;
+  }
+
   .list {
     display: flex;
 }
@@ -415,6 +428,15 @@ p {
   }
 
   .buttom-divider-width {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .talentprogram-buttom-divider {
+    flex-direction: column;
+  }
+
+  .talentprogram-buttom-divider-width {
     width: 100%;
     box-sizing: border-box;
   }

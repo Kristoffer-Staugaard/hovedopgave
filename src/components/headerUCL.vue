@@ -87,8 +87,15 @@ header {
     font-size: 11px;
 }
 
-li {
-    list-style-type: none;
+li  {
+list-style-type: none
+
+}
+
+a {
+text-decoration: none;
+color: #000;
+
 }
 
 .search-btn {
