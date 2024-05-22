@@ -36,7 +36,7 @@ function toggleDropdown(index) {
 }
 
 function isOpen(index) {
-    return openIndex.value === index;
+  return openIndex.value === index;
 }
 </script>
 
@@ -57,7 +57,7 @@ function isOpen(index) {
           <div class="dropdown-wrap" v-for="(item, index) in dropdowns">
             <div class="dropdown" @click="toggleDropdown(index)">
               <h3>{{ item.dropdown }}</h3>
-              <img src="../assets/img/arrow-down.svg" alt="arrow">
+              <img src="../assets/img/arrow-down.svg" alt="arrow" />
             </div>
             <div class="answer_uo" v-if="isOpen(index)">
               <p v-html="item.answer"></p>
@@ -68,45 +68,44 @@ function isOpen(index) {
     </div>
     <div class="buttom-divider">
       <div class="buttom-divider-width">
-      <div class="blue-card">
-        <h3>Kontakt din praktikkoordinator</h3>
-        <div class="card-inner">
-          <img
-            class="profile-img"
-            src="../assets/img/praktikkoordinator.png"
-            alt="Prkatik koordinator profil billede"
-          />
-          <div class="koordinator-info">
-            <h4>Karen Malene Andreasen</h4>
-            <p>Praktikkordinator</p>
-            <div class="list">
-              <img src="../assets/img/phone-icon.svg" alt="" />
-              <p>22 66 02 86</p>
-            </div>
-            <div class="list">
-              <img src="../assets/img/mail-icon.svg" alt="" />
-              <p>kmea@ucl.dk</p>
+        <div class="blue-card">
+          <h3>Kontakt din praktikkoordinator</h3>
+          <div class="card-inner">
+            <img
+              class="profile-img"
+              src="../assets/img/praktikkoordinator.png"
+              alt="Prkatik koordinator profil billede"
+            />
+            <div class="koordinator-info">
+              <h4>Karen Malene Andreasen</h4>
+              <p>Praktikkordinator</p>
+              <div class="list">
+                <img src="../assets/img/phone-icon.svg" alt="" />
+                <p>22 66 02 86</p>
+              </div>
+              <div class="list">
+                <img src="../assets/img/mail-icon.svg" alt="" />
+                <p>kmea@ucl.dk</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
       <div class="buttom-divider-width">
-      <h3>To vejledere</h3>
-      <p>
-        I praktikken har du både en vejleder på dit praktiksted og en vejleder
-        fra uddannelsesinstitutionen. De følger og vejleder dig begge to i de 3
-        måneder, du er i praktik. Din praktikvejleder på UCL fremgår her på
-        siden mens du først får tildelt en vejleder på dit praktiksted, når din
-        praktikaftale foreligger.
-      </p>
-    </div>
+        <h3>To vejledere</h3>
+        <p>
+          I praktikken har du både en vejleder på dit praktiksted og en vejleder
+          fra uddannelsesinstitutionen. De følger og vejleder dig begge to i de
+          3 måneder, du er i praktik. Din praktikvejleder på UCL fremgår her på
+          siden mens du først får tildelt en vejleder på dit praktiksted, når
+          din praktikaftale foreligger.
+        </p>
+      </div>
     </div>
   </section>
 </template>
 
 <style scoped>
-
 .dropdown-wrap {
   margin-top: 5px;
   background-color: #daeced;

@@ -19,15 +19,15 @@ import KVvidereuddannelse from "@/components/KVvidereuddannelse.vue";
   <div class="main-wrap">
     <forsideNavigation />
     <div class="content-wrap">
-        <KVstudiestart />
-        <KVUdannelsensOpbygning />
-        <KVpraktik />
-        <KVai />
-        <KVmuligheder />
-        <KVvidereuddannelse />      
-        <KVinternationalemuligheder />
-        <KVGenveje />
-        <KVevent />         
+      <KVstudiestart />
+      <KVUdannelsensOpbygning />
+      <KVpraktik />
+      <KVai />
+      <KVmuligheder />
+      <KVvidereuddannelse />
+      <KVinternationalemuligheder />
+      <KVGenveje />
+      <KVevent />
     </div>
   </div>
 </template>

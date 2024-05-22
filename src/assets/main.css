@@ -1,5 +1,4 @@
 @media (min-width: 768px) {
-  
   .buttom-divider {
     display: flex;
     flex-direction: row;
@@ -9,23 +8,20 @@
     gap: 60px;
   }
 
- .item-wrap{
-  width: 100%;
-
+  .item-wrap {
+    width: 100%;
   }
-
 }
 
-
 * {
-    margin: 0;
-    padding: 0;
-    line-height: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
 }
 
 body {
-    font-family: "proxima-nova";
-    background-color: #E6F1F0; 
+  font-family: "proxima-nova";
+  background-color: #e6f1f0;
 }
 
 #app {
@@ -39,157 +35,155 @@ body {
 }
 
 section {
-    padding: 5%;
+  padding: 5%;
 }
 
-h1{
-    font-size: 63px;
-    color: #1A424B;
-
-    }
-
-h2{
-    font-size: 48px;
-    color: #1A424B;
-    text-align: left;
-    margin-bottom: 20px;
+h1 {
+  font-size: 63px;
+  color: #1a424b;
 }
 
-h3{
-    font-size: 18px;
-    color: #1A424B;
- }
-
- h4 {
-  color: #1A424B;
-
- }
-
- p {
-    color: #1A424B;
-    font-size: 15px;
- }
-
- .main-wrap {
-    display: flex;
-    position: relative;
-    background-color: white;
-    max-width: 1200px;
- }
-
- .btn-yellow{
-    background-color: #FCE977;
-    border-radius: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    color: #1A424B;
-    font-weight: bold;
-    border: none;
-    margin-top: 20px;
-    width: fit-content;
-  }
-
-  /* Nu kommer reviews style  */
-  .reviews_container{
-    display: flex;
-    width:auto ;
-    gap: 50px;
-    justify-content: space-evenly;
+h2 {
+  font-size: 48px;
+  color: #1a424b;
+  text-align: left;
+  margin-bottom: 20px;
 }
 
-.reviews_box{
-background-color: #1A444D;
-width: 50%;
+h3 {
+  font-size: 18px;
+  color: #1a424b;
 }
 
-.style_reviews{
-    display: flex;
-    align-items: center;
-}
-.style_name_education{
-    padding-left: 10px;
+h4 {
+  color: #1a424b;
 }
 
-#reviews_img{
-width: 120px;
-height: 120px;
-border-radius: 100%;
-}
-.reviews_education{
-color: #FFFFFF;
-}
-.reviews_message{
-color: #FFFFFF;
+p {
+  color: #1a424b;
+  font-size: 15px;
 }
 
-.reviews_name{
-color: #FFFFFF;
-font-weight: bold;
-}
-.reviews_titel{
-color: #CAE4E3;
-font-weight: bold;
+.main-wrap {
+  display: flex;
+  position: relative;
+  background-color: white;
+  max-width: 1200px;
 }
 
-.btn-wrap{
- display: flex;
- justify-content: end;
- gap: 20px;
-padding-top: 15px;
+.btn-yellow {
+  background-color: #fce977;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: #1a424b;
+  font-weight: bold;
+  border: none;
+  margin-top: 20px;
+  width: fit-content;
 }
 
-.btn-div{
-   background-color: #CAE4E3;
-   width: 50px;
-   height: 50px;
-   color:#1A444D;
-   align-content: center;
- font-size: 50px;
+/* Nu kommer reviews style  */
+.reviews_container {
+  display: flex;
+  width: auto;
+  gap: 50px;
+  justify-content: space-evenly;
+}
+
+.reviews_box {
+  background-color: #1a444d;
+  width: 50%;
+}
+
+.style_reviews {
+  display: flex;
+  align-items: center;
+}
+.style_name_education {
+  padding-left: 10px;
+}
+
+#reviews_img {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+}
+.reviews_education {
+  color: #ffffff;
+}
+.reviews_message {
+  color: #ffffff;
+}
+
+.reviews_name {
+  color: #ffffff;
+  font-weight: bold;
+}
+.reviews_titel {
+  color: #cae4e3;
+  font-weight: bold;
+}
+
+.btn-wrap {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  padding-top: 15px;
+}
+
+.btn-div {
+  background-color: #cae4e3;
+  width: 50px;
+  height: 50px;
+  color: #1a444d;
+  align-content: center;
+  font-size: 50px;
 }
 .carousel-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    border-style: none;
-  }
-.btn-div:hover{
-    background-color: #FCE977;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-style: none;
+}
+.btn-div:hover {
+  background-color: #fce977;
 }
 .reviews_container {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    width: 100%;
-  }
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+}
 
-  .reviews_wrapper {
-    display: flex;
-    transition: transform 0.5s ease;
-    gap: 40px;
-  }
+.reviews_wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 40px;
+}
 
-  .reviews_box {
-    box-sizing: border-box;
-    padding: 20px;
-  }
+.reviews_box {
+  box-sizing: border-box;
+  padding: 20px;
+}
 
-  .carousel-enter-active, .carousel-leave-active {
-    transition: opacity 0.5s;
-  }
-  .carousel-enter, .carousel-leave-to /* .carousel-leave-active in <2.1.8 */ {
-    opacity: 0;
-  }
- /* Nu slutter reviews style  */
+.carousel-enter-active,
+.carousel-leave-active {
+  transition: opacity 0.5s;
+}
+.carousel-enter, .carousel-leave-to /* .carousel-leave-active in <2.1.8 */ {
+  opacity: 0;
+}
+/* Nu slutter reviews style  */
 
- /*Tjekliste*/
- #tjekliste-baggrund {
+/*Tjekliste*/
+#tjekliste-baggrund {
   background-image: url("../assets/img/tjekliste.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position:right;
-
+  background-position: right;
 }
 
 .italic {
@@ -225,49 +219,48 @@ padding-top: 15px;
   margin-right: 6px;
 }
 
+/* FORSIDE */
 
- /* FORSIDE */
+.buttom-divider {
+  display: flex;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  border-bottom: 2px #e6f1f0 solid;
+  gap: 60px;
+}
 
- .buttom-divider {
-    display: flex;
-    padding-bottom: 40px;
-    padding-top: 40px;
-    border-bottom: 2px #e6f1f0 solid;
-    gap: 60px;
-  }
-  
-  .buttom-divider-width{
-    width: 50%;
-  }
+.buttom-divider-width {
+  width: 50%;
+}
 
-  .talentprogram-buttom-divider {
-    display: flex;
-    flex-direction: row-reverse;
-    padding-bottom: 40px;
-    padding-top: 40px;
-    border-bottom: 2px #e6f1f0 solid;
-    gap: 60px;
-  }
-  
-  .talentprogram-buttom-divider-width{
-    width: 50%;
-  }
+.talentprogram-buttom-divider {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  border-bottom: 2px #e6f1f0 solid;
+  gap: 60px;
+}
 
-  .list {
-    display: flex;
+.talentprogram-buttom-divider-width {
+  width: 50%;
+}
+
+.list {
+  display: flex;
 }
 
 .list img {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .blue-card {
-    background-color: #daeced;
-    padding: 20px;
-  }
+  background-color: #daeced;
+  padding: 20px;
+}
 
 .green-card {
-  background-color: #00454E;
+  background-color: #00454e;
   padding: 20px;
 }
 
@@ -305,10 +298,8 @@ padding-top: 15px;
   font-weight: bolder;
 }
 
-
-
 .info-green-box {
-  background-color: #66B7B1;
+  background-color: #66b7b1;
   width: 57px;
   height: 182px;
   display: flex;
@@ -323,14 +314,13 @@ padding-top: 15px;
 
 /*Uddannelsens opbygning*/
 
-
 .semester-wrap_uo {
   margin-top: 10px;
   width: 100%;
 }
 
 .answer_uo {
-    background-color: #DAECED;
+  background-color: #daeced;
 }
 
 .dropdown-wrap_uo {
@@ -339,20 +329,20 @@ padding-top: 15px;
 }
 
 .semester-inner-wrap {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .semester-inner-wrap img {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .semester_uo {
   display: flex;
   justify-content: center;
   padding: 10px;
-  background-color: #DAECED;
-  border: #00454E solid 2px;
+  background-color: #daeced;
+  border: #00454e solid 2px;
   width: 100%;
 }
 
@@ -360,7 +350,7 @@ padding-top: 15px;
   display: flex;
   justify-content: space-between;
   padding: 15px;
-  background-color: #DAECED;
+  background-color: #daeced;
 }
 
 .answer_uo {
@@ -368,60 +358,56 @@ padding-top: 15px;
 }
 
 .box_uo {
-    width: 25px;
-    height: 25px;
-    border: solid;
-    border-color: #00454E;
+  width: 25px;
+  height: 25px;
+  border: solid;
+  border-color: #00454e;
 }
 
-.oversigt_uo  p {
-    margin-left: 10px;
+.oversigt_uo p {
+  margin-left: 10px;
 }
 
 .oversigt_uo {
-    display: flex;
+  display: flex;
 }
 
-
 .box_uo_moerk {
-    background-color: #00454E;
+  background-color: #00454e;
 }
 
 .box_uo_lys {
-    background-color: #DAECED;
+  background-color: #daeced;
 }
 
 .flex_uo {
-    display: flex;
+  display: flex;
 }
 
-@media screen and (max-width: 880px) { 
+@media screen and (max-width: 880px) {
+  h1 {
+    font-size: 30px;
+  }
 
-h1 {
-  font-size: 30px;
+  h2 {
+    font-size: 30px;
+  }
+
+  #info-banner p {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .buttom-divider {
+    gap: 30px;
+  }
 }
 
-h2 {
-  font-size: 30px;
-}
-
-#info-banner p {
-  font-size: 30px;
-}
-
-p {
-  font-size: 13px;
-  line-height: 20px;
-}
-
-.buttom-divider {
-  gap: 30px;
-}
-  
-}
-
-@media screen and (max-width: 855px) {  
-
+@media screen and (max-width: 855px) {
   .buttom-divider {
     flex-direction: column;
   }
@@ -439,17 +425,15 @@ p {
     width: 100%;
     box-sizing: border-box;
   }
-
 }
 
-@media screen and (max-width: 1100px) {  
-
+@media screen and (max-width: 1100px) {
   .main-wrap {
     top: 143px;
     flex-direction: column;
   }
 
-  #reviews_img{ 
+  #reviews_img {
     width: 80px;
     height: 80px;
   }
@@ -457,14 +441,10 @@ p {
   .reviews_wrapper {
     gap: 20px;
   }
-
-
 }
 
-
-@media screen and (max-width: 700px) {  
-
-  .style_reviews{ 
+@media screen and (max-width: 700px) {
+  .style_reviews {
     flex-direction: column;
     margin-bottom: 20px;
   }
@@ -472,11 +452,4 @@ p {
   .style_reviews div {
     text-align: center;
   }
-
 }
-
-
-
-
-
-

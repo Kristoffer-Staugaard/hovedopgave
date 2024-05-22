@@ -1,10 +1,10 @@
 <script setup>
-import footerUCL from './components/footerUCL.vue'
+import footerUCL from "./components/footerUCL.vue";
 </script>
 
 <template>
-<router-view/>
-<footerUCL />
+  <router-view />
+  <footerUCL />
 </template>
 
 <style>
@@ -36,7 +36,6 @@ nav a:first-of-type {
   border: 0;
 }
 
-
 @media (min-width: 1024px) {
   header {
     place-items: center;
@@ -58,4 +57,5 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
-</style>./components/footerUCL.vue
+</style>
+./components/footerUCL.vue

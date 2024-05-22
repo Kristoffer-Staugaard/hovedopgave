@@ -1,56 +1,49 @@
 <template>
-    <section id="kontaktka">
+  <section id="kontaktka">
     <h2>Kontakt Karrievejledning</h2>
     <div class="contact">
-        <div class="contact-inner">
-            <img src="../assets/img/dennis.png" alt="">
-                <h3>Dennis Færch Broch</h3>
-                <p>Dimittend- og karrierekonsulent</p>
-               <b> <p class="paragraf-kontakt-os">Kontakt os</p> </b>
-        </div>
-        <div class="contact-inner">
-            <img src="../assets/img/morten.png" alt="">
-                <h3>Morten Jung Lassen</h3>
-                <p>Karrierevejleder</p>
-               <b> <p class="paragraf-kontakt-os">Kontakt os</p> </b>
-        </div>
-     </div>
-   </section>
+      <div class="contact-inner">
+        <img src="../assets/img/dennis.png" alt="" />
+        <h3>Dennis Færch Broch</h3>
+        <p>Dimittend- og karrierekonsulent</p>
+        <b> <p class="paragraf-kontakt-os">Kontakt os</p> </b>
+      </div>
+      <div class="contact-inner">
+        <img src="../assets/img/morten.png" alt="" />
+        <h3>Morten Jung Lassen</h3>
+        <p>Karrierevejleder</p>
+        <b> <p class="paragraf-kontakt-os">Kontakt os</p> </b>
+      </div>
+    </div>
+  </section>
 </template>
-    
+
 <style>
-    
-.contact{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-align: center;
-    background-color: #F8CCC4;
-    margin: 0 auto;
-    padding: 5%;
-
-}   
-
-.contact img{
-    height: 200px;
-    width: 200px;
-
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: #f8ccc4;
+  margin: 0 auto;
+  padding: 5%;
 }
 
-.paragraf-kontakt-os{
-    border-bottom: 2px solid #000;
-    border-bottom-style: dotted;
-    text-align: center;
+.contact img {
+  height: 200px;
+  width: 200px;
 }
 
-
-@media screen and (max-width: 700px) {  
-
-    .contact img {
-        height: 100px;
-        width: 100px;
-    }
+.paragraf-kontakt-os {
+  border-bottom: 2px solid #000;
+  border-bottom-style: dotted;
+  text-align: center;
 }
 
-
+@media screen and (max-width: 700px) {
+  .contact img {
+    height: 100px;
+    width: 100px;
+  }
+}
 </style>

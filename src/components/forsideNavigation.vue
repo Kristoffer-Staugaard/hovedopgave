@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue';
+import { ref } from "vue";
 
 const isNavOpen = ref(false);
 
@@ -8,7 +8,9 @@ const toggleNav = () => {
 };
 
 const multimediedesignScroll = () => {
-  document.getElementById("multim-scroll").scrollIntoView({ behavior: "smooth" });
+  document
+    .getElementById("multim-scroll")
+    .scrollIntoView({ behavior: "smooth" });
 };
 
 const sstartScroll = () => {
@@ -20,7 +22,9 @@ const uoScroll = () => {
 };
 
 const praktikScroll = () => {
-  document.getElementById("praktik-scroll").scrollIntoView({ behavior: "smooth" });
+  document
+    .getElementById("praktik-scroll")
+    .scrollIntoView({ behavior: "smooth" });
 };
 
 const kmScroll = () => {
@@ -32,7 +36,9 @@ const imScroll = () => {
 };
 
 const genvejeScroll = () => {
-  document.getElementById("genvejescroll").scrollIntoView({ behavior: "smooth" });
+  document
+    .getElementById("genvejescroll")
+    .scrollIntoView({ behavior: "smooth" });
 };
 </script>
 
@@ -47,27 +53,51 @@ const genvejeScroll = () => {
       <ul :class="{ 'nav-open': isNavOpen }">
         <li @click="sstartScroll">
           Studiestart
-          <img class="mobile-arrow" src="../assets/img/arrow-white.svg" alt="" />
+          <img
+            class="mobile-arrow"
+            src="../assets/img/arrow-white.svg"
+            alt=""
+          />
         </li>
         <li @click="uoScroll">
           Uddannelsens opbygning
-          <img class="mobile-arrow" src="../assets/img/arrow-white.svg" alt="" />
+          <img
+            class="mobile-arrow"
+            src="../assets/img/arrow-white.svg"
+            alt=""
+          />
         </li>
         <li @click="praktikScroll">
           Praktik
-          <img class="mobile-arrow" src="../assets/img/arrow-white.svg" alt="" />
+          <img
+            class="mobile-arrow"
+            src="../assets/img/arrow-white.svg"
+            alt=""
+          />
         </li>
         <li @click="kmScroll">
           Karrieremuligheder
-          <img class="mobile-arrow" src="../assets/img/arrow-white.svg" alt="" />
+          <img
+            class="mobile-arrow"
+            src="../assets/img/arrow-white.svg"
+            alt=""
+          />
         </li>
         <li @click="imScroll">
           Internationale muligheder
-          <img class="mobile-arrow" src="../assets/img/arrow-white.svg" alt="" />
+          <img
+            class="mobile-arrow"
+            src="../assets/img/arrow-white.svg"
+            alt=""
+          />
         </li>
         <li @click="genvejeScroll">
           Genveje
-          <img class="mobile-arrow" src="../assets/img/arrow-white.svg" alt="" />
+          <img
+            class="mobile-arrow"
+            src="../assets/img/arrow-white.svg"
+            alt=""
+          />
         </li>
       </ul>
     </div>
@@ -164,4 +194,3 @@ li {
   justify-content: space-between;
 }
 </style>
-

@@ -1,29 +1,44 @@
 <script>
-import { ref } from 'vue';
+import { ref } from "vue";
 
 export default {
   data() {
     return {
-      currentDate: '',
+      currentDate: "",
       days: [],
       currYear: 0,
       currMonth: 0,
       months: [
-        "Januar", "Februar", "Marts", "April", "Maj", "Juni", "Juli",
-        "August", "September", "Oktober", "November", "December"
+        "Januar",
+        "Februar",
+        "Marts",
+        "April",
+        "Maj",
+        "Juni",
+        "Juli",
+        "August",
+        "September",
+        "Oktober",
+        "November",
+        "December",
       ],
       showInput: false,
-      nameValue: '',
-      UCLMailValue: '', 
-      messageValue: '', 
-      selectedTime:'',
+      nameValue: "",
+      UCLMailValue: "",
+      messageValue: "",
+      selectedTime: "",
       selectedDate: {
         year: null,
         month: null,
-        day: null
+        day: null,
       },
-      dayClicked: '',
-      tider: ["10:00 - 10:30", "10:45 - 11:15", "11:30 - 12:00", "12:15 - 12:45"],
+      dayClicked: "",
+      tider: [
+        "10:00 - 10:30",
+        "10:45 - 11:15",
+        "11:30 - 12:00",
+        "12:15 - 12:45",
+      ],
     };
   },
   mounted() {
@@ -34,19 +49,34 @@ export default {
   },
   methods: {
     renderCalendar() {
-      let currentDate = new Date(); 
+      let currentDate = new Date();
       let date = new Date(this.currYear, this.currMonth, 1);
       let firstDayOfMonth = date.getDay();
-      let lastDateOfMonth = new Date(this.currYear, this.currMonth + 1, 0).getDate();
-      let lastDayOfMonth = new Date(this.currYear, this.currMonth, lastDateOfMonth).getDay();
-      let lastDateOfLastMonth = new Date(this.currYear, this.currMonth, 0).getDate();
+      let lastDateOfMonth = new Date(
+        this.currYear,
+        this.currMonth + 1,
+        0
+      ).getDate();
+      let lastDayOfMonth = new Date(
+        this.currYear,
+        this.currMonth,
+        lastDateOfMonth
+      ).getDay();
+      let lastDateOfLastMonth = new Date(
+        this.currYear,
+        this.currMonth,
+        0
+      ).getDate();
       let daysArray = [];
       for (let i = firstDayOfMonth; i > 0; i--) {
         daysArray.push({ date: lastDateOfLastMonth - i + 1, active: false });
       }
 
       for (let i = 1; i <= lastDateOfMonth; i++) {
-        let isActive = i === currentDate.getDate() && this.currMonth === currentDate.getMonth() && this.currYear === currentDate.getFullYear();
+        let isActive =
+          i === currentDate.getDate() &&
+          this.currMonth === currentDate.getMonth() &&
+          this.currYear === currentDate.getFullYear();
         daysArray.push({ date: i, active: isActive });
       }
 
@@ -79,64 +109,70 @@ export default {
       this.showInput = false;
     },
     sendData() {
-  const dataToSend = {
-    name: this.nameValue,
-    uclMail: this.UCLMailValue,
-    message: this.messageValue,
-    selectedTime: this.selectedTime,
-    selectedDate: {
-      year: this.currYear,
-      month: this.currMonth + 1, 
-      day: this.dayClicked
-    }
-  };
-  console.log('Data til afsendelse:', dataToSend);
-  
-  fetch('https://hovedopgave-f875e-default-rtdb.firebaseio.com/booking.json', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(dataToSend)
-  })
-  .then(response => {
-    console.log('Data er sendt server:', response);
-    this.nameValue = '';
-    this.UCLMailValue = '';
-    this.messageValue = '';
-    this.selectedTime = '';
-    this.popupMessage = '✔ Tak for din bestilling af tid til vejledning';
-    setTimeout(() => {
-      console.log('Fjerner popup-melding');
-        this.$nextTick(() => {
-            this.popupMessage = ''; 
-            this.$forceUpdate();
+      const dataToSend = {
+        name: this.nameValue,
+        uclMail: this.UCLMailValue,
+        message: this.messageValue,
+        selectedTime: this.selectedTime,
+        selectedDate: {
+          year: this.currYear,
+          month: this.currMonth + 1,
+          day: this.dayClicked,
+        },
+      };
+      console.log("Data til afsendelse:", dataToSend);
+
+      fetch(
+        "https://hovedopgave-f875e-default-rtdb.firebaseio.com/booking.json",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(dataToSend),
+        }
+      )
+        .then((response) => {
+          console.log("Data er sendt server:", response);
+          this.nameValue = "";
+          this.UCLMailValue = "";
+          this.messageValue = "";
+          this.selectedTime = "";
+          this.popupMessage = "✔ Tak for din bestilling af tid til vejledning";
+          setTimeout(() => {
+            console.log("Fjerner popup-melding");
+            this.$nextTick(() => {
+              this.popupMessage = "";
+              this.$forceUpdate();
+            });
+          }, 3000);
+        })
+        .catch((error) => {
+          console.error("Fejl ved afsendelse af data:", error);
         });
-    }, 3000);
-   })  
-  .catch(error => {
-    console.error('Fejl ved afsendelse af data:', error);
-  });
-},
-selectTime(tid) {
-     this.selectedTime = tid;
+    },
+    selectTime(tid) {
+      this.selectedTime = tid;
       console.log("Du har valgt tid: " + tid);
-    }
-  }
+    },
+  },
 };
 </script>
 <template>
-    <section id="bdk">
-      <div class="calendar">
-        <div>
-          <div class="current-date">{{ currentDate }}   <div class="btn-wrap">
-          <button class="carousel-btn" @click="changeMonth(-1)">
-            <div class="btn-div-kalender">❮</div>
-          </button>
-          <button class="carousel-btn" @click="changeMonth(1)">
-            <div class="btn-div-kalender">❯</div>
-          </button>
-        </div></div>
+  <section id="bdk">
+    <div class="calendar">
+      <div>
+        <div class="current-date">
+          {{ currentDate }}
+          <div class="btn-wrap">
+            <button class="carousel-btn" @click="changeMonth(-1)">
+              <div class="btn-div-kalender">❮</div>
+            </button>
+            <button class="carousel-btn" @click="changeMonth(1)">
+              <div class="btn-div-kalender">❯</div>
+            </button>
+          </div>
+        </div>
         <div class="uge-dage">
           <div>
             <p id="uge-dage-tekst">Mandag</p>
@@ -161,66 +197,103 @@ selectTime(tid) {
           </div>
         </div>
       </div>
-        <div v-if="showInput" class="input-container">
-          <div class="input-box">
-              <div class="input-hide-box-1">
-              <div class="input-hide-box-1-tekst">
-                  <h3>Book en tid til Karrierevejledning</h3>
-              </div>
-              <button @click="hideInputBox" class="btn-div-hide-box-x">X</button>
-              </div>
-            <div class="input-hide-box-2">
-              <input type="text" v-model="nameValue" placeholder="Navn" class="input-felter-box">
-              <input type="text" v-model="UCLMailValue" placeholder="UCL mail" class="input-felter-box">
-                    <div>
-                          <div>
-                          <p>Hvornår ønsker du at bestille din tid hos karrierevejledning d.</p>
-                          </div>
-                          <div class="selected-date">
-                            <p>{{ selectedDate.day }}/{{ selectedDate.month }}/{{ selectedDate.year }}</p>
-                          </div>
-                    <div class="bestil-tid-boks">
-                      <div :class="{ 'selected-time': selectedTime === tid }" v-for="(tid, index) in tider" :key="index" @click="selectTime(tid)" class="bestil-tid">
-                      {{ tid }}
-                    </div>
-                 </div>
-              </div>
-              <p>Skriv gerne hvad du har brug for vejledning inden for. På den måde sikre vi at du for mest ud af din vejledning</p>
-              <input type="text" v-model="messageValue" placeholder="Besked" class="input-felter-box" id="input-input-felter-box-besked">
-              </div>
-                  <div class="input-hide-box-3">
-                  <button @click="sendData" class="btn-div-hide-box-send">Send</button>
-                  </div>
-                  <div>
-                    <div class="popup-sendt">{{ popupMessage }}</div>
-                  </div>
+      <div v-if="showInput" class="input-container">
+        <div class="input-box">
+          <div class="input-hide-box-1">
+            <div class="input-hide-box-1-tekst">
+              <h3>Book en tid til Karrierevejledning</h3>
             </div>
+            <button @click="hideInputBox" class="btn-div-hide-box-x">X</button>
+          </div>
+          <div class="input-hide-box-2">
+            <input
+              type="text"
+              v-model="nameValue"
+              placeholder="Navn"
+              class="input-felter-box"
+            />
+            <input
+              type="text"
+              v-model="UCLMailValue"
+              placeholder="UCL mail"
+              class="input-felter-box"
+            />
+            <div>
+              <div>
+                <p>
+                  Hvornår ønsker du at bestille din tid hos karrierevejledning
+                  d.
+                </p>
+              </div>
+              <div class="selected-date">
+                <p>
+                  {{ selectedDate.day }}/{{ selectedDate.month }}/{{
+                    selectedDate.year
+                  }}
+                </p>
+              </div>
+              <div class="bestil-tid-boks">
+                <div
+                  :class="{ 'selected-time': selectedTime === tid }"
+                  v-for="(tid, index) in tider"
+                  :key="index"
+                  @click="selectTime(tid)"
+                  class="bestil-tid"
+                >
+                  {{ tid }}
+                </div>
+              </div>
+            </div>
+            <p>
+              Skriv gerne hvad du har brug for vejledning inden for. På den måde
+              sikre vi at du for mest ud af din vejledning
+            </p>
+            <input
+              type="text"
+              v-model="messageValue"
+              placeholder="Besked"
+              class="input-felter-box"
+              id="input-input-felter-box-besked"
+            />
+          </div>
+          <div class="input-hide-box-3">
+            <button @click="sendData" class="btn-div-hide-box-send">
+              Send
+            </button>
+          </div>
+          <div>
+            <div class="popup-sendt">{{ popupMessage }}</div>
+          </div>
         </div>
-      
-          <ul class="days">
-            <li v-for="day in days" :class="{ 'active': day.active, 'inactive': !day.active }" @click="showInputBox(day.date)">
-              {{ day.date }}
-            </li>
-          </ul>
       </div>
-    </section>
-  </template>
+
+      <ul class="days">
+        <li
+          v-for="day in days"
+          :class="{ active: day.active, inactive: !day.active }"
+          @click="showInputBox(day.date)"
+        >
+          {{ day.date }}
+        </li>
+      </ul>
+    </div>
+  </section>
+</template>
 
 <style scoped>
 .current-date {
   font-size: 1.45rem;
   font-weight: 500;
-  color: #E2F1EE;
-  Font-style: italic;
+  color: #e2f1ee;
+  font-style: italic;
   display: flex;
-justify-content: space-between;
-    align-items: end;
+  justify-content: space-between;
+  align-items: end;
 }
 
 .calendar {
   padding: 20px;
   background: url("../assets/img/background.png") center center fixed;
-
 }
 
 .calendar ul {
@@ -253,11 +326,11 @@ justify-content: space-between;
 }
 
 .days li.inactive {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .days li.active {
-  color: #FFF;
+  color: #fff;
 }
 
 .days li::before {
@@ -273,11 +346,11 @@ justify-content: space-between;
 }
 
 .days li.active::before {
-  background: #F8CCC4;
+  background: #f8ccc4;
 }
 
 .days li:not(.active):hover::before {
-  background: #F8CCC4;
+  background: #f8ccc4;
 }
 
 .input-container {
@@ -293,135 +366,128 @@ justify-content: space-between;
   width: 500px;
   z-index: 9999;
   display: flex;
-
 }
 .input-box {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 20px;
 }
 .input-box input {
   flex: 1;
   margin-right: 10px;
-
 }
 
-.input-hide-box-1{
-margin-left: 50px;
-display: flex;
+.input-hide-box-1 {
+  margin-left: 50px;
+  display: flex;
 }
 
-.input-hide-box-2{
-    display: flex;
-    flex-wrap: wrap;
-    grid-row-gap: 30px;
-    padding-left: 36px;
+.input-hide-box-2 {
+  display: flex;
+  flex-wrap: wrap;
+  grid-row-gap: 30px;
+  padding-left: 36px;
 }
 
-.input-felter-box{
-    width:420px;
-    border: 1px solid #1A424B;
+.input-felter-box {
+  width: 420px;
+  border: 1px solid #1a424b;
 }
 
-#input-input-felter-box-besked{
-    
+#input-input-felter-box-besked {
 }
 
-.input-hide-box-3{
-    margin-left: 170px;
+.input-hide-box-3 {
+  margin-left: 170px;
 }
 
-
-.btn-div-hide-box-x{
-    background-color: #CAE4E3;
-   width: 30px;
-   height: 30px;
-   color:#1A444D;
-   align-content: center;
-   font-size: 20px;
-   border-radius: 15%;
+.btn-div-hide-box-x {
+  background-color: #cae4e3;
+  width: 30px;
+  height: 30px;
+  color: #1a444d;
+  align-content: center;
+  font-size: 20px;
+  border-radius: 15%;
 }
 
-.btn-div-hide-box-x:hover{
-background-color: #f8ccc4;
+.btn-div-hide-box-x:hover {
+  background-color: #f8ccc4;
 }
 
-.btn-div-hide-box-send{
-  background-color: #FCE977;
+.btn-div-hide-box-send {
+  background-color: #fce977;
   font-weight: bold;
   border: none;
   border-radius: 20px;
   width: 150px;
   height: 50px;
-  color:#1A444D;
+  color: #1a444d;
   align-content: center;
   font-size: 14px;
 }
 
-.btn-div-hide-box-send:hover{
-background-color: #f8ccc4;
+.btn-div-hide-box-send:hover {
+  background-color: #f8ccc4;
 }
 
-.input-hide-box-1-tekst{
-    width:400px
+.input-hide-box-1-tekst {
+  width: 400px;
 }
 
-.popup-sendt{
-display: flex;
-width: 480px;
-justify-content: center;
-color: #1A424B;
-
+.popup-sendt {
+  display: flex;
+  width: 480px;
+  justify-content: center;
+  color: #1a424b;
 }
 
-.bestil-tid{
+.bestil-tid {
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100px;
-  background-color: #FCE977;
+  background-color: #fce977;
   border: none;
   border-radius: 20px;
 }
 
-.bestil-tid:hover{
+.bestil-tid:hover {
   background-color: #f8ccc4;
 }
-.btn-div-kalender{
-  background-color: #CAE4E3;
-   width: 30px;
-   height: 30px;
-   color:#1A444D;
-   align-content: center;
- font-size: 30x;
+.btn-div-kalender {
+  background-color: #cae4e3;
+  width: 30px;
+  height: 30px;
+  color: #1a444d;
+  align-content: center;
+  font-size: 30x;
 }
 
-.bestil-tid-boks{
+.bestil-tid-boks {
   display: flex;
   width: 425px;
   justify-content: space-between;
 }
 
-.selected-time{
+.selected-time {
   background-color: #f8ccc4;
 }
 
-.uge-dage{
- display: flex;
- justify-content: space-evenly;
- gap: 5%;
+.uge-dage {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5%;
 }
-#uge-dage-tekst{
-  color:  #CAE4E3;
-}
-
-#input-input-felter-box-besked{
-display: flex;
-height: 100px;
-
+#uge-dage-tekst {
+  color: #cae4e3;
 }
 
+#input-input-felter-box-besked {
+  display: flex;
+  height: 100px;
+}
 </style>

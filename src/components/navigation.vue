@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue';
+import { ref } from "vue";
 
 const isNavOpen = ref(false);
 
@@ -8,7 +8,9 @@ const toggleNav = () => {
 };
 
 const multimediedesignScroll = () => {
-  document.getElementById("multim-scroll").scrollIntoView({ behavior: "smooth" });
+  document
+    .getElementById("multim-scroll")
+    .scrollIntoView({ behavior: "smooth" });
 };
 
 const sstartScroll = () => {
@@ -20,7 +22,9 @@ const uoScroll = () => {
 };
 
 const praktikScroll = () => {
-  document.getElementById("praktik-scroll").scrollIntoView({ behavior: "smooth" });
+  document
+    .getElementById("praktik-scroll")
+    .scrollIntoView({ behavior: "smooth" });
 };
 
 const kmScroll = () => {
@@ -32,7 +36,9 @@ const imScroll = () => {
 };
 
 const genvejeScroll = () => {
-  document.getElementById("genvejescroll").scrollIntoView({ behavior: "smooth" });
+  document
+    .getElementById("genvejescroll")
+    .scrollIntoView({ behavior: "smooth" });
 };
 </script>
 
@@ -47,31 +53,59 @@ const genvejeScroll = () => {
       <ul :class="{ 'nav-open': isNavOpen }">
         <li @click="sstartScroll">
           Hvad kan vi tilbyde?
-          <img class="mobile-arrow" src="../assets/img/arrow-white.svg" alt="" />
+          <img
+            class="mobile-arrow"
+            src="../assets/img/arrow-white.svg"
+            alt=""
+          />
         </li>
         <li @click="uoScroll">
           Book en vejledning
-          <img class="mobile-arrow" src="../assets/img/arrow-white.svg" alt="" />
+          <img
+            class="mobile-arrow"
+            src="../assets/img/arrow-white.svg"
+            alt=""
+          />
         </li>
         <li @click="praktikScroll">
           Karriere tjekliste
-          <img class="mobile-arrow" src="../assets/img/arrow-white.svg" alt="" />
+          <img
+            class="mobile-arrow"
+            src="../assets/img/arrow-white.svg"
+            alt=""
+          />
         </li>
         <li @click="kmScroll">
-            Hvad siger de studerende?
-          <img class="mobile-arrow" src="../assets/img/arrow-white.svg" alt="" />
+          Hvad siger de studerende?
+          <img
+            class="mobile-arrow"
+            src="../assets/img/arrow-white.svg"
+            alt=""
+          />
         </li>
         <li @click="imScroll">
-            Jobportalen
-          <img class="mobile-arrow" src="../assets/img/arrow-white.svg" alt="" />
+          Jobportalen
+          <img
+            class="mobile-arrow"
+            src="../assets/img/arrow-white.svg"
+            alt=""
+          />
         </li>
         <li @click="genvejeScroll">
-            Arrangementer
-          <img class="mobile-arrow" src="../assets/img/arrow-white.svg" alt="" />
+          Arrangementer
+          <img
+            class="mobile-arrow"
+            src="../assets/img/arrow-white.svg"
+            alt=""
+          />
         </li>
         <li @click="genvejeScroll">
-            Kontakt karrierevejledningen
-          <img class="mobile-arrow" src="../assets/img/arrow-white.svg" alt="" />
+          Kontakt karrierevejledningen
+          <img
+            class="mobile-arrow"
+            src="../assets/img/arrow-white.svg"
+            alt=""
+          />
         </li>
       </ul>
     </div>
@@ -80,18 +114,18 @@ const genvejeScroll = () => {
 
 <style scoped>
 nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
-    position: sticky;
-    left: 0px;
-    top: 0px;
-    padding: 40px;
-    box-sizing: border-box;
-    background-color: #00454E;
-    margin-top: 0;
-    background: url("../assets/img/background.png") center 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  position: sticky;
+  left: 0px;
+  top: 0px;
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: #00454e;
+  margin-top: 0;
+  background: url("../assets/img/background.png") center 50%;
 }
 
 .nav-inner {
@@ -168,4 +202,3 @@ li {
   justify-content: space-between;
 }
 </style>
-
