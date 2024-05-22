@@ -219,7 +219,8 @@ justify-content: space-between;
 
 .calendar {
   padding: 20px;
-  background: #1A444D;
+  background: url("../assets/img/background.png") center center fixed;
+
 }
 
 .calendar ul {

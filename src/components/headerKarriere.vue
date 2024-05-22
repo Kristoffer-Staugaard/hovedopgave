@@ -102,6 +102,12 @@ li {
     list-style-type: none;
 }
 
+a {
+text-decoration: none;
+color: #000;
+
+}
+
 .search-btn {
     background-color: #00454E;
     color: #FFFFFF;
