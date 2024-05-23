@@ -11,7 +11,7 @@
         <button class="btn-yellow">Læs mere</button>
       </div>
       <div class="jobportalen-2">
-        <img src="../assets/img/video.jpg" alt="" />
+        <img src="../assets/img/jobportal.png" alt="" />
       </div>
     </div>
   </section>
@@ -41,5 +41,23 @@
 
 .jobportalen img {
   width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .jobportalen {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .jobportalen-1 {
+    order: 2;
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
+
+  .jobportalen-2 {
+    order: 1;
+  }
 }
 </style>

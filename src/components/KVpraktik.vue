@@ -110,6 +110,7 @@ function isOpen(index) {
   margin-top: 5px;
   background-color: #daeced;
   width: 100%;
+  cursor: pointer;
 }
 
 .dropdown {

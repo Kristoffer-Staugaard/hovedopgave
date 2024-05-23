@@ -89,6 +89,12 @@ const getArrangementerSection = () => {
 @media screen and (max-width: 700px) {
   .arrangementer_container {
     gap: 20px;
+    display: flex;
+    flex-direction: column;
   }
+
+  .arrangementer_box {
+  width: 100%;
+}
 }
 </style>

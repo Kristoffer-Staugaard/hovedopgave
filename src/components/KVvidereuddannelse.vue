@@ -98,6 +98,7 @@ function toggleDropdown(index) {
   background-color: #fff;
   border: 1px solid #00454e;
   width: 100%;
+  cursor: pointer;
 }
 
 .dropdown {
@@ -131,6 +132,7 @@ function toggleDropdown(index) {
   width: 200px;
   margin-top: 20px;
   gap: 10px;
+  cursor: pointer;
 }
 
 .talentprogram-button p {

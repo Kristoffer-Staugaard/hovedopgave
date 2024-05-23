@@ -18,12 +18,10 @@
   </section>
 </template>
 
-<style>
+<style scoped>
 .contact {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
-  text-align: center;
   background-color: #f8ccc4;
   margin: 0 auto;
   padding: 5%;
@@ -34,16 +32,34 @@
   width: 200px;
 }
 
+.contact-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .paragraf-kontakt-os {
   border-bottom: 2px solid #000;
   border-bottom-style: dotted;
-  text-align: center;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 700px) {
   .contact img {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
   }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
 }
 </style>

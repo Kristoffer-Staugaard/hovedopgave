@@ -104,3 +104,33 @@ onMounted(() => {
     </div>
   </section>
 </template>
+
+<style scoped>
+@media screen and (max-width: 700px) {
+  #reviews_section {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .reviews_box {
+    width: 100%;
+  }
+
+  .reviews_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .style_reviews {
+  display: flex;
+  align-items: start;
+}
+
+.style_name_education {
+text-align: left;
+padding: 0;
+}
+}
+
+</style>

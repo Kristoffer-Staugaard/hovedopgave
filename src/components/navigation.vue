@@ -7,37 +7,35 @@ const toggleNav = () => {
   isNavOpen.value = !isNavOpen.value;
 };
 
-const multimediedesignScroll = () => {
+const hkvtScroll = () => {
+  document.getElementById("hkvt").scrollIntoView({ behavior: "smooth" });
+};
+
+const bdkScroll = () => {
+  document.getElementById("bdk").scrollIntoView({ behavior: "smooth" });
+};
+
+const tjeklisteScroll = () => {
   document
-    .getElementById("multim-scroll")
+    .getElementById("tjekliste-baggrund")
     .scrollIntoView({ behavior: "smooth" });
 };
 
-const sstartScroll = () => {
-  document.getElementById("sstart").scrollIntoView({ behavior: "smooth" });
+const hsdsScroll = () => {
+  document.getElementById("reviews_section").scrollIntoView({ behavior: "smooth" });
 };
 
-const uoScroll = () => {
-  document.getElementById("uo-scroll").scrollIntoView({ behavior: "smooth" });
+const jobpScroll = () => {
+  document.getElementById("jobp").scrollIntoView({ behavior: "smooth" });
+}
+
+const arrangScroll = () => {
+  document.getElementById("arrang").scrollIntoView({ behavior: "smooth" });
 };
 
-const praktikScroll = () => {
+const kontaktkaScroll = () => {
   document
-    .getElementById("praktik-scroll")
-    .scrollIntoView({ behavior: "smooth" });
-};
-
-const kmScroll = () => {
-  document.getElementById("kmScroll").scrollIntoView({ behavior: "smooth" });
-};
-
-const imScroll = () => {
-  document.getElementById("imScroll").scrollIntoView({ behavior: "smooth" });
-};
-
-const genvejeScroll = () => {
-  document
-    .getElementById("genvejescroll")
+    .getElementById("kontaktka")
     .scrollIntoView({ behavior: "smooth" });
 };
 </script>
@@ -51,7 +49,7 @@ const genvejeScroll = () => {
       </div>
 
       <ul :class="{ 'nav-open': isNavOpen }">
-        <li @click="sstartScroll">
+        <li @click="hkvtScroll()">
           Hvad kan vi tilbyde?
           <img
             class="mobile-arrow"
@@ -59,7 +57,7 @@ const genvejeScroll = () => {
             alt=""
           />
         </li>
-        <li @click="uoScroll">
+        <li @click="bdkScroll()">
           Book en vejledning
           <img
             class="mobile-arrow"
@@ -67,7 +65,7 @@ const genvejeScroll = () => {
             alt=""
           />
         </li>
-        <li @click="praktikScroll">
+        <li @click="tjeklisteScroll()">
           Karriere tjekliste
           <img
             class="mobile-arrow"
@@ -75,7 +73,7 @@ const genvejeScroll = () => {
             alt=""
           />
         </li>
-        <li @click="kmScroll">
+        <li @click="hsdsScroll()">
           Hvad siger de studerende?
           <img
             class="mobile-arrow"
@@ -83,7 +81,7 @@ const genvejeScroll = () => {
             alt=""
           />
         </li>
-        <li @click="imScroll">
+        <li @click="jobpScroll()">
           Jobportalen
           <img
             class="mobile-arrow"
@@ -91,7 +89,7 @@ const genvejeScroll = () => {
             alt=""
           />
         </li>
-        <li @click="genvejeScroll">
+        <li @click="arrangScroll()">
           Arrangementer
           <img
             class="mobile-arrow"
@@ -99,7 +97,7 @@ const genvejeScroll = () => {
             alt=""
           />
         </li>
-        <li @click="genvejeScroll">
+        <li @click="kontaktkaScroll()">
           Kontakt karrierevejledningen
           <img
             class="mobile-arrow"
@@ -131,6 +129,7 @@ nav {
 .nav-inner {
   color: white;
   text-wrap: nowrap;
+  cursor: pointer;
 }
 
 ul {

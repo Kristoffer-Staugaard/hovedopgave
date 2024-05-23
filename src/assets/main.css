@@ -41,6 +41,7 @@ section {
 h1 {
   font-size: 63px;
   color: #1a424b;
+  font-style: italic;
 }
 
 h2 {
@@ -48,11 +49,13 @@ h2 {
   color: #1a424b;
   text-align: left;
   margin-bottom: 20px;
+  font-style: italic;
 }
 
 h3 {
   font-size: 18px;
   color: #1a424b;
+  font-style: italic;
 }
 
 h4 {
@@ -64,6 +67,11 @@ p {
   font-size: 15px;
 }
 
+button {
+  font-size: 15px;
+  cursor: pointer;
+}
+
 .main-wrap {
   display: flex;
   position: relative;
@@ -73,7 +81,6 @@ p {
 
 .btn-yellow {
   background-color: #fce977;
-  border-radius: 20px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 10px;
@@ -83,6 +90,13 @@ p {
   border: none;
   margin-top: 20px;
   width: fit-content;
+}
+.btn-yellow:hover {
+  background-color: #F7ECA7;
+}
+
+.btn-yellow:focus {
+  background-color: #FAE13E;
 }
 
 /* Nu kommer reviews style  */
@@ -147,6 +161,7 @@ p {
   border: none;
   cursor: pointer;
   border-style: none;
+  cursor: pointer;
 }
 .btn-div:hover {
   background-color: #fce977;
@@ -248,6 +263,7 @@ p {
 
 .list {
   display: flex;
+  cursor: pointer;
 }
 
 .list img {
@@ -317,6 +333,7 @@ p {
 .semester-wrap_uo {
   margin-top: 10px;
   width: 100%;
+  cursor: pointer;
 }
 
 .answer_uo {
@@ -326,6 +343,7 @@ p {
 .dropdown-wrap_uo {
   margin-top: 5px;
   width: 100%;
+  cursor: pointer;
 }
 
 .semester-inner-wrap {

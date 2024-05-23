@@ -3,13 +3,14 @@
     <div class="shortcut-wrap">
       <h2>Hvad kan vi tilbyde</h2>
       <p>
-        UCL karrierevejledning har mulighed for at hjælpe dig som studerede
-        gennem studiet, dyk ned i hvad vi kan tilbyde dig.
+        UCL's karrierevejledning kan give dig råd og vejledning i alt omkring din 
+        karriere igennem hele studiet. Her kan du dykke ned i, hvad de kan tilbyde dig.
+
       </p>
       <div class="item-wrap">
         <div class="dropdown-wrap" v-for="(item, index) in dropdowns">
           <div class="dropdown" @click="toggleDropdown(index)">
-            <h3>{{ item.dropdown }}</h3>
+            <p>{{ item.dropdown }}</p>
             <img src="../assets/img/arrow-down.svg" alt="arrow" />
           </div>
           <div class="answer" v-if="openIndex === index">
@@ -64,9 +65,19 @@ function toggleDropdown(index) {
 </script>
 
 <style scoped>
+
+p {
+  font-size: 18px;
+}
 .dropdown-wrap {
   border: solid 2px #cae4e3;
   margin-bottom: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.dropdown-wrap:hover {
+  background-color: #E2F1EE;
 }
 
 .dropdown {
@@ -77,5 +88,13 @@ function toggleDropdown(index) {
 
 .answer {
   padding: 25px;
+}
+
+@media screen and (max-width: 700px) {
+  .btn-yellow {
+    text-align: left;
+    padding: 10px;
+    line-height: 20px;
+  }
 }
 </style>

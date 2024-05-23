@@ -123,6 +123,7 @@ nav {
 .nav-inner {
   color: white;
   text-wrap: nowrap;
+  cursor: pointer;
 }
 
 ul {

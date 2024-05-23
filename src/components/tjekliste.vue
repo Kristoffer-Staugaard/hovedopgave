@@ -166,3 +166,14 @@
     </button>
   </section>
 </template>
+
+<style scoped>
+
+@media screen and (max-width: 700px) {
+  .btn-yellow {
+    text-align: left;
+    padding: 10px;
+    line-height: 20px;
+  }
+}
+</style>

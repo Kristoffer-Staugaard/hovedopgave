@@ -96,6 +96,7 @@
   width: 200px;
   margin-top: 20px;
   gap: 10px;
+  cursor: pointer;
 }
 
 .internationalemuligheder-button p {
