@@ -211,12 +211,8 @@ button {
 
 .flex-tjekliste {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 40px;
-  width: 50%;
 }
 
 .semester-opdeling {
@@ -227,7 +223,7 @@ button {
 .flex-overordnet {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 200px;
 }
 
 .check-img {
@@ -422,6 +418,14 @@ button {
 
   .buttom-divider {
     gap: 30px;
+  }
+
+  .btn-yellow:hover {
+    background-color: #F7ECA7;
+  }
+  
+  .btn-yellow:focus {
+    background-color: #FAE13E;
   }
 }
 

@@ -21,8 +21,8 @@ import KVvidereuddannelse from "@/components/KVvidereuddannelse.vue";
     <div class="content-wrap">
       <KVstudiestart />
       <KVUdannelsensOpbygning />
-      <KVpraktik />
       <KVai />
+      <KVpraktik />
       <KVmuligheder />
       <KVvidereuddannelse />
       <KVinternationalemuligheder />

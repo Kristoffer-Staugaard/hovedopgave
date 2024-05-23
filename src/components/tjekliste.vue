@@ -175,5 +175,14 @@
     padding: 10px;
     line-height: 20px;
   }
+  
+  .flex-tjekliste {
+  gap: 40px;
+}
+
+.flex-overordnet {
+  gap: 20px;
+}
+  
 }
 </style>
