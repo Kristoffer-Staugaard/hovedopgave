@@ -145,4 +145,8 @@ function toggleDropdown(index) {
   display: flex;
   align-items: center;
 }
+
+.dropdown-wrap:hover {
+  background-color: #E2F1EE;
+}
 </style>
