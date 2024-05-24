@@ -293,7 +293,8 @@ export default {
 
 .calendar {
   padding: 20px;
-  background: url("../assets/img/background.png") center center fixed;
+  background: url("../assets/img/background.png") top center fixed;
+  background-size: cover;
 }
 
 .calendar ul {
