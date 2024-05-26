@@ -2,12 +2,9 @@
   <nav>
     <header>
       <div class="logo-div">
-        <a href=""
-          ><img
-            class="logo"
-            src="../assets/img/mitucl-logo.png"
-            alt="MitUcl logo"
-        /></a>
+        <a href="">
+          <img class="logo" src="../assets/img/mitucl-logo.png" alt="MitUcl logo" />
+        </a>
         <div class="burger-div">
           <button class="burger-search">
             Søg <img src="../assets/img/search-icon-dark.svg" alt="Søge knap" />
@@ -38,9 +35,14 @@
           <ul class="buttom-nav">
             <li>Mit campus</li>
             <!--midlertidig løsning ind til karrierevejledning-->
-            <router-link to="/karrierevejledning">
-              <li>Studieservice</li>
-            </router-link>
+            <li @mouseenter="showDropdown" @mouseleave="hideDropdown">
+              <router-link to="">Studieservice</router-link>
+              <ul v-show="isDropdownOpen" class="dropdown-menu">
+                <li><router-link to="/karrierevejledning">Karrierevejledning</router-link></li>
+                <li><router-link to="/">Studenterådgivning</router-link></li>
+                <li><router-link to="">Karriereservice</router-link></li>
+              </ul>
+            </li>
             <li>Events & studieliv</li>
             <li>SU</li>
             <li>Specialpædagogisk støtte (SPS)</li>
@@ -51,20 +53,31 @@
   </nav>
 </template>
 
+
+
+
 <script>
 export default {
   data() {
     return {
       isMenuOpen: false,
+      isDropdownOpen: false,
     };
   },
   methods: {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
     },
+    showDropdown() {
+      this.isDropdownOpen = true;
+    },
+    hideDropdown() {
+      this.isDropdownOpen = false;
+    },
   },
 };
 </script>
+
 
 <style scoped>
 nav {
@@ -147,6 +160,40 @@ a {
 
 .burger-div {
   display: none;
+}
+
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #00454e;
+  padding: 10px;
+  list-style: none;
+  margin: 0;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  padding: 8px 12px;
+}
+
+.dropdown-menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.buttom-nav li:hover .dropdown-menu {
+  display: block;
+}
+
+/* Responsive styles */
+
+@media screen and (max-width: 1100px) {
+  .dropdown-menu {
+    position: relative;
+    box-shadow: none;
+  }
 }
 
 @media screen and (max-width: 1200px) {

@@ -2,18 +2,15 @@
   <nav>
     <header>
       <div class="logo-div">
-        <a href=""
-          ><img
-            class="logo"
-            src="../assets/img/mitucl-logo.png"
-            alt="MitUcl logo"
-        /></a>
+        <a href="">
+          <img class="logo" src="../assets/img/mitucl-logo.png" alt="MitUcl logo" />
+        </a>
         <div class="burger-div">
           <button class="burger-search">
             Søg <img src="../assets/img/search-icon-dark.svg" alt="Søge knap" />
           </button>
           <button class="burgermenu" @click="toggleMenu">
-            <img src="../assets/img/burgermenu-icon.svg" alt="" />
+            <img src="../assets/img/burgermenu-icon.svg" alt="Burgermenu ikon" />
           </button>
         </div>
       </div>
@@ -37,10 +34,14 @@
         <div class="buttom-nav-wrap">
           <ul class="buttom-nav">
             <li>Mit campus</li>
-            <!--midlertidig løsning ind til karrierevejledning-->
-            <router-link to="/karrierevejledning">
-              <li>Studieservice</li>
-            </router-link>
+            <li class="dropdown" @mouseenter="showDropdown" @mouseleave="hideDropdown">
+              <router-link to="/karrierevejledning">Studieservice</router-link>
+              <ul v-show="isDropdownOpen" class="dropdown-menu">
+                <li><router-link to="/karrierevejledning">Studievejledning</router-link></li>
+                <li><router-link to="/student-counseling">Studenterådgivning</router-link></li>
+                <li><router-link to="/career-services">Karriereservice</router-link></li>
+              </ul>
+            </li>
             <li>Events & studieliv</li>
             <li>SU</li>
             <li>Specialpædagogisk støtte (SPS)</li>
@@ -57,17 +58,25 @@ export default {
   data() {
     return {
       isMenuOpen: false,
+      isDropdownOpen: false,
     };
   },
   methods: {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
     },
+    showDropdown() {
+      this.isDropdownOpen = true;
+    },
+    hideDropdown() {
+      this.isDropdownOpen = false;
+    },
   },
 };
 </script>
 
 <style scoped>
+
 .purple {
   background-color: purple;
 }
@@ -79,7 +88,7 @@ nav {
   max-width: 1200px;
 }
 
-header {
+header{
   display: flex;
   justify-content: space-between;
 }
@@ -152,6 +161,38 @@ a {
 
 .burger-div {
   display: none;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #00454e;
+  padding: 10px;
+  list-style: none;
+  margin: 0;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  padding: 8px 12px;
+}
+
+.dropdown-menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.buttom-nav li:hover .dropdown-menu {
+  display: block;
+}
+
+/* Responsive styles */
+
+@media screen and (max-width: 1100px) {
+  .dropdown-menu {
+    position: relative;
+    box-shadow: none;
+  }
 }
 
 @media screen and (max-width: 1200px) {
