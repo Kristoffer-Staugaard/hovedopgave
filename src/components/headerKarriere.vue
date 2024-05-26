@@ -59,6 +59,7 @@
     <h1>Karrierevejledning</h1>
     <br>
     <h2>Få råd og vejledning om praktik og karrierevalg.</h2>
+    <button class="btn-yellow">Kontakt os</button>
   </div>
   </nav>
 </template>
