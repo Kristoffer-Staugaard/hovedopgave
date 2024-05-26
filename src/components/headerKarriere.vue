@@ -88,18 +88,15 @@ export default {
 </script>
 
 <style scoped>
-<<<<<<< HEAD
-
 .purple {
   background-color: purple;
-=======
+}
 .breadcrumbs {
   display: flex;
   gap: 20px;
   margin-top: 40px;
   margin-bottom: 40px;
 
->>>>>>> 3220e4cbc5f12e5e215fdd1973d1ff4a39f70fdb
 }
 
 nav {
