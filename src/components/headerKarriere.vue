@@ -49,7 +49,19 @@
         </div>
       </div>
     </header>
-    <div class="purple"></div>
+    <div class="breadcrumbs-wrap">
+    <div class="breadcrumbs">
+    <p>Forside</p>
+    <p>/</p>
+    <p>Studieservice</p>
+    <p>/</p>
+    <p>Karrievejledning</p>
+    </div>
+    <h1>Karrierevejledning</h1>
+    <br>
+    <h2>Få råd og vejledning om praktik og karrierevalg.</h2>
+    <button class="btn-yellow">Kontakt os</button>
+  </div>
   </nav>
 </template>
 
@@ -76,9 +88,18 @@ export default {
 </script>
 
 <style scoped>
+<<<<<<< HEAD
 
 .purple {
   background-color: purple;
+=======
+.breadcrumbs {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+>>>>>>> 3220e4cbc5f12e5e215fdd1973d1ff4a39f70fdb
 }
 
 nav {
@@ -203,9 +224,18 @@ a {
   .logo {
     width: 200px;
   }
+
+  .breadcrumbs-wrap {
+    padding: 0 5%;
+  }
 }
 
 @media screen and (max-width: 1100px) {
+
+  .breadcrumbs-wrap {
+    display: none;
+  }
+
   .logo-div {
     background-color: #e6f1f0;
     padding: 3%;
