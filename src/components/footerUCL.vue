@@ -25,8 +25,10 @@
             bæredygtig vækst, velfærd og løsninger, der gør en forskel.
           </li>
         </ul>
-        <div class="footer-image">
-          <img src="../assets/img/video.jpg" alt="" />
+        <div>
+          <video class="footer-video" width="600" height="340" controls>
+            <source src="../assets/Video/mitucl.dk_-_rundvisning_på_sitet (720p).mp4" type="video/mp4">
+          </video>
         </div>
       </div>
     </div>
@@ -141,6 +143,11 @@ ul {
 
   .footer-1 .footer-2 li {
     font-size: 30px;
+  }
+
+  .footer-video {
+    width: 100%;
+    height: 100%;
   }
 }
 </style>
