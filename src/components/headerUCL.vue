@@ -212,6 +212,7 @@ li a::after {
   margin-top: 5px;
 }
 
+
 /* Responsive styles */
 
 @media screen and (max-width: 1100px) {
