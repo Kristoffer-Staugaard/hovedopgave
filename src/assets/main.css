@@ -100,6 +100,11 @@ button {
   background-color: #FAE13E;
 }
 
+.btn-kv {
+  text-decoration: none;
+  color: #1a424b;
+}
+
 /* Nu kommer reviews style  */
 .reviews_container {
   display: flex;
@@ -335,6 +340,9 @@ button {
 
 .answer_uo {
   background-color: #daeced;
+}
+.answer_uo li {
+  margin-left: 10px;
 }
 
 .dropdown-wrap_uo {

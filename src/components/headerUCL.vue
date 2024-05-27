@@ -38,9 +38,15 @@
             <li @mouseenter="showDropdown" @mouseleave="hideDropdown">
               <router-link to="">Studieservice</router-link>
               <ul v-show="isDropdownOpen" class="dropdown-menu">
+                <li><router-link to="">Studiestart</router-link></li>
+                <li><router-link to="/">Studieadministration</router-link></li>
+                <li><router-link to="/">SU-vejledning</router-link></li>
+                <li><router-link to="/">Studievejledning</router-link></li>
+                <li><router-link to="/">SPS-vejledning</router-link></li>
                 <li><router-link to="/karrierevejledning">Karrierevejledning</router-link></li>
-                <li><router-link to="/">Studenterådgivning</router-link></li>
-                <li><router-link to="">Karriereservice</router-link></li>
+                <li><router-link to="/">Service portalen</router-link></li>
+                <li><router-link to="">Internationale muligheder</router-link></li>
+                <li><router-link to="/">Krisesituationer</router-link></li>
               </ul>
             </li>
             <li>Events & studieliv</li>
