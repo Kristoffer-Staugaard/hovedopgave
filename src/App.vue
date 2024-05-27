@@ -1,8 +1,10 @@
 <script setup>
 import footerUCL from "./components/footerUCL.vue";
+import headerUCL from "./components/headerUCL.vue"
 </script>
 
 <template>
+    <headerUCL />
   <router-view />
   <footerUCL />
 </template>

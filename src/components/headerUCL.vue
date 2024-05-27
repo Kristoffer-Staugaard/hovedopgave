@@ -82,7 +82,7 @@ export default {
 <style scoped>
 nav {
   background-color: #e6f1f0;
-  padding: 5% 0;
+  padding-top: 5%;
   width: 100%;
   max-width: 1200px;
 }

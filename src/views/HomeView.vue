@@ -1,33 +1,31 @@
 <script setup>
 import { ref } from "vue";
-import headerUCL from "../components/headerUCL.vue";
 import forsideNavigation from "@/components/forsideNavigation.vue";
-import KVstudiestart from "@/components/KVstudiestart.vue";
-import KVUdannelsensOpbygning from "@/components/KVUdannelsensOpbygning.vue";
-import KVpraktik from "@/components/KVpraktik.vue";
-import KVinternationalemuligheder from "@/components/KVinternationalemuligheder.vue";
-import KVmuligheder from "@/components/KVmuligheder.vue";
-import KVGenveje from "@/components/KVGenveje.vue";
-import KVevent from "@/components/KVevent.vue";
-import KVai from "@/components/KVai.vue";
-import KVvidereuddannelse from "@/components/KVvidereuddannelse.vue";
+import Fstudiestart from "@/components/Fstudiestart.vue";
+import FUdannelsensOpbygning from "@/components/FUdannelsensOpbygning.vue";
+import Fpraktik from "@/components/Fpraktik.vue";
+import FInternationalemuligheder from "@/components/FInternationalemuligheder.vue";
+import FKVmuligheder from "@/components/FKVmuligheder.vue";
+import FGenveje from "@/components/FGenveje.vue";
+import FEvent from "@/components/FEvent.vue";
+import FAi from "@/components/FAi.vue";
+import Fvidereuddannelse from "@/components/Fvidereuddannelse.vue";
 </script>
 
 <template>
-  <headerUCL />
-
   <div class="main-wrap">
     <forsideNavigation />
+    
     <div class="content-wrap">
-      <KVstudiestart />
-      <KVUdannelsensOpbygning />
-      <KVai />
-      <KVpraktik />
-      <KVmuligheder />
-      <KVvidereuddannelse />
-      <KVinternationalemuligheder />
-      <KVGenveje />
-      <KVevent />
+      <Fstudiestart />
+      <FUdannelsensOpbygning />
+      <FAi />
+      <Fpraktik />
+      <FKVmuligheder />
+      <Fvidereuddannelse />
+      <FInternationalemuligheder />
+      <FGenveje />
+      <FEvent />
     </div>
   </div>
 </template>

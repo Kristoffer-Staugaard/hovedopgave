@@ -1,29 +1,30 @@
 <script setup>
-import headerKarriere from "@/components/headerKarriere.vue";
-import arrangementer from "@/components/arrangementer.vue";
-import jobportalen from "@/components/jobportalen.vue";
-import reviews from "@/components/reviews.vue";
-import tjekliste from "@/components/tjekliste.vue";
-import shortcut from "@/components/shortcut.vue";
-import kontaktUCL from "@/components/kontaktUCL.vue";
-import navigation from "@/components/navigation.vue";
-import bookKarrierevejledning from "@/components/bookKarrierevejledning.vue";
+import KVarrangementer from "@/components/KVarrangementer.vue";
+import KVjobportalen from "@/components/KVjobportalen.vue";
+import KVreviews from "@/components/KVreviews.vue";
+import KVtjekliste from "@/components/KVtjekliste.vue";
+import KVtilbud from "@/components/KVtilbud.vue";
+import KVkontaktUCL from "@/components/KVkontaktUCL.vue";
+import KVnavigation from "@/components/KVnavigation.vue";
+import KVbookKarrierevejledning from "@/components/KVbookKarrierevejledning.vue";
+import KVtop from "@/components/KVtop.vue";
 </script>
 
 <template>
-  <headerKarriere />
+  
+  <KVtop />
 
   <div class="main-wrap">
-    <navigation />
+    <KVnavigation />
 
     <div class="content-wrap">
-      <shortcut />
-      <bookKarrierevejledning />
-      <tjekliste />
-      <reviews />
-      <jobportalen />
-      <arrangementer />
-      <kontaktUCL />
+      <KVtilbud />
+      <KVbookKarrierevejledning />
+      <KVtjekliste />
+      <KVreviews />
+      <KVjobportalen />
+      <KVarrangementer />
+      <KVkontaktUCL />
     </div>
   </div>
 </template>
