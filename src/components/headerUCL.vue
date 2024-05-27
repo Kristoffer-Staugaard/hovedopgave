@@ -202,7 +202,7 @@ li a::after {
 }
 
 .dropdown-menu li a {
-  margin-top: 10px;
+  margin-top: 5px;
   color: #fff;
   text-decoration: none;
 }
