@@ -127,8 +127,24 @@ li {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #00454e;
+  position: relative;
+
 }
+
+li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #00454e;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+  }
+  li a:hover::after {
+    width: 20%;
+  }
 
 .search-btn {
   background-color: #00454e;
@@ -175,22 +191,25 @@ a {
   background-color: #00454e;
   padding: 10px;
   list-style: none;
-  margin: 0;
+  margin: 10;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
 
 .dropdown-menu li {
+
   padding: 8px 12px;
 }
 
 .dropdown-menu li a {
+  margin-top: 10px;
   color: #fff;
   text-decoration: none;
 }
 
 .buttom-nav li:hover .dropdown-menu {
   display: block;
+  margin-top: 5px;
 }
 
 /* Responsive styles */
