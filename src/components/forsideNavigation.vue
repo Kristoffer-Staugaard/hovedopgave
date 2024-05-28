@@ -132,7 +132,7 @@ ul {
   list-style-type: none;
   font-size: 15px;
   font-weight: bold;
-  gap: 70px;
+  gap: 60px;
 }
 
 .mobile-arrow {
