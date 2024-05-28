@@ -20,6 +20,10 @@
 <script setup></script>
 
 <style scoped>
+
+section {
+  padding: 0;
+}
 .jobportalen {
   display: flex;
   flex-direction: row;
@@ -37,10 +41,19 @@
 
 .jobportalen-2 {
   display: flex;
+  justify-content: center;
 }
 
 .jobportalen img {
-  width: 100%;
+  width: 500px;
+  margin-right: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  .jobportalen img {
+  width: 400px;
+  margin-right: 40px;
+}
 }
 
 @media screen and (max-width: 700px) {
@@ -58,6 +71,11 @@
 
   .jobportalen-2 {
     order: 1;
+  }
+
+  .jobportalen img {
+    width: 100%;
+    margin-right: 0;
   }
 }
 </style>
