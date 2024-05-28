@@ -160,6 +160,7 @@ export default {
 </script>
 <template>
   <section id="bdk">
+    <h2>Book karrierevejledning</h2>
     <div class="calendar">
       <div>
         <div class="current-date">
@@ -460,12 +461,20 @@ export default {
   background-color: #f8ccc4;
 }
 .btn-div-kalender {
-  background-color: #cae4e3;
+  background-color: #fce977;
   width: 30px;
   height: 30px;
   color: #1a444d;
   align-content: center;
   font-size: 30x;
+}
+
+.btn-div-kalender:hover {
+  background-color: #F7ECA7;
+}
+
+.btn-div-kalender:focus {
+  background-color: #FAE13E;
 }
 
 .bestil-tid-boks {
