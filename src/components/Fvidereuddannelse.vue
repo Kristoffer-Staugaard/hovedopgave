@@ -22,7 +22,7 @@ const dropdowns = ref([
   {
     dropdown: "Webudvikling (1,5 år)",
     answer:
-      "Uddannelsen i webudvikling er for dig, der vil arbejde kreativt med kodning og specialisere dig inden for udviklingen af apps, hjemmesider og andre webløsninger.Undervejs på uddannelsen til webudvikling vil du komme til at arbejde med teknologier, der klæder dig på til at kunne indgå i mange typer af jobs.",
+      "Uddannelsen i webudvikling er for dig, der vil arbejde kreativt med kodning og specialisere dig inden for udviklingen af apps, hjemmesider og andre webløsninger. Undervejs på uddannelsen til webudvikling vil du komme til at arbejde med teknologier, der klæder dig på til at kunne indgå i mange typer af jobs.",
   },
 ]);
 
