@@ -129,7 +129,7 @@ function isOpen2(index) {
               </div>
               <img src="../assets/img/arrow-down.svg" alt="arrow" />
             </div>
-            <div class="answer_uo" v-if="isOpen2(index)">
+            <div class="semester-answer_uo" v-if="isOpen2(index)">
               <p v-html="item1.answer"></p>
             </div>
           </div>

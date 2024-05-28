@@ -348,6 +348,8 @@ button {
 .answer_uo {
   background-color: #daeced;
 }
+
+
 .answer_uo li {
   margin-left: 10px;
 }
@@ -375,6 +377,14 @@ button {
   border: #00454e solid 2px;
   width: 100%;
 }
+
+.semester-answer_uo {
+  background-color: #daeced;
+  margin-right: 25px;
+  padding: 20px;
+
+}
+
 
 .dropdown_uo {
   display: flex;
