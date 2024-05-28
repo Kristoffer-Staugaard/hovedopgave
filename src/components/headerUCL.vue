@@ -35,7 +35,7 @@
           <ul class="buttom-nav">
             <li>Mit campus</li>
             <!--midlertidig løsning ind til karrierevejledning-->
-            <li @mouseenter="showDropdown" @mouseleave="hideDropdown">
+            <li id="studieservice" @mouseenter="showDropdown" @mouseleave="hideDropdown">
               <router-link to="">Studieservice</router-link>
               <ul v-show="isDropdownOpen" class="dropdown-menu">
                 <li><router-link to="">Studiestart</router-link></li>
@@ -146,6 +146,22 @@ li a::after {
     width: 20%;
   }
 
+  #studieservice li a:hover::after{
+    width: 20%;
+
+  }
+
+  #studieservice li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+  }
+
 .search-btn {
   background-color: #00454e;
   color: #ffffff;
@@ -209,7 +225,7 @@ li a::after {
 
 .buttom-nav li:hover .dropdown-menu {
   display: block;
-  margin-top: 5px;
+  margin-top: 1px;
 }
 
 
