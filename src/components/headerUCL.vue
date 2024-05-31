@@ -347,4 +347,12 @@ li a::after {
     display: none;
   }
 }
+
+@media screen and (max-width: 465px) { 
+  .logo {
+    width: 150px;
+  }
+
+}
+
 </style>

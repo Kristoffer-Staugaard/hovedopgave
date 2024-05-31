@@ -130,6 +130,7 @@ button {
   width: 120px;
   height: 120px;
   border-radius: 100%;
+  object-fit: cover;
 }
 .reviews_education {
   color: #ffffff;
@@ -212,6 +213,7 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
+  margin: 5%;
 }
 
 .italic {
@@ -477,7 +479,7 @@ button {
 
 @media screen and (max-width: 1100px) {
   .main-wrap {
-    top: 200px;
+    top: 165px;
     flex-direction: column;
   }
 
