@@ -17,7 +17,7 @@ const dropdowns = ref([
   {
     dropdown: "Praktikfaktaark og praktikportal",
     answer:
-      "<b>Praktikfaktaark</b> <br>Har du helt styr på, hvad det egentlig er, du kan tilbyde din kommende praktikvært?<br><br> Find dit praktikfaktaark og bliv helt skarp på dine kompetencer, når du skal ud og søge praktikplads. <br><br> <b><i>- Find dit praktikfaktaart </i></b> <br><br> <b>Praktikportalen</b> <br>Dit praktikophold administreres i Praktikportalen. <br><br>I praktikportalen kan du bl.a. ønske praktikpladser, kommunikere med praktikstedet, se praktikrelevante dokumenter, m.m.  <br><br> <b><i>- Læs mere om Praktikportalen </b></i>",
+      "<b>Praktikfaktaark</b> <br>Har du helt styr på, hvad det egentlig er, du kan tilbyde din kommende praktikvært?<br><br> Find dit praktikfaktaark og bliv helt skarp på dine kompetencer, når du skal ud og søge praktikplads. <br><br> <b><i>- Find dit praktikfaktaark </i></b> <br><br> <b>Praktikportalen</b> <br>Dit praktikophold administreres i Praktikportalen. <br><br>I praktikportalen kan du bl.a. ønske praktikpladser, kommunikere med praktikstedet, se praktikrelevante dokumenter, m.m.  <br><br> <b><i>- Læs mere om Praktikportalen </b></i>",
   },
   {
     dropdown: "Ikke gennemført praktik",
@@ -27,7 +27,7 @@ const dropdowns = ref([
   {
     dropdown: "Få hjælp",
     answer:
-      "Du kan få hjælp til alt inden for praktik og jobsøgning hos karrierevejledningen på UCL. Du kan læse mere om, hvordan de kan hjælpe dig og hvilke tilbud de udbyder her:<br><br> <b><i>- Karrierevejledningen </i></b> <br><br> Find online guides der kan hjælpe dig med din ansøgning, CV, kompetence-afklaring m.m. her: <br><br> <i><b>- Online guides </b></i>",
+      "Du kan få hjælp til alt inden for praktik og jobsøgning hos karrierevejledningen på UCL. Du kan læse mere om, hvordan de kan hjælpe dig og hvilke tilbud de udbyder her:<br><br> <b><i>- <a href='#/karrierevejledning'>Karrierevejledningen</a> </i></b> <br><br> Find online guides der kan hjælpe dig med din ansøgning, CV, kompetence-afklaring m.m. her: <br><br> <i><b>- Online guides</a> </b></i>",
   },
 ]);
 
@@ -54,7 +54,7 @@ function isOpen(index) {
       </div>
       <div class="buttom-divider-width">
         <div class="item-wrap">
-          <div class="dropdown-wrap" v-for="(item, index) in dropdowns">
+          <div class="dropdown-wrap" v-for="(item, index) in dropdowns" :key="index">
             <div class="dropdown" @click="toggleDropdown(index)">
               <h3>{{ item.dropdown }}</h3>
               <img src="../assets/img/arrow-down.svg" alt="arrow" />
@@ -132,5 +132,9 @@ function isOpen(index) {
 .profile-img {
   width: 100px;
   height: 100px;
+}
+
+a {
+  text-decoration: none;
 }
 </style>

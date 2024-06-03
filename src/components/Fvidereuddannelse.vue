@@ -147,6 +147,6 @@ function toggleDropdown(index) {
 }
 
 .dropdown-wrap:hover {
-  background-color: #E2F1EE;
+  background-color: #e2f1ee;
 }
 </style>
