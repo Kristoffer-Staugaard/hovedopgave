@@ -235,11 +235,6 @@ li a::after {
   .dropdown-menu {
     position: relative;
     box-shadow: none;
-    text-align: left;
-  }
-
-  li {
-    text-align: left;
   }
 }
 
@@ -269,14 +264,14 @@ li a::after {
     position: relative;
     padding: 3%;
     box-sizing: border-box;
-    top: 75px;
+    top: 50px;
     display: none;
   }
 
   .nav-wrap.open {
     right: 0;
     background-color: #e6f1f0;
-    display: flex;
+    display: block;
   }
 
   .buttom-nav-wrap {
@@ -353,7 +348,6 @@ li a::after {
   }
 }
 
-<<<<<<< HEAD
 
 @media only screen and (max-width: 400px) {
 .logo{
@@ -369,13 +363,4 @@ width: 150px;
 }
 
 
-=======
-@media screen and (max-width: 465px) { 
-  .logo {
-    width: 150px;
-  }
-
-}
-
->>>>>>> b33b2ecf867d0ff76781600c323b2e8f256db6e3
 </style>
