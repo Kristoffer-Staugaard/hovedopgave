@@ -27,7 +27,7 @@ const dropdowns = ref([
   {
     dropdown: "Få hjælp",
     answer:
-      "Du kan få hjælp til alt inden for praktik og jobsøgning hos karrierevejledningen på UCL. Du kan læse mere om, hvordan de kan hjælpe dig og hvilke tilbud de udbyder her:<br><br> <b><i>- <a href='#/karrierevejledning'>Karrierevejledningen</a> </i></b> <br><br> Find online guides der kan hjælpe dig med din ansøgning, CV, kompetence-afklaring m.m. her: <br><br> <i><b>- Online guides</a> </b></i>",
+      "Du kan få hjælp til alt inden for praktik og jobsøgning hos karrierevejledningen på UCL. Du kan læse mere om, hvordan de kan hjælpe dig og hvilke tilbud de udbyder her:<br><br> <b><i>- <a href='#/karrierevejledning' class='no-decoration'>Karrierevejledningen</a> </i></b> <br><br> Find online guides der kan hjælpe dig med din ansøgning, CV, kompetence-afklaring m.m. her: <br><br> <i><b>- Online guides</a> </b></i>",
   },
 ]);
 
@@ -134,7 +134,7 @@ function isOpen(index) {
   height: 100px;
 }
 
-a {
+.no-decoration {
   text-decoration: none;
 }
 </style>
