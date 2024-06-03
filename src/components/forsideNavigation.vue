@@ -151,7 +151,7 @@ ul {
   nav {
     height: auto;
     position: fixed;
-    top: 125px;
+    top: 135px;
     width: 100%;
     padding: 20px;
     z-index: 99;
@@ -197,7 +197,7 @@ li {
 
 @media screen and (max-width: 465px) { 
   nav {
-    top: 105px;
+    top: 100px;
   }
 }
 

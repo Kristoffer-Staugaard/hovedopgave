@@ -349,18 +349,11 @@ li a::after {
 }
 
 
-@media only screen and (max-width: 400px) {
-.logo{
-width: 150px;
-
-
-}
-
-
-
-  
+@media screen and (max-width: 465px) { 
+  .logo {
+    width: 150px;
+  }
 
 }
-
 
 </style>
