@@ -160,7 +160,7 @@ export default {
 </script>
 <template>
   <section id="bdk">
-    <h2>Book karrierevejledning</h2>
+    <h2>Book en vejledning</h2>
     <div class="calendar">
       <div>
         <div class="current-date">
