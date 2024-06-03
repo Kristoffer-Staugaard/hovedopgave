@@ -1,10 +1,10 @@
 <script setup>
 import footerUCL from "./components/footerUCL.vue";
-import headerUCL from "./components/headerUCL.vue"
+import headerUCL from "./components/headerUCL.vue";
 </script>
 
 <template>
-    <headerUCL />
+  <headerUCL />
   <router-view />
   <footerUCL />
 </template>
@@ -53,7 +53,6 @@ nav a:first-of-type {
   nav {
     text-align: left;
     margin-left: -1rem;
-
     padding: 1rem 0;
   }
 }

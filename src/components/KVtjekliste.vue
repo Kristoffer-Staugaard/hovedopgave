@@ -168,21 +168,19 @@
 </template>
 
 <style scoped>
-
 @media screen and (max-width: 700px) {
   .btn-yellow {
     text-align: left;
     padding: 10px;
     line-height: 20px;
   }
-  
-  .flex-tjekliste {
-  gap: 40px;
-}
 
-.flex-overordnet {
-  gap: 20px;
-}
-  
+  .flex-tjekliste {
+    gap: 40px;
+  }
+
+  .flex-overordnet {
+    gap: 20px;
+  }
 }
 </style>

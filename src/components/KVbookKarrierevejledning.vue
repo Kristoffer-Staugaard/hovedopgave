@@ -470,11 +470,11 @@ export default {
 }
 
 .btn-div-kalender:hover {
-  background-color: #F7ECA7;
+  background-color: #f7eca7;
 }
 
 .btn-div-kalender:focus {
-  background-color: #FAE13E;
+  background-color: #fae13e;
 }
 
 .bestil-tid-boks {

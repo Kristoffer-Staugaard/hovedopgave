@@ -10,8 +10,7 @@
         </p>
         <button class="btn-yellow">Læs mere</button>
       </div>
-      <div class="jobportalen-2">
-      </div>
+      <div class="jobportalen-2"></div>
     </div>
   </section>
 </template>
@@ -19,7 +18,6 @@
 <script setup></script>
 
 <style scoped>
-
 section {
   padding: 0;
 }
@@ -55,9 +53,9 @@ section {
 
 @media screen and (max-width: 1000px) {
   .jobportalen img {
-  width: 400px;
-  margin-right: 40px;
-}
+    width: 400px;
+    margin-right: 40px;
+  }
 }
 
 @media screen and (max-width: 700px) {

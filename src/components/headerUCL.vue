@@ -3,7 +3,11 @@
     <header>
       <div class="logo-div">
         <a href="">
-          <img class="logo" src="../assets/img/mitucl-logo.png" alt="MitUcl logo" />
+          <img
+            class="logo"
+            src="../assets/img/mitucl-logo.png"
+            alt="MitUcl logo"
+          />
         </a>
         <div class="burger-div">
           <button class="burger-search">
@@ -35,7 +39,11 @@
           <ul class="buttom-nav">
             <li>Mit campus</li>
             <!--midlertidig løsning ind til karrierevejledning-->
-            <li id="studieservice" @mouseenter="showDropdown" @mouseleave="hideDropdown">
+            <li
+              id="studieservice"
+              @mouseenter="showDropdown"
+              @mouseleave="hideDropdown"
+            >
               <router-link to="">Studieservice</router-link>
               <ul v-show="isDropdownOpen" class="dropdown-menu">
                 <li><router-link to="">Studiestart</router-link></li>
@@ -43,9 +51,15 @@
                 <li><router-link to="/">SU-vejledning</router-link></li>
                 <li><router-link to="/">Studievejledning</router-link></li>
                 <li><router-link to="/">SPS-vejledning</router-link></li>
-                <li><router-link to="/karrierevejledning">Karrierevejledning</router-link></li>
+                <li>
+                  <router-link to="/karrierevejledning"
+                    >Karrierevejledning</router-link
+                  >
+                </li>
                 <li><router-link to="/">Service portalen</router-link></li>
-                <li><router-link to="">Internationale muligheder</router-link></li>
+                <li>
+                  <router-link to="">Internationale muligheder</router-link>
+                </li>
                 <li><router-link to="/">Krisesituationer</router-link></li>
               </ul>
             </li>
@@ -58,9 +72,6 @@
     </header>
   </nav>
 </template>
-
-
-
 
 <script>
 export default {
@@ -83,7 +94,6 @@ export default {
   },
 };
 </script>
-
 
 <style scoped>
 nav {
@@ -129,38 +139,36 @@ a {
   text-decoration: none;
   color: #00454e;
   position: relative;
-
 }
 
 li a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 3px;
-    background-color: #00454e;
-    bottom: 0;
-    left: 0;
-    transition: width 0.3s ease-in-out;
-  }
-  li a:hover::after {
-    width: 20%;
-  }
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #00454e;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+}
+li a:hover::after {
+  width: 20%;
+}
 
-  #studieservice li a:hover::after{
-    width: 20%;
+#studieservice li a:hover::after {
+  width: 20%;
+}
 
-  }
-
-  #studieservice li a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 3px;
-    background-color: #fff;
-    bottom: 0;
-    left: 0;
-    transition: width 0.3s ease-in-out;
-  }
+#studieservice li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+}
 
 .search-btn {
   background-color: #00454e;
@@ -200,7 +208,6 @@ li a::after {
   display: none;
 }
 
-
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -213,7 +220,6 @@ li a::after {
 }
 
 .dropdown-menu li {
-
   padding: 8px 12px;
 }
 
@@ -227,7 +233,6 @@ li a::after {
   display: block;
   margin-top: 1px;
 }
-
 
 /* Responsive styles */
 
@@ -348,12 +353,9 @@ li a::after {
   }
 }
 
-
-@media screen and (max-width: 465px) { 
+@media screen and (max-width: 465px) {
   .logo {
     width: 150px;
   }
-
 }
-
 </style>

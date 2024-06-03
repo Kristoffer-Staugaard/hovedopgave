@@ -94,7 +94,7 @@ const getArrangementerSection = () => {
   }
 
   .arrangementer_box {
-  width: 100%;
-}
+    width: 100%;
+  }
 }
 </style>

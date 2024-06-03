@@ -22,21 +22,21 @@ const tjeklisteScroll = () => {
 };
 
 const hsdsScroll = () => {
-  document.getElementById("reviews_section").scrollIntoView({ behavior: "smooth" });
+  document
+    .getElementById("reviews_section")
+    .scrollIntoView({ behavior: "smooth" });
 };
 
 const jobpScroll = () => {
   document.getElementById("jobp").scrollIntoView({ behavior: "smooth" });
-}
+};
 
 const arrangScroll = () => {
   document.getElementById("arrang").scrollIntoView({ behavior: "smooth" });
 };
 
 const kontaktkaScroll = () => {
-  document
-    .getElementById("kontaktka")
-    .scrollIntoView({ behavior: "smooth" });
+  document.getElementById("kontaktka").scrollIntoView({ behavior: "smooth" });
 };
 </script>
 
@@ -201,11 +201,9 @@ li {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 465px) { 
-
+@media screen and (max-width: 465px) {
   nav {
     top: 100px;
   }
 }
-
 </style>

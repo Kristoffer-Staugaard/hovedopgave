@@ -112,7 +112,6 @@ onMounted(() => {
     flex-direction: column;
   }
 
-
   .reviews_box {
     width: 100%;
   }
@@ -123,14 +122,13 @@ onMounted(() => {
   }
 
   .style_reviews {
-  display: flex;
-  align-items: start;
-}
+    display: flex;
+    align-items: start;
+  }
 
-.style_name_education {
-text-align: left;
-padding: 0;
+  .style_name_education {
+    text-align: left;
+    padding: 0;
+  }
 }
-}
-
 </style>

@@ -11,7 +11,6 @@ import KVtop from "@/components/KVtop.vue";
 </script>
 
 <template>
-  
   <KVtop />
 
   <div class="main-wrap">

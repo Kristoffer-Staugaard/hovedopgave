@@ -15,7 +15,7 @@ import Fvidereuddannelse from "@/components/Fvidereuddannelse.vue";
 <template>
   <div class="main-wrap">
     <forsideNavigation />
-    
+
     <div class="content-wrap">
       <Fstudiestart />
       <FUdannelsensOpbygning />

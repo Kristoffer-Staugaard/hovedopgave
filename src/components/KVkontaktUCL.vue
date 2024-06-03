@@ -60,6 +60,5 @@
     align-items: center;
     padding: 20px;
   }
-
 }
 </style>

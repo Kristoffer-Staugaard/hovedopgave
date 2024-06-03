@@ -3,9 +3,9 @@
     <div class="shortcut-wrap">
       <h2>Hvad kan vi tilbyde</h2>
       <p>
-        UCL's karrierevejledning kan give dig råd og vejledning i alt omkring din 
-        karriere igennem hele studiet. Her kan du dykke ned i, hvad de kan tilbyde dig.
-
+        UCL's karrierevejledning kan give dig råd og vejledning i alt omkring
+        din karriere igennem hele studiet. Her kan du dykke ned i, hvad de kan
+        tilbyde dig.
       </p>
       <div class="item-wrap">
         <div class="dropdown-wrap" v-for="(item, index) in dropdowns">
@@ -65,7 +65,6 @@ function toggleDropdown(index) {
 </script>
 
 <style scoped>
-
 p {
   font-size: 18px;
 }
@@ -77,7 +76,7 @@ p {
 }
 
 .dropdown-wrap:hover {
-  background-color: #E2F1EE;
+  background-color: #e2f1ee;
 }
 
 .dropdown {

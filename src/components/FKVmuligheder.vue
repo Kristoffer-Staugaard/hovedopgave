@@ -14,7 +14,10 @@
           klogere på dine kompetencer og styrke din faglige profil.
         </p>
         <button class="btn-yellow">
-          <router-link class="btn-kv" to="/karrierevejledning">Karrierevejledning</router-link></button>
+          <router-link class="btn-kv" to="/karrierevejledning"
+            >Karrierevejledning</router-link
+          >
+        </button>
       </div>
       <div class="buttom-divider-width green-card">
         <h3>Dimittender</h3>
