@@ -353,23 +353,6 @@ li a::after {
   }
 }
 
-<<<<<<< HEAD
-
-@media only screen and (max-width: 400px) {
-.logo{
-width: 150px;
-
-
-}
-
-
-
-  
-
-}
-
-
-=======
 @media screen and (max-width: 465px) { 
   .logo {
     width: 150px;
@@ -377,5 +360,4 @@ width: 150px;
 
 }
 
->>>>>>> b33b2ecf867d0ff76781600c323b2e8f256db6e3
 </style>
