@@ -11,7 +11,6 @@
         <button class="btn-yellow">Læs mere</button>
       </div>
       <div class="jobportalen-2">
-        <img src="../assets/img/jobportal.png" alt="" />
       </div>
     </div>
   </section>
@@ -30,18 +29,23 @@ section {
   justify-content: center;
   gap: 25px;
   background-color: #e2f1ee;
+  margin: 5%;
 }
 
 .jobportalen-1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5%;
+  padding: 3%;
+  width: 50%;
 }
 
 .jobportalen-2 {
   display: flex;
   justify-content: center;
+  background-image: url("../assets/img/jobportal.png");
+  background-size: cover;
+  width: 50%;
 }
 
 .jobportalen img {
@@ -60,17 +64,17 @@ section {
   .jobportalen {
     display: flex;
     flex-direction: column;
-    padding: 15px;
   }
 
   .jobportalen-1 {
     order: 2;
-    margin-top: -20px;
-    margin-bottom: -20px;
+    width: auto;
   }
 
   .jobportalen-2 {
     order: 1;
+    width: 100%;
+    height: 200px;
   }
 
   .jobportalen img {

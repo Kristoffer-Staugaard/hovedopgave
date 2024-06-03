@@ -194,4 +194,11 @@ li {
   display: flex;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 465px) { 
+  nav {
+    top: 105px;
+  }
+}
+
 </style>
