@@ -26,7 +26,7 @@
           </li>
         </ul>
         <div>
-          <video class="footer-video" width="100%" allowfullscreen="true" playsinline="playsinline" controls>
+          <video class="footer-video" width="100%" controls>
             <source
               src="../assets/Video/mitucl.dk_-_rundvisning_på_sitet (720p).mp4"
               type="video/mp4"
