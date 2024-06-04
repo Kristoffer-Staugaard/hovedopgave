@@ -379,6 +379,10 @@ li a:hover::after {
 }
 }
 
+li {
+  text-align: left;
+}
+
 @media screen and (max-width: 465px) {
   .logo {
     width: 150px;

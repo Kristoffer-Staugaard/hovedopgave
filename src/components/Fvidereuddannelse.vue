@@ -33,16 +33,16 @@ function toggleDropdown(index) {
 
 <template>
   <section id="imScroll">
-    <div class="talentprogram-buttom-divider">
-      <div class="talentprogram-buttom-divider-width talentprogram-img"></div>
-      <div class="talentprogram-buttom-divider-width">
+    <div class="buttom-divider" id="none">
+      <div class="buttom-divider-width talentprogram-img"></div>
+      <div class="buttom-divider-width">
         <h2>Talent program</h2>
         <p>
           UCL’s talentprogram er baseret på mulighederne for, at talentfulde
           studerende kan opnå anerkendelse for talent som et tillæg til deres
           eksamensbevis.
         </p>
-        <div class="talentprogram-button">
+        <div class="btn-green">
           <p>Talentprogram</p>
           <svg
             class="arrow"
@@ -121,23 +121,6 @@ function toggleDropdown(index) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.talentprogram-button {
-  background-color: #00454e;
-  color: #fae76a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  margin-top: 20px;
-  gap: 10px;
-  cursor: pointer;
-}
-
-.talentprogram-button p {
-  color: #fae76a;
-  text-align: center;
 }
 
 .arrow {

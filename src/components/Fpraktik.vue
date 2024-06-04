@@ -43,7 +43,7 @@ function isOpen(index) {
 <template>
   <section id="praktik-scroll">
     <h2>Praktik</h2>
-    <div class="buttom-divider">
+    <div class="buttom-divider" id="none">
       <div class="buttom-divider-width">
         <p>Dit praktikforløb er af 3 måneders varighed.</p>
         <ul>
@@ -136,5 +136,9 @@ function isOpen(index) {
 
 .no-decoration {
   text-decoration: none;
+}
+
+#none {
+  border-bottom: none;
 }
 </style>
