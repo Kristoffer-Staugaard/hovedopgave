@@ -11,7 +11,7 @@
         <p>- En praktikperiode i udlandet</p>
         <p>- Et udlandsophold i forbindelse med et valgfag</p>
         <p>- Et engelsksprogede forløb på UCL</p>
-        <div class="internationalemuligheder-button">
+        <div class="btn-green">
           <p>Rejs ud under studie</p>
           <svg
             class="arrow"
@@ -85,23 +85,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.internationalemuligheder-button {
-  background-color: #00454e;
-  color: #fae76a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  margin-top: 20px;
-  gap: 10px;
-  cursor: pointer;
-}
-
-.internationalemuligheder-button p {
-  color: #fae76a;
-  text-align: center;
 }
 
 .arrow {

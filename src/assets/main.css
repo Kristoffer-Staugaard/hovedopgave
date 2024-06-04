@@ -84,6 +84,23 @@ button {
   max-width: 1200px;
 }
 
+.btn-green {
+  display: flex;
+  align-items: center;
+  background-color: #00454e;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.btn-green p {
+  color: #fae76a;
+  margin-right: 10px;
+}
+
 .btn-yellow {
   background-color: #fce977;
   padding-left: 20px;
@@ -96,6 +113,7 @@ button {
   margin-top: 20px;
   width: fit-content;
 }
+
 .btn-yellow:hover {
   background-color: #F7ECA7;
 }
@@ -260,19 +278,6 @@ button {
 }
 
 .buttom-divider-width {
-  width: 50%;
-}
-
-.talentprogram-buttom-divider {
-  display: flex;
-  flex-direction: row-reverse;
-  padding-bottom: 40px;
-  padding-top: 40px;
-  border-bottom: 2px #e6f1f0 solid;
-  gap: 60px;
-}
-
-.talentprogram-buttom-divider-width {
   width: 50%;
 }
 
