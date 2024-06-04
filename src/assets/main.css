@@ -31,6 +31,10 @@ body {
   align-items: center;
 }
 
+#none {
+  border-bottom: none;
+}
+
 .content-wrap {
   overflow: auto;
 }

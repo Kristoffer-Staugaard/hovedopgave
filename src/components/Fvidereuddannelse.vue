@@ -33,9 +33,9 @@ function toggleDropdown(index) {
 
 <template>
   <section id="imScroll">
-    <div class="talentprogram-buttom-divider">
-      <div class="talentprogram-buttom-divider-width talentprogram-img"></div>
-      <div class="talentprogram-buttom-divider-width">
+    <div class="buttom-divider" id="none">
+      <div class="buttom-divider-width talentprogram-img"></div>
+      <div class="buttom-divider-width">
         <h2>Talent program</h2>
         <p>
           UCL’s talentprogram er baseret på mulighederne for, at talentfulde

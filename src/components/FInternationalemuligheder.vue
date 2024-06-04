@@ -4,7 +4,7 @@
   <section id="imScroll">
     <h2>Internationale muligheder</h2>
 
-    <div class="buttom-divider">
+    <div class="buttom-divider" id="none">
       <div class="buttom-divider-width international-img"></div>
       <div class="buttom-divider-width">
         <h3>3 muligheder for at rejse ud</h3>
