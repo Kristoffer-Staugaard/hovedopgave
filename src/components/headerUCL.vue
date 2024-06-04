@@ -170,6 +170,10 @@ li a:hover::after {
   transition: width 0.3s ease-in-out;
 }
 
+li {
+  text-align: left;
+}
+
 .search-btn {
   background-color: #00454e;
   color: #ffffff;
@@ -276,7 +280,7 @@ li a:hover::after {
   .nav-wrap.open {
     right: 0;
     background-color: #e6f1f0;
-    display: block;
+    display: flex;
   }
 
   .buttom-nav-wrap {
