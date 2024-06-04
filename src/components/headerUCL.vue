@@ -284,7 +284,7 @@ li {
     position: relative;
     padding: 3%;
     box-sizing: border-box;
-    top: 50px;
+    top: 75px;
     display: none;
   }
 
