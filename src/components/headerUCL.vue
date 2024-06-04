@@ -261,6 +261,7 @@ li a:hover::after {
   }
 
   .nav-wrap {
+
     flex-direction: column-reverse;
     width: 100%;
     height: 100vh;
@@ -276,7 +277,7 @@ li a:hover::after {
   .nav-wrap.open {
     right: 0;
     background-color: #e6f1f0;
-    display: block;
+    display: flex;
   }
 
   .buttom-nav-wrap {
