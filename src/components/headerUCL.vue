@@ -38,14 +38,13 @@
         <div class="buttom-nav-wrap">
           <ul class="buttom-nav">
             <li>Mit campus</li>
-            <!--midlertidig løsning ind til karrierevejledning-->
             <li
               id="studieservice"
               @mouseenter="showDropdown"
               @mouseleave="hideDropdown"
             >
               <router-link to="">Studieservice</router-link>
-              <ul v-show="isDropdownOpen" class="dropdown-menu">
+              <ul v-show="isDropdownOpen || isMenuOpen" class="dropdown-menu">
                 <li><router-link to="">Studiestart</router-link></li>
                 <li><router-link to="/">Studieadministration</router-link></li>
                 <li><router-link to="/">SU-vejledning</router-link></li>
@@ -84,12 +83,20 @@ export default {
   methods: {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
+      // Ensure the dropdown opens with the menu
+      if (this.isMenuOpen) {
+        this.isDropdownOpen = true;
+      } else {
+        this.isDropdownOpen = false;
+      }
     },
     showDropdown() {
       this.isDropdownOpen = true;
     },
     hideDropdown() {
-      this.isDropdownOpen = false;
+      if (!this.isMenuOpen) {
+        this.isDropdownOpen = false;
+      }
     },
   },
 };
@@ -151,6 +158,7 @@ li a::after {
   left: 0;
   transition: width 0.3s ease-in-out;
 }
+
 li a:hover::after {
   width: 20%;
 }
@@ -168,6 +176,10 @@ li a:hover::after {
   bottom: 0;
   left: 0;
   transition: width 0.3s ease-in-out;
+}
+
+li {
+  text-align: left;
 }
 
 .search-btn {
@@ -214,7 +226,7 @@ li a:hover::after {
   background-color: #00454e;
   padding: 10px;
   list-style: none;
-  margin: 10;
+  margin: 0;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
@@ -229,12 +241,15 @@ li a:hover::after {
   text-decoration: none;
 }
 
-.buttom-nav li:hover .dropdown-menu {
+/* Showing dropdown menu when the menu is open */
+.nav-wrap.open .dropdown-menu {
   display: block;
-  margin-top: 1px;
 }
 
-/* Responsive styles */
+/* Show dropdown menu on hover for desktop */
+#studieservice:hover .dropdown-menu {
+  display: block;
+}
 
 @media screen and (max-width: 1100px) {
   .dropdown-menu {
@@ -261,7 +276,6 @@ li a:hover::after {
   }
 
   .nav-wrap {
-
     flex-direction: column-reverse;
     width: 100%;
     height: 100vh;
@@ -277,7 +291,7 @@ li a:hover::after {
   .nav-wrap.open {
     right: 0;
     background-color: #e6f1f0;
-    display: flex;
+    display: block;
   }
 
   .buttom-nav-wrap {
@@ -353,35 +367,15 @@ li a:hover::after {
     display: none;
   }
 
-
+  /* Make sure dropdown menu is hidden when not in mobile view */
   .dropdown-menu {
-  position: absolute;
-  background-color: #00454e;
-  padding: 10px;
-  list-style: none;
-  margin: 10;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-  z-index: 1;
-}
+    display: none;
+  }
 
-.dropdown-menu li {
-  padding: 8px 12px;
-}
-
-.dropdown-menu li a {
-  margin-top: 5px;
-  color: #fff;
-  text-decoration: none;
-}
-
-.buttom-nav li:hover .dropdown-menu {
-  display: block;
-  margin-top: 1px;
-}
-}
-
-li {
-  text-align: left;
+  /* Show dropdown menu when menu is open */
+  .nav-wrap.open .dropdown-menu {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 465px) {
