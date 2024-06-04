@@ -28,7 +28,7 @@
         <div>
           <video class="footer-video" width="100%" autoplay muted controls>
             <source
-              src="../assets/Video/mitucl.dk_-_rundvisning_på_sitet (720p).mp4" type="video/mp4">
+              src="../assets/Video/mitucl.dk.mp4" type="video/mp4">
           </video>
         </div>
       </div>
