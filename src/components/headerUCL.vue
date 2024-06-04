@@ -38,13 +38,14 @@
         <div class="buttom-nav-wrap">
           <ul class="buttom-nav">
             <li>Mit campus</li>
+            <!--midlertidig løsning ind til karrierevejledning-->
             <li
               id="studieservice"
               @mouseenter="showDropdown"
               @mouseleave="hideDropdown"
             >
               <router-link to="">Studieservice</router-link>
-              <ul v-show="isDropdownOpen || isMenuOpen" class="dropdown-menu">
+              <ul v-show="isDropdownOpen" class="dropdown-menu">
                 <li><router-link to="">Studiestart</router-link></li>
                 <li><router-link to="/">Studieadministration</router-link></li>
                 <li><router-link to="/">SU-vejledning</router-link></li>
@@ -83,20 +84,12 @@ export default {
   methods: {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
-      // Ensure the dropdown opens with the menu
-      if (this.isMenuOpen) {
-        this.isDropdownOpen = true;
-      } else {
-        this.isDropdownOpen = false;
-      }
     },
     showDropdown() {
       this.isDropdownOpen = true;
     },
     hideDropdown() {
-      if (!this.isMenuOpen) {
-        this.isDropdownOpen = false;
-      }
+      this.isDropdownOpen = false;
     },
   },
 };
@@ -158,7 +151,6 @@ li a::after {
   left: 0;
   transition: width 0.3s ease-in-out;
 }
-
 li a:hover::after {
   width: 20%;
 }
@@ -176,10 +168,6 @@ li a:hover::after {
   bottom: 0;
   left: 0;
   transition: width 0.3s ease-in-out;
-}
-
-li {
-  text-align: left;
 }
 
 .search-btn {
@@ -226,7 +214,7 @@ li {
   background-color: #00454e;
   padding: 10px;
   list-style: none;
-  margin: 0;
+  margin: 10;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
@@ -241,15 +229,12 @@ li {
   text-decoration: none;
 }
 
-/* Showing dropdown menu when the menu is open */
-.nav-wrap.open .dropdown-menu {
+.buttom-nav li:hover .dropdown-menu {
   display: block;
+  margin-top: 1px;
 }
 
-/* Show dropdown menu on hover for desktop */
-#studieservice:hover .dropdown-menu {
-  display: block;
-}
+/* Responsive styles */
 
 @media screen and (max-width: 1100px) {
   .dropdown-menu {
@@ -281,10 +266,10 @@ li {
     height: 100vh;
     justify-content: flex-end;
     right: -106%;
-    position: static;
+    position: relative;
     padding: 3%;
-    padding-top: 100px;
     box-sizing: border-box;
+    top: 50px;
     display: none;
   }
 
@@ -365,16 +350,6 @@ li {
 
   .search-btn {
     display: none;
-  }
-
-  /* Make sure dropdown menu is hidden when not in mobile view */
-  .dropdown-menu {
-    display: none;
-  }
-
-  /* Show dropdown menu when menu is open */
-  .nav-wrap.open .dropdown-menu {
-    display: block;
   }
 }
 
