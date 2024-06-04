@@ -26,7 +26,7 @@
           </li>
         </ul>
         <div>
-          <video class="footer-video" width="100%" autoplay muted controls>
+          <video class="footer-video" width="100%" controls>
             <source
               src="../assets/Video/mitucl.dk.mp4" type="video/mp4">
           </video>
