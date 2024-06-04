@@ -281,10 +281,10 @@ li {
     height: 100vh;
     justify-content: flex-end;
     right: -106%;
-    position: relative;
+    position: static;
     padding: 3%;
+    padding-top: 100px;
     box-sizing: border-box;
-    top: 75px;
     display: none;
   }
 
